@@ -10,6 +10,7 @@
 
 :email: oi@rocketseat.com.br  
 <br>
+<br>
 
 > ## :tv:
 
@@ -20,6 +21,7 @@
 ### Twitch:
 
 :link: https://www.twitch.tv/search?term=rocketseat_oficial
+<br>
 <br>
 
 > ## :iphone:
@@ -36,6 +38,7 @@
 
 :link: https://www.instagram.com/rocketseat_oficial/
 <br>
+<br>
 
 > ## :smile:
 
@@ -43,12 +46,14 @@
 
 :link: http://comunidade.rocketseat.com.br
 <br>
+<br>
 
 > ## :email:
 
 ### Newsletter:
 
 :link: https://rocketseat.ck.page/b4b4e90122
+<br>
 <br>
 
 > ## :speaker:
