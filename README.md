@@ -8,9 +8,10 @@
 
 ## E-mail:
 
-:email: oi@rocketseat.com.br
+:email: oi@rocketseat.com.br  
+<br>
 
-## :tv:
+> ## :tv:
 
 ### YouTube:
 
@@ -19,8 +20,9 @@
 ### Twitch:
 
 :link: https://www.twitch.tv/search?term=rocketseat_oficial
+<br>
 
-## :iphone:
+> ## :iphone:
 
 ### Twitter:
 
@@ -33,20 +35,23 @@
 ### Instagram:
 
 :link: https://www.instagram.com/rocketseat_oficial/
+<br>
 
-## :smile:
+> ## :smile:
 
 ### Comunidade:
 
 :link: http://comunidade.rocketseat.com.br
+<br>
 
-## :email:
+> ## :email:
 
 ### Newsletter:
 
 :link: https://rocketseat.ck.page/b4b4e90122
+<br>
 
-## :speaker:
+> ## :speaker:
 
 ### Spotify:
 
