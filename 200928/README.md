@@ -22,8 +22,3 @@ A small webcam player builded with html, css, javascript and electron.
 [Fronteditor GitHub](https://github.com/maykbrito/fronteditor)  
 
 It's a simple html code runner.  
-
-
-
-### notes
-
