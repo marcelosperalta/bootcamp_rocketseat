@@ -12,7 +12,7 @@
 <br>
 <br>
 
-> ## :tv:
+> # :tv:
 
 ### YouTube:
 
@@ -24,7 +24,7 @@
 <br>
 <br>
 
-> ## :iphone:
+> # :iphone:
 
 ### Twitter:
 
@@ -40,7 +40,7 @@
 <br>
 <br>
 
-> ## :smile:
+> # :smile:
 
 ### Comunidade:
 
@@ -48,7 +48,7 @@
 <br>
 <br>
 
-> ## :email:
+> # :email:
 
 ### Newsletter:
 
@@ -56,7 +56,7 @@
 <br>
 <br>
 
-> ## :speaker:
+> # :speaker:
 
 ### Spotify:
 
