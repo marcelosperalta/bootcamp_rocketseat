@@ -2,11 +2,11 @@
 
 :link: https://rocketseat.com.br/
 
-## Blog:
+### Blog:
 
 :link: https://rocketseat.com.br/blog
 
-## E-mail:
+### E-mail:
 
 :email: oi@rocketseat.com.br  
 <br>
