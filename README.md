@@ -8,7 +8,7 @@
 
 ### E-mail:
 
-:email: oi@rocketseat.com.br  
+:email: oi@rocketseat.com.br
 <br>
 <br>
 
