@@ -25,22 +25,14 @@ It's a simple html code runner.
 
 ### tags
 
-[<details>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)  
+[details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)  
 
-[<datalist>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist)  
+[datalist](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist)  
 
-[<mark>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark)  
+[mark](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark)  
 
-[<cite>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite)  
+[cite](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite)  
 
 ### global attribute
 
 [contenteditable](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable)  
-
-
-
-[]()  
-
-[]()  
-
-[]()  
