@@ -25,9 +25,9 @@ It's a simple html code runner.
 
 ### tags
 
-[details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)  
+[<details>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)  
 
-[]()  
+[<datalist>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist)  
 
 []()  
 
