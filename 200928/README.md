@@ -35,6 +35,10 @@ It's a simple html code runner.
 
 [blockquote](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote)  
 
+[progress](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress)  
+
+[input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)  
+
 ### global attribute
 
 [contenteditable](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable)  
