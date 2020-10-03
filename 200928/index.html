@@ -114,11 +114,27 @@
             <progress id="bar" value="0" max="100" class="w-full">Progress 50%</progress>
 
             <br>
+            <br>
 
             <!-- input -->
-            <div class="p-4 bg-purpel-600 text-white flex">
+            <div class="p-4 bg-purple-600 text-white flex">
                 <label for="volume" class="mr-4">Range</label>
                 <input type="range" id="volume" name="volume" min="0" max="10">
+            </div>
+
+            <div class="p-4 bg-purple-100 text-purple-900 flex">
+                <label for="when" class="mr-4">Date</label>
+                <input type="date" id="when" name="trip-start" value="2020-09-22" min="2020-10-22" max="2020-12-22">
+            </div>
+
+            <div class="p-4 bg-purple-600 text-white flex">
+                <label for="color" class="mr-4">Color</label>
+                <input type="color" id="color" name="color">
+            </div>
+
+            <div class="p-4 bg-purple-100 text-purple-900 flex">
+                <label for="hour" class="mr-4">Time</label>
+                <input type="time" id="hour" name="hour" value="22:00">
             </div>
         </section>
       </main>
