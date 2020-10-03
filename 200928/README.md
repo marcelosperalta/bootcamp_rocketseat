@@ -33,6 +33,8 @@ It's a simple html code runner.
 
 [cite](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite)  
 
+[blockquote](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote)  
+
 ### global attribute
 
 [contenteditable](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable)  
