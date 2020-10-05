@@ -14,6 +14,10 @@
 
 > # :tv:
 
+<div align="center">
+    <a href="marcelosperalta.github.io/rocketseat/">CLASSES</a>
+</div>
+
 ### YouTube:
 
 :link: https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg
