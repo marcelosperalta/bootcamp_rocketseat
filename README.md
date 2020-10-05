@@ -1,3 +1,7 @@
+<div align="center">
+    <a href="marcelosperalta.github.io/rocketseat/">CLASSES</a>
+</div>
+
 # :rocket: Rocketseat Bootcamp
 
 :link: https://rocketseat.com.br/
@@ -13,10 +17,6 @@
 <br>
 
 > # :tv:
-
-<div align="center">
-    <a href="marcelosperalta.github.io/rocketseat/">CLASSES</a>
-</div>
 
 ### YouTube:
 
