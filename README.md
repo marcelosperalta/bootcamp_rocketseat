@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="marcelosperalta.github.io/rocketseat/">CLASSES</a>
+    <h1><a href="marcelosperalta.github.io/rocketseat/">CLASSES</a></h1>
 </div>
 
 # :rocket: Rocketseat Bootcamp
