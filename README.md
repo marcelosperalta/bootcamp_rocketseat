@@ -50,6 +50,7 @@
 
 :link: http://comunidade.rocketseat.com.br  
 <br>
+<br>
 
 # :email:
 
@@ -58,6 +59,7 @@
 :link: https://rocketseat.ck.page/b4b4e90122  
 
 :link: [dev/letter](https://www.notion.so/dev-letter-e59ace6284a044b88fc5a9945ae326de)  
+<br>
 <br>
 
 # :speaker:
