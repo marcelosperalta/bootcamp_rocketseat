@@ -1,6 +1,6 @@
 # :rocket: Rocketseat Bootcamp
 
-## Iniciando com Git | Diego Fernandes
+## Pré-processador SASS | Cleiton Souza
 
 https://www.youtube.com/watch?v=MW7hrQe6aYo
 

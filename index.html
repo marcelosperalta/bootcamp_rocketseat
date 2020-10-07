@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +14,7 @@
 
     <title>Rocketseat</title>
 </head>
+
 <style>
     * {
         margin: 0;
@@ -21,9 +24,11 @@
     }
     body {
         background-color: #18191A;
+        margin-left: 30%;
     }  
     nav {
         margin: 5px;
+        margin-top: 30px;
         padding: 5px;
         width: 170px;
         border: 1px solid #9466FF;  
@@ -32,7 +37,7 @@
         justify-content: center;
         align-items: center;
     }
-    nav a span {
+    span {
         vertical-align: middle;
     }
     h1 {
@@ -53,45 +58,63 @@
         color: #9466FF;
         text-decoration: none;
     }
+    .class-subject {
+        display: inline-block;
+        color: aqua;
+        font-weight: bold;
+        min-width: 80px;
+        text-align: center;
+        border: 2px solid aqua;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }
 </style>
+
 <body>
+
     <nav>
         <a href="https://github.com/marcelosperalta/rocketseat">
             <span class="material-icons">link</span>
             GitHub Repository
         </a>
     </nav>
+
     <h1>
         <a href="https://rocketseat.com.br/">
             <span class="material-icons">link</span>
             Rocketseat
         </a>
     </h1>
-    <div>
+
+    <!-- "YouTube" section -->
     <h2>
         <a href="https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg">
             <span class="material-icons">link</span>
             YouTube
         </a>
     </h2>
-    <p>
-        <a href="https://github.com/marcelosperalta/rocketseat/blob/master/170601/README.md">
-            <span class="material-icons">link</span>
-            GIT - Iniciando com Git | Diego Fernandes
-        </a>
-    </p>
         <p>
-        <a href="https://github.com/marcelosperalta/rocketseat/blob/master/170612/README.md">
-            <span class="material-icons">link</span>
-            SASS - Pré-processador SASS | Cleiton Souza
-        </a>
-    </p>
-    <p>
-        <a href="./200928/index.html">
-            <span class="material-icons">link</span>
-            HTML - Code/Drops #58 | 7 Tags HTML que Você Precisa Conhecer
-        </a>
-    </p>
-    </div>
+            <a href="https://github.com/marcelosperalta/rocketseat/blob/master/170601/README.md">
+                <span class="material-icons">link</span>
+                <span class="class-subject">GIT</span>
+                Iniciando com Git | Diego Fernandes
+            </a>
+        </p>
+            <p>
+            <a href="https://github.com/marcelosperalta/rocketseat/blob/master/170612/README.md">
+                <span class="material-icons">link</span>
+                <span class="class-subject">SASS</span>
+                Pré-processador SASS | Cleiton Souza
+            </a>
+        </p>
+        <p>
+            <a href="./200928/index.html">
+                <span class="material-icons">link</span>
+                <span class="class-subject">HTML</span>
+                Code/Drops #58 | 7 Tags HTML que Você Precisa Conhecer
+            </a>
+        </p>
+
 </body>
+
 </html>
