@@ -4,6 +4,23 @@ main {
   margin: 20px auto;
 }
 
+body {
+  font-family: "Baloo Thambi 2", cursive;
+  font-size: 2rem;
+}
+body ul {
+  list-style: none;
+}
+body ul li {
+  margin-left: 10px;
+}
+body ul li a {
+  color: #111;
+}
+body ul li a:hover {
+  color: #ddd;
+}
+
 code {
   background-color: #eee;
   border-radius: 3px;

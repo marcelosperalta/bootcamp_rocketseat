@@ -1,0 +1,16 @@
+body {
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 2rem;
+    ul {
+        list-style: none;
+        li {
+            margin-left: 10px;
+            a {
+                color: #111;
+                &:hover {
+                    color: #ddd;
+                }
+            }
+        }
+    }
+}
