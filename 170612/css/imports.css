@@ -4,8 +4,11 @@ main {
   margin: 20px auto;
 }
 
-.content {
-  background-color: lightcyan;
+code {
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=imports.css.map */
