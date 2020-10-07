@@ -24,6 +24,12 @@ npm install -g sass
 sass --version
 ```
 
+### convert sass to css
+
+```
+sass sass/imports.scss css/imports.css
+```
+
 ### Other tools
 
 https://stylus-lang.com/

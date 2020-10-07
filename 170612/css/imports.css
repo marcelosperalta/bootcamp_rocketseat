@@ -1,0 +1,11 @@
+nav,
+main {
+  width: 960px;
+  margin: 20px auto;
+}
+
+.content {
+  background-color: lightcyan;
+}
+
+/*# sourceMappingURL=imports.css.map */
