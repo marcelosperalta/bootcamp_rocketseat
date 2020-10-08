@@ -30,6 +30,20 @@ sass --version
 sass sass/imports.scss css/imports.css
 ```
 
+### watch individual files or directories
+
+_individual files:_  
+
+```
+sass --watch imports.scss imports.css
+```
+
+_directories:_  
+
+```
+sass --watch sass:css
+```
+
 ### Other tools
 
 https://stylus-lang.com/

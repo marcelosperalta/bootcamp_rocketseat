@@ -1,0 +1,15 @@
+$font: 'Baloo Thambi 2', cursive;
+$primary: #111;
+
+body {
+    $lovalVar: #000;
+    $glonalVar: #DDD !global;
+    $primary: #e1f1ec;
+    font-family: $font;
+    background-color: $primary;
+}
+
+.main {
+    background-color: $glonalVar;
+    border-color: $primary;
+}
