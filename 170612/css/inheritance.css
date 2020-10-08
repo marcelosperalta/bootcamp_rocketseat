@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .icon, .icon-twitter, .icon-facebook {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Custom Font";
   line-height: 1;
   color: #111;
 }
