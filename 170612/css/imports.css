@@ -1,9 +1,3 @@
-nav,
-main {
-  width: 1280px;
-  margin: 20px auto;
-}
-
 body {
   font-size: 2rem;
 }
@@ -28,6 +22,26 @@ body {
 .main {
   background-color: #DDD;
   border-color: #111;
+}
+
+.item {
+  width: 320px;
+}
+
+.banana {
+  padding: 30px;
+  background-image: url("images/banana.png");
+}
+
+.apple {
+  padding: 20px;
+  margin: 10px;
+  background-image: url("images/apple.png");
+}
+
+.lemon {
+  margin: 20px;
+  background-image: url("images/lemon.png");
 }
 
 code {

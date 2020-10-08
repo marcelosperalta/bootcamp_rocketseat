@@ -1,0 +1,6 @@
+$gap: 20px;
+$viewport: 800px;
+
+.item {
+    width: ($viewport / 2) - (4 * $gap);
+}

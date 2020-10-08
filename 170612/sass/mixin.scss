@@ -1,0 +1,8 @@
+@mixin border($with, $type, $color: #F00) {
+    border: $with $type $color;
+}
+
+button {
+    @include border(5px, solid);
+    margin: 10px;
+}

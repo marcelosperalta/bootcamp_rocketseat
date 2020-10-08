@@ -1,0 +1,15 @@
+.icon {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1;
+    color: #111;
+}
+
+.icon-facebook {
+    @extend .icon;
+    content: "\e301";
+}
+
+.icon-twitter {
+    @extend .icon;
+    content: "\e302";
+}

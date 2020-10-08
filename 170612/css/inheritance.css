@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.icon, .icon-twitter, .icon-facebook {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1;
+  color: #111;
+}
+
+.icon-facebook {
+  content: "";
+}
+
+.icon-twitter {
+  content: "";
+}
+
+/*# sourceMappingURL=inheritance.css.map */

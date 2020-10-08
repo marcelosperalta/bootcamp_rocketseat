@@ -1,0 +1,15 @@
+$primary: #111;
+
+button {
+    color: lighten($primary, 10);
+    border-color: rgba(lighten($primary, 10), .8);
+}
+
+@function multiply($n1, $n2: 50) {
+    // logic
+    @return #{$n1 * $n2}px;
+}
+
+button {
+    margin: multiply(10, 20);
+}
