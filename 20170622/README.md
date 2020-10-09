@@ -1,21 +1,21 @@
 # :rocket: Rocketseat Bootcamp
 
-## Pré-processador SASS | Cleiton Souza
+## Iniciando no ReactJS | Diego Fernandes
 
-https://www.youtube.com/watch?v=MW7hrQe6aYo
+https://www.youtube.com/watch?v=7A4UQGrFU9Q&t=4s
 
 ### tools
 
-[Sass](https://git-scm.com/)  
+[React](https://reactjs.org/)  
 
-Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.  
+A JavaScript library for building user interfaces.  
 
-### install
-
-https://sass-lang.com/install
+#### [create a new react app](https://reactjs.org/docs/create-a-new-react-app.html#gatsby-focus-wrapper)
 
 ```
-npm install -g sass
+npx create-react-app my-app
+cd my-app
+npm start
 ```
 
 ### check version
