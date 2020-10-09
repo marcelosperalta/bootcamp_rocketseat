@@ -10,42 +10,14 @@ https://www.youtube.com/watch?v=7A4UQGrFU9Q&t=4s
 
 A JavaScript library for building user interfaces.  
 
-#### [create a new react app](https://reactjs.org/docs/create-a-new-react-app.html#gatsby-focus-wrapper)
+#### create a new react app
+
+https://github.com/facebook/create-react-app  
+
+https://reactjs.org/docs/create-a-new-react-app.html#gatsby-focus-wrapper  
 
 ```
 npx create-react-app my-app
 cd my-app
 npm start
 ```
-
-### check version
-
-```
-sass --version
-```
-
-### convert sass to css
-
-```
-sass sass/imports.scss css/imports.css
-```
-
-### watch individual files or directories
-
-_individual files:_  
-
-```
-sass --watch imports.scss imports.css
-```
-
-_directories:_  
-
-```
-sass --watch sass:css
-```
-
-### Other tools
-
-https://stylus-lang.com/  
-
-http://lesscss.org/  
