@@ -54,6 +54,7 @@ export default class Post extends React.Component {
                 { this.state.comments.map((comment, index) => {
                     return <Comment key={index} text={comment.text} />
                 }) }
+                <br></br>
             </div>
         )
     }
