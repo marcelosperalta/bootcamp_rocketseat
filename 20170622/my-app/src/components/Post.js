@@ -8,7 +8,8 @@ export default class Post extends React.Component {
             <div>
                 {/* <h2>Post</h2> // cenário 1 */}
                 <h2>{this.props.title}</h2>
-                <Comment />
+                {/* <Comment /> // cenário 2 */}
+                <Comment text="Bom post" />
             </div>
         )
     }
