@@ -1,6 +1,6 @@
 import React from "react";
 
-import Comment from "./Comment"
+import Comment from "./Comment";
 
 export default class Post extends React.Component {
 
@@ -9,18 +9,31 @@ export default class Post extends React.Component {
 
         this.state = {
             comments: [
-                { text: "Bom post!" }
-            ]
+                // { text: "Bom post!" }
+            ],
+            newCommentsText: ""
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleTextChange = this.handleTextChange.bind(this);
     }
 
     handleSubmit(e) {
-        //this.setState
+        this.setState({
+            comments: [
+                ... this.state.comments,
+                { text: this.state.newCommentsText }
+            ]
+        });
+
+        this.setState({ newCommentsText: "" });
+
         e.preventDefault();
     }
 
+    handleTextChange(e) {
+        this.setState({ newCommentsText: e.target.value })
+    }
 
     render() {
         return (
@@ -28,8 +41,13 @@ export default class Post extends React.Component {
                 {/* <h2>Post</h2> // cenário 1 */}
                 <h2>{this.props.title}</h2>
                 <form onSubmit={this.handleSubmit}>
-                    <input />
-                    <button type="submit">Comentar</button>
+                    <input 
+                        value={this.state.newCommentsText} 
+                        onChange={this.handleTextChange}
+                    />
+                    <button type="submit">
+                        Comentar
+                    </button>
                 </form>
                 {/* <Comment /> // cenário 2 */}
                 {/* <Comment text="Bom post" /> // cenário 3 */}
