@@ -15,7 +15,7 @@
 
 ### Blog:
 
-:link: https://rocketseat.com.br/blog  
+:link: https://blog.rocketseat.com.br/  
 
 ### E-mail:
 
