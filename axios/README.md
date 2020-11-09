@@ -2,9 +2,9 @@
 
 ## [Axios](https://github.com/axios/axios) - um cliente HTTP Full Stack
 
-by [Thiago Marinho](https://github.com/tgmarinho)
+by [Thiago Marinho](https://github.com/tgmarinho)  
 
-https://blog.rocketseat.com.br/axios-um-cliente-http-full-stack/
+https://blog.rocketseat.com.br/axios-um-cliente-http-full-stack/  
 
 ### Related topics
 
