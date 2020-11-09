@@ -27,3 +27,7 @@ or
 ```
 yarn add axios
 ```
+
+### Sandbox
+
+https://codesandbox.io/s/trying-axios-8ezy1?from-embed=&file=/public/index.html
