@@ -27,7 +27,7 @@
 
 ### YouTube:
 
-:link: https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg  
+:link: https://www.youtube.com/rocketseat  
 
 ### Twitch:
 
