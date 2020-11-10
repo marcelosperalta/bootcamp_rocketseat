@@ -1,0 +1,28 @@
+body {
+  background-color: #272527;
+}
+
+img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+figure {
+  margin: 0;
+  display: flex;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+/* Landscape */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: masonry;
+  gap: 10px;
+}
+
+.landscape {
+  grid-column-end: span 2;
+}
