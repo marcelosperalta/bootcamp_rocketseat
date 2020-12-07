@@ -3,7 +3,7 @@
         <img src="./logo_rocketseat.png" alt="Rocketseat" width="300px">
     </a>
     <h1>
-        <a href="https://marcelosperalta.github.io/rocketseat/">
+        <a href="https://marcelosperalta.github.io/bootcamp_rocketseat/">
         CLASSES
         </a>
     </h1>
