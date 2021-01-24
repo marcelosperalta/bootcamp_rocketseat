@@ -2,7 +2,7 @@
 
 :link: _fullstack version:_ ...
 
-# E-learning platform mock-up
+# Finance App
 
 A finance app using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/Style/CSS/)**, **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**, and **[Node.js](https://nodejs.org/)**.  
 
@@ -34,13 +34,8 @@ with [Mayk Brito](https://github.com/maykbrito)
 
 ### :iphone:  
 
-![mobile](./readme/screenshots/home_mobile.png)  
+![mobile](./readme/screenshots/...)  
 
 ### :computer:  
 
-![home](./readme/screenshots/home_desk.png)  
-
-![estudar](./readme/screenshots/study_front-end_only.png)  
-
-![dar-aulas](./readme/screenshots/give-classes.png)  
-<br>
+![home](./readme/screenshots/...)  
