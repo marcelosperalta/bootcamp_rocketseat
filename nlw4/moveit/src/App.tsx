@@ -1,11 +1,11 @@
-import { Button } from "./components/Button";
+// import { Button } from "./components/Button";
 
 import "./styles/global.css";
 
 function App() {
   return (
     <div>
-      <Button color="red">
+      {/* <Button color="red">
         Botao 1
       </Button>
       <Button color="blue">
@@ -13,7 +13,7 @@ function App() {
       </Button>
       <Button color="green">
         Botao 3
-      </Button>
+      </Button> */}
     </div>
   );
 }
