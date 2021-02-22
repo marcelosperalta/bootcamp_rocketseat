@@ -2,6 +2,29 @@
 
 Trilha ***React**
 
+### Ambiente
+
+- Visual Studio Code;
+- Node + NPM;
+- Yarn;
+- TypeScript;
+- React.
+
 ## Aula 1 - 22.02.2021 - Rumo ao próximo nível
 
-- Font-end SPA
+**install**  
+
+```
+yarn create react-app moveit --template=typescript
+```
+
+
+**start**  
+
+```
+cd moveit
+```
+
+```
+yarn start
+```
