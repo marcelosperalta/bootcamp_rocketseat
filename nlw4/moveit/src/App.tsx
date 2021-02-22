@@ -1,10 +1,11 @@
 // import { Button } from "./components/Button";
+import { ExperienceBar } from "./components/ExperienceBar";
 
 import "./styles/global.css";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       {/* <Button color="red">
         Botao 1
       </Button>
@@ -14,6 +15,8 @@ function App() {
       <Button color="green">
         Botao 3
       </Button> */}
+      {/* <button style={{ height: "3rem"}}>test</button> */}
+      <ExperienceBar />
     </div>
   );
 }
