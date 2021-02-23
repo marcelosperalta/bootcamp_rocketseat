@@ -11,14 +11,17 @@ Trilha **React**
 - React;
 - Next.js.
 
-## Aula 1 - 22.02.2021 - Rumo ao próximo nível
+## Aula 1 - 22.02.2021 - Rumo ao próximo nível 
+
+**folder**
+
+moveit
 
 **install**  
 
 ```
 yarn create react-app moveit --template=typescript
 ```
-
 
 **start**  
 
@@ -42,8 +45,30 @@ The three most popular ways to start a React project are:
 - SSG > [Gatsby](https://www.gatsbyjs.com/);  
 - SPA+SSR+SSG > [Next.js](https://nextjs.org/);  
 
-How to migrate the project to Next.js:  
+Migrate the project to Next.js:  
+
+**folder**
+
+moveit-next
+
+**install**  
 
 ```
 yarn create next-app moveit-next
+```
+
+rename from ```_app.js``` and ```index.js``` to ```_app.tsx``` and ```index.tsx```  
+
+```
+yarn add typescript @types/react @types/react-dom @types/node -D
+```
+
+**start**  
+
+```
+yarn dev
+```
+
+```
+http://localhost:3000/
 ```
