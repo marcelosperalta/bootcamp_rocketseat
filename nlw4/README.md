@@ -32,11 +32,12 @@ yarn start
 
 ## Aula 2 - 23.02.2021 - Desvendando o Next.js
 
-[SPA - Single-page application](https://en.wikipedia.org/wiki/Single-page_application)  
-[SSR - Server-side rendering](https://en.wikipedia.org/wiki/Server-side_scripting)  
-[SSG - Static site generators](https://www.netguru.com/blog/what-are-static-site-generators)  
+- [SPA - Single-page application](https://en.wikipedia.org/wiki/Single-page_application)  
+- [SSR - Server-side rendering](https://en.wikipedia.org/wiki/Server-side_scripting)  
+- [SSG - Static site generators](https://www.netguru.com/blog/what-are-static-site-generators)  
 
 The three most popular ways to start a React project are:  
-- SPA _________ > [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app);  
-- SSG _________ > [Gatsby](https://www.gatsbyjs.com/);  
-- SPA+SSR+SSG _ > [Next.js](https://nextjs.org/);  
+
+- SPA > [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app);  
+- SSG > [Gatsby](https://www.gatsbyjs.com/);  
+- SPA+SSR+SSG > [Next.js](https://nextjs.org/);  
