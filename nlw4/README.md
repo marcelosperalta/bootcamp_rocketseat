@@ -41,3 +41,9 @@ The three most popular ways to start a React project are:
 - SPA > [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app);  
 - SSG > [Gatsby](https://www.gatsbyjs.com/);  
 - SPA+SSR+SSG > [Next.js](https://nextjs.org/);  
+
+How to migrate the project to Next.js:  
+
+```
+yarn create next-app moveit-next
+```
