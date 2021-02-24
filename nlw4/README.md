@@ -73,6 +73,9 @@ yarn dev
 http://localhost:3000/
 ```
 
-## CSS
+### CSS
 
 [CSS Modules](https://github.com/css-modules/css-modules)  
+
+## Aula 3 - 24.02.2021 - Contexto e componentes
+
