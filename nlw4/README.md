@@ -1,12 +1,12 @@
 # [Next Level Week 04](https://nextlevelweek.com/)
 
-Trilha:  
+_trilha:_
 **React**  
 
-App:  
-__Pomodoro Technique__
+_app:_  
+**Pomodoro Technique**
 
-Screenshot:
+_screenshot:_  
 ![pomodoro](./readme/screenshot.PNG)
 
 ### Environment
