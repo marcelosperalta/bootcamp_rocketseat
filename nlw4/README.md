@@ -72,3 +72,7 @@ yarn dev
 ```
 http://localhost:3000/
 ```
+
+## CSS
+
+[CSS Modules](https://github.com/css-modules/css-modules)  
