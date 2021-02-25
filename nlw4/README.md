@@ -89,4 +89,5 @@ http://localhost:3000/
 
 ## Aula 3 - 24.02.2021 - Contexto e componentes
 
-useEffect()
+[useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect)  
+[createContext](https://reactjs.org/docs/context.html)  
