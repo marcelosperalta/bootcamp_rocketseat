@@ -1,6 +1,6 @@
 // import { useState } from "react";
 // import { ChallengesContext } from "../contexts/ChallengesContext";
-import { ChallengesProvider } from "../contexts/ChallengesContext";
+// import { ChallengesProvider } from "../contexts/ChallengesContext";
 // import { CountdownProvider } from "../contexts/CountdownContext";
 
 import "../styles/global.css";
@@ -17,14 +17,18 @@ function MyApp({ Component, pageProps }) {
     // <ChallengesContext.Provider value={{ level: 1, levelUp }}>
     //   <Component {...pageProps} />
     // </ChallengesContext.Provider>
+
       // <ChallengesProvider>
       //   <CountdownProvider>
       //     <Component {...pageProps} />
       //   </CountdownProvider>
       // </ChallengesProvider>
-      <ChallengesProvider>
-        <Component {...pageProps} />
-      </ChallengesProvider>
+
+      // <ChallengesProvider>
+      //   <Component {...pageProps} />
+      // </ChallengesProvider>
+
+      <Component {...pageProps} />
   )
 }
 
