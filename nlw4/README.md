@@ -95,3 +95,11 @@ http://localhost:3000/
 ## Aula 4 - 25.02.2021 - Melhorando a usabilidade da aplicação
 
 [createContext](https://reactjs.org/docs/context.html)  
+
+## Aula 5 - 26.02.2021 - Próximo nível com React
+
+[localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)  
+[sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage)  
+[IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)  
+[Web SQL Database](https://www.w3.org/TR/webdatabase/)  
+[Cookies](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies)  
