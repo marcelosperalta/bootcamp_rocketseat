@@ -115,3 +115,34 @@ yarn add js-cookie
 ```
 yarn add @types/js-cookie -D
 ```
+
+### Deploy
+
+[netlify](https://www.netlify.com/)  
+[Vercel](https://vercel.com/)  
+
+#### Vercel
+
+[Vercel CLI](https://vercel.com/download)  
+
+```
+npm i -g vercel
+```
+
+```
+vercel -h
+```
+
+```
+vercel login
+```
+
+_on GitHub, give access to Vercel on your repository:_  
+
+Settings > Applications > Installed GitHub Apps > Vercel > Configure > Repository access
+
+_from you project folder path:_  
+
+```
+vercel
+```
