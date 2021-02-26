@@ -103,3 +103,15 @@ http://localhost:3000/
 [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)  
 [Web SQL Database](https://www.w3.org/TR/webdatabase/)  
 [Cookies](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies)  
+
+### Cookies
+
+[js-cookie](https://github.com/js-cookie/js-cookie)  
+
+```
+yarn add js-cookie
+```
+
+```
+yarn add @types/js-cookie -D
+```
