@@ -137,11 +137,7 @@ vercel -h
 vercel login
 ```
 
-_on GitHub, give access to Vercel on your repository:_  
-
-Settings > Applications > Installed GitHub Apps > Vercel > Configure > Repository access
-
-_from you project folder path:_  
+_from your project folder:_  
 
 ```
 cd moveit-next
