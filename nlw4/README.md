@@ -144,5 +144,23 @@ Settings > Applications > Installed GitHub Apps > Vercel > Configure > Repositor
 _from you project folder path:_  
 
 ```
+cd moveit-next
+```
+
+```
 vercel
+```
+
+_project updates:_  
+
+stage:  
+
+```
+vercel
+```
+
+prod:  
+
+```
+vercel --prod
 ```
