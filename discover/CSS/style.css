@@ -1,0 +1,29 @@
+/* comment sample */
+
+/* 
+selectors:
+
+global "*"
+element/type "h1, h2, p, div, ..."
+id "#box, #container, ..."
+class ".red, .m-40, ..."
+attribute, pseudo-class, pseudo-element, etc...
+*/
+
+* {
+    margin: 0;
+}
+
+#container {
+    width: 200px;
+}
+
+.m-40 {
+    margin: 40px;
+}
+
+h1, h2 {
+    color: red;
+    font-size: 60px;
+    background: gray;
+}
