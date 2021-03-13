@@ -1,0 +1,49 @@
+@media (min-width: 500px) {
+    h1 {
+        color: wheat;
+    }
+}
+
+@font-face {
+    /* external fonts */
+}
+
+@keyframes nameofanimation {
+    /* ... */
+}
+
+
+/* shorthand */
+/* h1 {
+    background-color: #000;
+    background-image: url(images/image.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+h1 {
+    background: #000 url(images/image.gif) no-repeat left top;
+} */
+/* h1 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.2;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    font: italic bold .8em/1.2 Arial, sans-serif;
+} */
+
+
+/* cascade */
+/* level 1 */
+/* -- 7 -- */
+h1 {
+    color: salmon;
+}
+/* cascade */
+/* level 1 */
+/* -- 6 -- */
+h1 {
+    color: yellowgreen;
+}

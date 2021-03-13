@@ -1,0 +1,48 @@
+/* @import url("http://local.com/style.css") */
+
+/* universal selector */
+* {
+    color: teal;
+}
+
+/* specificity */
+/* level 10 */
+/* -- 3 -- */
+.title {
+    color: purple;
+}
+/* specificity */
+/* level 100 */
+/* -- 2 -- */
+#my-title {
+    color: rebeccapurple;
+}
+
+/* level 111 */
+/* 1 + 10     + 100        = 111 */
+/* h1  .title3  #my-title3 */
+h1.title3#my-title3,
+#my-title3 strong {
+    color: turquoise;
+}
+/* level 2 */
+/* 1 + 1 */
+body h1 {
+    color: wheat;
+    /* important */
+    /* color: wheat !important; */
+}
+
+/* cascade */
+/* level 1 */
+/* -- 9 -- */
+h1 {
+    color: violet;
+}
+/* cascade */
+/* level 1 */
+/* -- 8 -- */
+h1 {
+    color: steelblue;
+}
+
