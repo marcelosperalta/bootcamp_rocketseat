@@ -12,7 +12,6 @@
     /* ... */
 }
 
-
 /* shorthand */
 /* h1 {
     background-color: #000;
@@ -32,6 +31,13 @@ h1 {
 }
 h1 {
     font: italic bold .8em/1.2 Arial, sans-serif;
+} */
+
+/* functions */
+/* @import url("http://urlhere.com/style.css") */
+/* {
+    color: rgb (255, 0, 100);
+    width: calc(100% - 10px);
 } */
 
 
