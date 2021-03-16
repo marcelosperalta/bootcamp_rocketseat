@@ -1,5 +1,8 @@
 # GIT  
+
 [Version control systems (VCS)](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)  
+
+[SHA-1 (Secure Hash Algorithm 1)](https://en.wikipedia.org/wiki/SHA-1)  
 
 ## Using **Git Bash**  
 
@@ -88,7 +91,7 @@ git log --grep="init"
 git log --grep="bug fix"
 ```
 
-### VIM
+### VIM:  
 ```
 vim file.txt
 ```
@@ -105,4 +108,86 @@ git add .
 ```
 ```
 git commit -m "initial commit"
+```
+
+### Recap:  
+```
+mkdir git-test
+```
+```
+cd git-test
+```
+```
+git init
+```
+```
+touch file1.txt
+```
+```
+git status
+```
+```
+touch file2.txt
+```
+```
+git status
+```
+```
+git add file1.txt
+```
+```
+git status
+```
+```
+git add .
+```
+```
+git status
+```
+```
+git rm --cached file2.txt
+```
+```
+git status
+```
+```
+git commit -m "initial commit"
+```
+```
+clear
+```
+```
+git log
+```
+```
+git add file2.txt
+```
+```
+git commit -m "second commit"
+```
+```
+git log
+```
+```
+vim file1.txt
+```
+```
+git status
+```
+```
+git add file1.txt
+```
+```
+git commit -m "file1.txt changed"
+```
+```
+git log
+```
+
+### Changing files  
+```
+
+```
+```
+
 ```
