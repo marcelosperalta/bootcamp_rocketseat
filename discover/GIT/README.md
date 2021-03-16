@@ -1,22 +1,22 @@
-GIT  
+# GIT  
 [Version control systems (VCS)](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)  
 
-Using **Git Bash**  
+## Using **Git Bash**  
 
 ![git bash](./screenshot_git_bash.png)
 
-Configuration:  
+### Configuration:  
 ```
 git config --global user.name "Your full name"
 git config --global user.email "Your email"
 ```
 
-Change Git standar editor:  
+### Change Git standar editor:  
 ```
 git config --global core.editor "code -w"
 ```
 
-See configurations:  
+### See configurations:  
 ```
 git config --list`
 ```
@@ -24,15 +24,85 @@ git config --list`
 cat ~/.gitconfig
 ```
 
-Git config file path on Windows:
+### Git config file path on Windows:  
 ```
 C:/Users/<user>/.gitconfig
 ```
 
-Create a folder
+### Create a folder:  
 ```
 mkdir git
 ```
 ```
 cd git
+```
+
+### Start a repository:  
+```
+git init
+```
+```
+ls -a
+```
+```
+cd .git
+```
+```
+ls
+```
+```
+cat config
+```
+```
+git config --list
+```
+
+### Git Help:  
+```
+git help
+```
+
+### Git Log:  
+```
+git log
+```
+```
+git log -n 5
+```
+```
+git log -n 20
+```
+```
+git log --since=2021-01-01
+```
+```
+git log --until=2021-01-01
+```
+```
+git log --author=Marcelo
+```
+```
+git log --grep="init"
+```
+```
+git log --grep="bug fix"
+```
+
+### VIM
+```
+vim file.txt
+```
+- Write something  
+- Press "Esc"  
+```
+:wq
+```
+_wq = write and quit_
+
+### Commit:  
+```
+git add .
+```
+```
+git commit -m "initial commit"
 ```
