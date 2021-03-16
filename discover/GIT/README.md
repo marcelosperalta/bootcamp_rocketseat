@@ -185,6 +185,52 @@ git log
 ```
 
 ### Changing files  
+
+**add:**  
+```
+touch README.md
+```
+```
+git status
+```
+```
+vim README.md
+```
+```
+vim file1.txt
+```
+```
+git add README.md
+```
+```
+git status
+```
+```
+git commit -m "added README.md"
+```
+```
+clear
+```
+```
+git log
+```
+```
+git status
+```
+```
+git add *.md
+```
+
+**edit:**  
+```
+
+```
+```
+
+```
+```
+
+```
 ```
 
 ```
