@@ -223,17 +223,149 @@ git add *.md
 
 **edit:**  
 ```
+vim file1.txt
+```
+```
+vim file2.txt
+```
+```
+vim README.md
+```
+```
+git status
+```
+```
+git add .
+```
+```
+git commit -m "all files modified"
+```
+
+#### **[diff](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/diff.html)**
 
 ```
+rm file1.txt
+```
+```
+rm file2.txt
+```
+```
+touch repository_local.md
+```
+```
+touch stage_area.md
+```
+```
+touch working_directory.md
+```
+```
+vim README.md
 ```
 
-```
-```
+**comparing files** 
 
 ```
+git status
+```
+```
+git diff
 ```
 
+**diff staged** 
+
 ```
+git add README.md
+```
+```
+git diff
+```
+```
+git diff --staged
 ```
 
+**delete** 
+
+```
+touch file1.txt
+```
+```
+git status
+```
+```
+git add file2.txt
+```
+```
+git status
+```
+```
+git restore --staged README.md
+```
+```
+git status
+```
+```
+git commit -m "delete file2.txt"
+```
+```
+git status
+```
+```
+git rm file1.txt
+```
+```
+git status
+```
+```
+git commit -m "remove file1.txt"
+```
+```
+git status
+```
+
+**rename** 
+
+```
+git status
+```
+```
+git add .
+```
+```
+git commit -m "files added"
+```
+```
+git status
+```
+```
+git mv stage_area.md 2-stage_area.md
+```
+```
+git status
+```
+```
+git mv repository_local.md 3-repository_local.md
+```
+```
+git status
+```
+```
+git commit -m "renamed"
+```
+```
+git status
+```
+
+**move** 
+
+```
+mkdir sub
+```
+```
+git status
+```
+```
+git mv README.md sub/README.md
+```
+```
+git status
 ```
