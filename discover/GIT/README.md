@@ -506,7 +506,6 @@ git commit -m "working_directory.md updated"
 git log
 ```
 _copy the first letters of the commit that you like to restore_  
-e.g.
 ![git bash](./screenshot_git_bash_2.png)
 
 ```
