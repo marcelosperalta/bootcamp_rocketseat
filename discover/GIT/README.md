@@ -471,22 +471,22 @@ git commit --amend -m "test"
 git log
 ```
 ```
-
+vim 2-repository_local.md
 ```
 ```
-
+git status
 ```
 ```
-
+git add .
 ```
 ```
-
+git commit --amend -m "modify 2-repository_local.md"
 ```
 ```
-
+git status
 ```
 ```
-
+ls -al
 ```
 ```
 
