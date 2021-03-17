@@ -4,9 +4,11 @@
 
 [SHA-1 (Secure Hash Algorithm 1)](https://en.wikipedia.org/wiki/SHA-1)  
 
+[DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph)  
+
 ## Using **Git Bash**  
 
-![git bash](./screenshot_git_bash.png)
+![git bash](./screenshot_git_bash_1.png)
 
 ### Configuration:  
 ```
@@ -488,9 +490,70 @@ git status
 ```
 ls -al
 ```
-```
+
+**recover**
 
 ```
+vim working_directory.md
+```
+```
+git add working_directory.md
+```
+```
+git commit -m "working_directory.md updated"
+```
+```
+git log
+```
+_copy the first letters of the commit that you like to restore_  
+e.g.
+![git bash](./screenshot_git_bash_2.png)
+
+```
+git checkout d946caa -- README.md
+```
+```
+git status
+```
+```
+vim README.md
+```
+```
+vim working_directory.md
+```
+```
+git restore --staged README.md
+```
+```
+git add working_directory.md
+```
+```
+git status
+```
+```
+git commit -m "working_directory.md updated"
+```
+```
+rm README.md
+```
+
+**remove untracked files**
+
+```
+touch trash1.txt trash2.txt
+```
+```
+git status
+```
+```
+git clean -f
+```
+```
+git status
+```
+
+
+
 ```
 
 ```
