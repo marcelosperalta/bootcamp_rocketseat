@@ -552,23 +552,29 @@ git clean -f
 git status
 ```
 
-
-
-```
+**revert a commit**  
 
 ```
+git status
+```
+![git bash](./screenshot_git_bash_3.png)
+```
+git log
+```
+```
+git revert HEAD~5
+```
+![git bash](./screenshot_git_bash_4.png)
+```
+git log --oneline
+```
+![git bash](./screenshot_git_bash_5.png)
+```
+git revert 235a2f7
 ```
 
-```
-```
+**real project**
 
-```
-```
-
-```
-```
-
-```
 ```
 
 ```
