@@ -369,3 +369,152 @@ git mv README.md sub/README.md
 ```
 git status
 ```
+
+**undo**  
+
+```
+vim 3-repository_local.md
+```
+```
+cat 3-repository_local.md
+```
+```
+git status
+```
+```
+git restore 3-repository_local.md
+```
+```
+cat 3-repository_local.md
+```
+
+**return from stage**  
+
+```
+vim 3-repository_local.md
+```
+```
+git add .
+```
+```
+git status
+```
+```
+git restore --staged 3-repository_local.md
+```
+```
+git status
+```
+_or_  
+```
+git add .
+```
+```
+git status
+```
+```
+git reset HEAD 3-repository_local.md
+```
+```
+git status
+```
+_all_  
+```
+vim 2-repository_local.md
+```
+```
+vim 3-repository_local.md
+```
+```
+git status
+```
+```
+git add .
+```
+```
+git status
+```
+```
+git restore --staged .
+```
+```
+git status
+```
+```
+git add .
+```
+```
+git status
+```
+```
+git reset HEAD .
+```
+```
+git status
+```
+```
+git restore .
+```
+```
+git status
+```
+
+**fixing the last commit**
+
+```
+git log
+```
+```
+git commit --amend -m "test"
+```
+```
+git log
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
