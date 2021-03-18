@@ -13,6 +13,10 @@
 
 :link: https://rocketseat.com.br/  
 
+### Git Hub:
+
+:link: https://github.com/rocketseat-education
+
 ### Blog:
 
 :link: https://blog.rocketseat.com.br/  
