@@ -673,4 +673,3 @@ git add .
 ```
 git commit "new project tracking using the .gitignore file"
 ```
-
