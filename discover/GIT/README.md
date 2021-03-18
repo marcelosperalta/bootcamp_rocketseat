@@ -575,12 +575,62 @@ git revert 235a2f7
 
 **real project**
 
-```
+[happy app](https://github.com/rocketseat-education/nlw-03-discovery)
+
+_start:_  
 
 ```
+cd nlw-03-discovery
+```
+```
+git status
+```
+```
+git init
+```
+```
+git status
+```
+```
+cd ..
+```
+```
+cd nlw-03-discovery
+```
+```
+git add .
+```
+```
+git status
+```
+```
+git commit -m "first commit"
+```
+```
+git status
 ```
 
+_adding and verifying changes:_  
+
 ```
+git status
+```
+```
+git diff --color-words
+```
+
+_shortcuts for staging and commits:_  
+
+```
+git commit -am "index modified"
+```
+
+_modifications history:_  
+
+```
+git log
+```
+![git bash](./screenshot_git_bash_6.png)
 ```
 
 ```
