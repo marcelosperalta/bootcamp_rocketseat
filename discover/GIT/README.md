@@ -632,8 +632,45 @@ git log
 ```
 ![git bash](./screenshot_git_bash_6.png)
 ```
+git show de2c664
+```
+```
+git show 2c88237
+```
+```
+git show 2c88237 --color-words
+```
+```
+git show de2c664 -- src/views/*
+```
+
+_ignoring files and folders:_  
+
+.gitignore  
 
 ```
+cat .gitignore
+```
+```
+vim .gitignore
+```
+exit from vim without saving  
+```
+:q!
 ```
 
+_remove files from cache to reset the tracking_  
+
 ```
+git rm -r --cached .
+```
+```
+vim .gitignore
+```
+```
+git add .
+```
+```
+git commit "new project tracking using the .gitignore file"
+```
+
