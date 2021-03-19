@@ -216,3 +216,101 @@ let yourName = "Marcelo"
 // - snake_case
 
 let your_name = "Marcelo"
+
+
+console.log("----- practicing -----");
+
+var myName
+myName = "Marcelo"
+console.log(typeof myName); // string
+console.log(myName);        // Marcelo
+// let age = 20
+// let isHuman = true
+let age2, isHuman
+age2 = 40
+isHuman = true
+console.log(myName, age2, isHuman);                 // Marcelo 40 true
+console.log("Marcelo is 40 years old");             // Marcelo is 40 years old
+// concatenate:
+console.log(myName + " is " + age2 + " years old"); // Marcelo is 40 years old
+console.log(myName + ' is ' + age2 + ' years old'); // Marcelo is 40 years old
+// interpolation:
+console.log(`${myName} is ${age2} years old`);      // Marcelo is 40 years old
+
+// - object
+
+const person = {
+    name: "Marcelo",
+    age: 40,
+    weight: 86,
+    isAdmin: true
+}
+console.log(person);
+console.log(person.name);                                 // Marcelo
+console.log(person.age);                                  // 40
+console.log(`${person.name} is ${person.age} years old`); // Marcelo is 40 years old
+
+// - array
+
+const animals = [
+    "Lion",
+    "Monkey",
+    "Cat",
+    {
+        name: "Dog",
+        age: 3
+    }
+]
+console.log(animals);         // Lion
+console.log(animals[0]);      // Lion
+console.log(animals[1]);      // Monkey
+console.log(animals[2]);      // Cat
+console.log(animals[3]);      // {name: "Dog", age: 3}
+console.log(animals[3].name); // Dog
+console.log(animals.length);  // 4
+
+// - exercises
+
+let weight
+
+console.log(typeof weight); // undefined
+
+let name2 = "Marcelo"
+let age3 = 40
+let weight2 = 86
+let isSubscribed = true
+
+let student = {
+    name: "Marcelo",
+    age: 40,
+    weight: 86,
+    isSubscribed: true
+}
+console.log(typeof student); // object
+console.log(`${student.name} is ${student.age} and weighs ${student.weight}`);
+
+var students = [student]
+console.log(students);
+console.log(students[0]);
+
+const priscila = {
+    name: "Priscila",
+    age: 32,
+    weight: 52,
+    isSubscribed: true
+}
+students = [
+    student,
+    priscila
+]
+console.log(students);
+//or
+students[1] = priscila
+console.log(students);
+
+console.log(hoisting); // undefined
+var hoisting = 1
+// console.log(noHoisting1); // Cannot access 'hoisting2' before initialization
+// let noHoisting1= 1
+// console.log(noHoisting2); // Cannot access 'hoisting2' before initialization
+// const noHoisting2 = 1
