@@ -235,3 +235,150 @@ console.log(newDate);       // Sun Mar 21 2021 01:00:00 GMT+0100 (Central Europe
 "Marcelo".length
 true.__proto__
 23.0.hasOwnProperty()
+
+// Type conversion (or typecasting) vs Type coercion
+console.log("9" + 5);         // 95 // Type coercion
+console.log(Number("9") + 5); // 14 // Type onversion
+
+// Strings and Numbers
+let string = "123"
+console.log(Number(string)); // 123
+let number7 = 321
+console.log(String(number7)); // 321
+
+// Counting characters and digits
+let word ="Counting"
+console.log(word.length);            // 8
+let number8 = 1234
+console.log(String(number8).length); // 4
+
+// Decimal places
+let number9 = 546.546546545
+console.log(number9.toFixed(2).replace(".", ","));         // 546,54
+console.log(Number(number9.toFixed(2)));                   // 546.55
+console.log(Number(number9.toFixed(2).replace(".", ","))); // NaN ("," turned it in a String)
+console.log(Number(number9.toFixed(2).replace(".", "."))); // 546.55
+
+// uppercase and lowecase
+let phrase1 = "Letter case is the distinction between..."
+console.log(phrase1.toLowerCase()); // letter case is the distinction between...
+console.log(phrase1.toUpperCase()); // LETTER CASE IS THE DISTINCTION BETWEEN...
+
+// searching words, letters...
+let phrase2 = "Letter case is the distinction between..."
+console.log(phrase2.includes("Love")); // false
+console.log(phrase2.includes("case")); // true
+console.log(phrase2.includes("Case")); // false
+
+// split Strings / join 
+let phrase3 = "Letter case is the distinction between..."
+let myArray1 = phrase3.split(" ")
+console.log(myArray1);             // ["Letter", "case", "is", "the", "distinction", "between..."]
+let myArray2 = phrase3.split("o")
+console.log(myArray2);             // ["Letter case is the distincti", "n between..."]
+let myArray4 = phrase3.split("i")
+console.log(myArray4);             // ["Letter case ", "s the d", "st", "nct", "on between..."]
+let phrase4 = "Letter"
+let myArray3 = phrase4.split("")
+console.log(myArray3);             // ["L", "e", "t", "t", "e", "r"]
+let phraseWithUnderscore = myArray1.join("_")
+console.log(phraseWithUnderscore); // Letter_case_is_the_distinction_between..
+
+// create a Array using constructor
+let myArray5 = new Array(10)
+console.log(myArray5); // [empty × 10]
+let myArray6 = new Array("a", "b", "c")
+console.log(myArray6); // ["a", "b", "c"]
+let myArray7 = new Array(1, 2, 3)
+console.log(myArray7); // [1, 2, 3]
+let myArray8 = new Array(1, 2, 3, "a", 4, "b")
+console.log(myArray8); // [1, 2, 3, "a", 4, "b"]
+let myArray9 = new Array(1, 2, 3, [], 4, "b")
+console.log(myArray9); // [1, 2, 3, Array(0), 4, "b"]
+
+// array elements
+console.log(["a", "b", "c"].length); // 3
+
+console.log([
+    "a", 
+    "b", 
+    function(){ return "Hi" }
+].length);                           // 3
+
+console.log([                        // index:
+    "a",                             // 0
+    "b",                             // 1
+    function(){ return "Hi" },       // 2
+    
+][2]());                             // Hi
+
+console.log([                        // index:
+    "a",                             // 0
+    "b",                             // 1
+    function(){ return "Hi" },       // 2
+    
+][0]);                               // a
+
+console.log([                        // index:
+    "a",                             // 0
+    "b",                             // 1
+    function(name){ return name },   // 2
+    
+][2]("Marcelo"));                    // Marcelo
+
+console.log([                        // index:
+    "a",                             // 0
+    {type: "array"},                 // 1
+    function(name){ return name },   // 2
+    
+][1].type);                          // array
+
+console.log([                        // index:
+    "a",                             // 0
+    {
+        type: "array",                  // 1
+        name: "test"
+    },                  
+    function(name){ return name },   // 2
+    
+][1].name);                          // test
+
+// String to Array
+let word2 = "string"
+console.log(Array.from(word2)); // ["s", "t", "r", "i", "n", "g"]
+
+// Array manipulation
+let techs = ["HTML", "CSS", "JS"]
+techs.push("Node.js");
+console.log(techs) // ["HTML", "CSS", "JS", "Node.js"]
+techs.unshift("SQL");
+console.log(techs) // ["SQL", "HTML", "CSS", "JS", "Node.js"]
+techs.pop();
+console.log(techs) // ["SQL", "HTML", "CSS", "JS"]
+techs.pop();
+console.log(techs) // ["SQL", "HTML", "CSS"]
+techs.shift();
+console.log(techs) // ["HTML", "CSS"]
+techs.shift();
+console.log(techs) // [CSS"]
+
+let techs2 = ["HTML", "CSS", "JS"]
+console.log(techs2.slice(1, 3)) // ["CSS", "JS"]
+console.log(techs2.slice(1, 2)) // ["CSS"]
+console.log(techs2.slice(1, 1)) // []
+console.log(techs2.slice(0, 1)) // ["HTML"]
+
+let techs3 = ["HTML", "CSS", "JS"]
+console.log(techs3.splice(1, 1))  // ["CSS"]
+console.log(techs3);              // ["HTML", "JS"]
+console.log(techs3.splice(1, 1))  // ["JS"]
+console.log(techs3);              // ["HTML"]
+let techs4 = ["HTML", "CSS", "JS"]
+console.log(techs4.splice(1, 2))  // ["CSS", "JS"]
+console.log(techs4);              // ["HTML"]
+
+let techs5 = ["HTML", "CSS", "JS"]
+let index = techs5.indexOf("CSS")
+console.log(index);                  // 1
+console.log(techs5.splice(index, 1)) // ["CSS"]
+console.log(techs5);                 // ["HTML", "JS"]
