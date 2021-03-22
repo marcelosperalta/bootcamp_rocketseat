@@ -226,3 +226,12 @@ console.log(nameString[0]); // M
 
 let newDate = new Date("2021-03-21")
 console.log(newDate);       // Sun Mar 21 2021 01:00:00 GMT+0100 (Central European Standard Time)
+
+
+// prototype
+// __proto__
+"Marcelo".__proto__
+23.0.__proto__
+"Marcelo".length
+true.__proto__
+23.0.hasOwnProperty()
