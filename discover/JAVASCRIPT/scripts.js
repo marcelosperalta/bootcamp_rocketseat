@@ -314,3 +314,39 @@ var hoisting = 1
 // let noHoisting1= 1
 // console.log(noHoisting2); // Cannot access 'hoisting2' before initialization
 // const noHoisting2 = 1
+
+
+// Expressions and operators
+
+// expressions
+let num1 = 1
+// or
+let num2 = 1;
+
+// ----- problem -----
+// let num3 = 1  // <---------------------- without ";"
+// (function() {
+//     console.log("abc")
+// })()
+// ----- work -----
+let num3 = 1;    // <---------------------- with ";"
+(function() {
+    console.log("abc") // abc
+})()
+
+// operators
+
+// - unary
+let num4 = 1
+console.log(++num4);   // 2 // num4 + num4
+let num5 = 1
+console.log(--num5);   // 0 // num5 - num5
+// - binary
+let num6 = 1
+console.log(num6 + 1); // 2
+// - ternary
+console.log(true ? "is true" : "is false");  // is true
+console.log(false ? "is true" : "is false"); // is false
+
+
+
