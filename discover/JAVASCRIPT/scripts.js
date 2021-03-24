@@ -348,5 +348,227 @@ console.log(num6 + 1); // 2
 console.log(true ? "is true" : "is false");  // is true
 console.log(false ? "is true" : "is false"); // is false
 
+// new operator = left-hand-side expression > to create a new object
+let name7 = new String("Marcelo")
+name7.surname = "Peralta"
+let age4 = new Number(23)
+console.log(name7);          // String {"Marcelo"}
+console.log(age4);           // Number {23}
+console.log(name7, age4);    // String {"Marcelo"} 
+                             // Number {23}
+console.log(name7.surname);  // Peralta
+let date = new Date("2021-03-24")
+console.log(date);           // Wed Mar 24 2021 01:00:00 GMT+0100 (Central European Standard Time)
+console.log(date.__proto__); // {constructor: ƒ, toString: ƒ, toDateString: ƒ, toTimeString: ƒ, toISOString: ƒ, …}
 
+let test1 = "test"
+console.log(test1.__proto__); // String {"", constructor: ƒ, anchor: ƒ, big: ƒ, blink: ƒ, …}
+let test2 = 1
+console.log(test2.__proto__); // Number {0, constructor: ƒ, toExponential: ƒ, toFixed: ƒ, toPrecision: ƒ, …}
+
+// typeof 
+console.log(typeof "Marcelo"); // string
+console.log(typeof 10);        // number
+
+// delete
+const person2 = {
+    name: "Marcelo",
+    age: 40
+}
+console.log(person2); // {name: "Marcelo", age: 40}
+delete person2.age
+console.log(person2); // {name: "Marcelo"}
+
+// arithmetic operators
+console.log(2 + 2);   // 4
+console.log(2 - 2);   // 0
+console.log(2 * 2);   // 4
+console.log(2 / 2);   // 1
+console.log(2.2 + 2); // 4.2
+console.log(2.2 - 2); // 0.20000000000000018
+console.log(2.2 * 2); // 4.4
+console.log(2.2 / 2); // 1.1
+
+// - reminder
+console.log(2 % 2 );  // 0
+
+// - increment (++)
+let increment = 0
+console.log(increment++);        // 0
+console.log(increment++);        // 1
+console.log(increment++);        // 2
+console.log(increment++);        // 3
+let increment2 = 0
+console.log(++increment2);       // 1
+console.log(++increment2);       // 2
+console.log(++increment2);       // 3
+console.log(++increment2);       // 4
+
+let xx = 3;
+const y = xx++;
+console.log(`xx:${xx}, y:${y}`); // expected output: "xx:4, y:3"
+
+let a = 3;
+const b = ++a;
+console.log(`a:${a}, b:${b}`);   // expected output: "a:4, b:4"
+
+// - decrement (--)
+let decrement = 0
+console.log(decrement--);       //  0
+console.log(decrement--);       // -1
+console.log(decrement--);       // -2
+console.log(decrement--);       // -3
+
+let decrement2 = 0
+console.log(--decrement2);       // -1
+console.log(--decrement2);       // -2
+console.log(--decrement2);       // -3
+console.log(--decrement2);       // -4
+
+// exponentiation (**)
+console.log(2 ** 2); //  4
+console.log(3 ** 2); //  9
+console.log(3 ** 3); // 27
+
+// grouping operator ( )
+let total1 = 2 + 3 * 3
+console.log(total1); // 11
+let total2 = 2 + (3 * 3)
+console.log(total2); // 11
+let total3 = (2 + 3) * 3
+console.log(total3); // 15
+
+// comparison operators
+let comp1 = 1
+let comp2 = 2
+// == equal
+console.log(comp1 == comp1);  // true
+console.log(comp1 == 1);      // true
+console.log(comp1 == "1");    // true
+console.log(comp1 == comp2);  // false
+// != not equal
+console.log(comp1 != comp1);  // false
+console.log(comp1 != 1);      // false
+console.log(comp1 != "1");    // false
+console.log(comp1 != comp2);  // true
+// === strict equal
+console.log(comp1 === comp1); // true
+console.log(comp1 === 1);     // true
+console.log(comp1 === "1");   // false
+console.log(comp1 === comp2); // false
+// !== strict not equal
+console.log(comp1 !== comp1); // false
+console.log(comp1 !== 1);     // false
+console.log(comp1 !== "1");   // true
+console.log(comp1 !== comp2); // true
+// > greater than
+console.log(comp1 > comp2);   // false
+// >= greater than or equal   
+console.log(comp1 >= comp2);  // false
+// < less than
+console.log(comp1 < comp2);   // true
+// <= less than or equal
+console.log(comp1 <= comp2);  // true
+
+// assignment operators
+let assignment
+console.log(assignment); // undefined
+// assignment
+assignment = 1
+console.log(assignment); // 1
+// addition assignment
+assignment += 1          // assignment = assignment + 1
+console.log(assignment); // 2
+// subtraction assignment
+assignment -= 1          // assignment = assignment - 1
+console.log(assignment); // 1
+// multiplication assignment
+assignment *= 1          // assignment = assignment * 1
+console.log(assignment); // 1
+// division assignment
+let assignment2 = 4
+assignment2 /= 2          // assignment = assignment / 2
+console.log(assignment2); // 1
+// remainder assignment
+let assignment3 = 4
+assignment3 %= 2          // assignment = assignment % 2
+console.log(assignment3); // 0
+// exponentiation assignment
+let assignment4 = 4
+assignment4 **= 2         // assignment = assignment ** 2
+console.log(assignment4); // 16
+
+// logical operators
+let bread1 = true
+let cheese1 = true
+
+let bread2 = true
+let cheese2 = false
+
+let bread3 = false
+let cheese3 = false
+
+// AND - &&
+console.log(true && true);      // true
+console.log(false && true);     // false
+console.log(true && false);     // false
+console.log(bread1 && cheese1); // true
+console.log(bread2 && cheese2); // false
+console.log(bread3 && cheese3); // false
+
+// OR - ||
+console.log(true || true);      // true
+console.log(false || true);     // true
+console.log(true || false);     // true
+console.log(false || false);    // false
+console.log(bread1 || cheese1); // true
+console.log(bread2 || cheese2); // true
+console.log(bread3 || cheese3); // false
+
+let bread4 = true
+let cheese4 = false
+// NOT - !
+console.log(!bread4);  // false
+console.log(!cheese4); // true
+
+// conditional (ternary) operator
+let bread5 = true
+let cheese5 = true
+const niceBreakfast1 = bread5 && cheese5 ? "good" : "bad"
+console.log(niceBreakfast1); // good
+let bread6 = false
+let cheese6 = true
+const niceBreakfast2 = bread6 && cheese6 ? "good" : "bad"
+console.log(niceBreakfast2); // bad
+let bread7 = true
+const niceBreakfast3 = bread7 ? "good" : "bad"
+console.log(niceBreakfast3); // good
+let age5 = 18
+const canDrive = age5 >= 18 ? "can drive" : "cannot drive"
+console.log(canDrive);       // can drive
+
+// string operators
+console.log("a" + "a");     // aa
+let alpha = "alpha"
+console.log(alpha + "bet"); // alphabet
+let testing = "test"
+testing += "ing"            // testing = testing + "ing"
+console.log(testing);       // testing
+
+// (remember type conversion and coersion)
+// falsy and truthy
+console.log(true ? "true" : "false");  // true
+console.log(false ? "true" : "false"); // false
+//          falsy
+console.log(0         ? "true" : "false"); // false (type coersion > falsy)
+console.log(""        ? "true" : "false"); // false (type coersion > falsy)
+console.log(null      ? "true" : "false"); // false (type coersion > falsy)
+console.log(undefined ? "true" : "false"); // false (type coersion > falsy)
+console.log(NaN       ? "true" : "false"); // false (type coersion > falsy)
+//          truthy
+console.log({ }       ? "true" : "false"); // true (type coersion > truthy)
+console.log([ ]       ? "true" : "false"); // true (type coersion > truthy)
+console.log(1         ? "true" : "false"); // true (type coersion > truthy)
+console.log("0"       ? "true" : "false"); // true (type coersion > truthy)
+console.log(Infinity  ? "true" : "false"); // true (type coersion > truthy)
 
