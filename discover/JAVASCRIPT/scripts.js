@@ -572,3 +572,19 @@ console.log(1         ? "true" : "false"); // true (type coersion > truthy)
 console.log("0"       ? "true" : "false"); // true (type coersion > truthy)
 console.log(Infinity  ? "true" : "false"); // true (type coersion > truthy)
 
+// operator precedence
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+// the following table is ordered from highest (21) to lowest (1) precedence.
+// precedence  operator type:                associativity:  individual operators:
+// 21          Grouping                      n/a             ( ... )
+// 20          Member Access                 left-to-right   … . …
+// 20          Computed Member Access        left-to-right   … [ … ]
+// 20          new (with argument list)      n/a             new … ( … )
+// 20          Function Call                 left-to-right   … ( … )
+// 20          Optional chaining             left-to-right   ?.
+// 19          new (without argument list)   right-to-left   new …
+// 
+// 
+// 
+// 
+// 
