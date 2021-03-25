@@ -640,3 +640,10 @@ console.log(Infinity  ? "true" : "false"); // true (type coersion > truthy)
 //  2            yield                                right-to-left    yield …
 //  2            yield*                               right-to-left    yield* …
 //  1            Comma / Sequence                     left-to-right    … , …
+console.log(2 + 5 * 10);     // 2 + 50       // 52
+console.log((2 + 5) * 10);   // 7 * 10       // 70
+console.log(3 > 2);                          // true
+console.log(3 > 2 > 1);      // true > 1     // false
+console.log(3 > 2 == 1);     // true == 1    // true
+console.log(3 > 2 === 1);    // true === 1   // false
+console.log(3 > 2 && 2 > 1); // true && true // true
