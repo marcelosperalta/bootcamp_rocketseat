@@ -647,3 +647,128 @@ console.log(3 > 2 > 1);      // true > 1     // false
 console.log(3 > 2 == 1);     // true == 1    // true
 console.log(3 > 2 === 1);    // true === 1   // false
 console.log(3 > 2 && 2 > 1); // true && true // true
+
+// control flow
+console.log("a"); // a
+console.log("b"); // b
+// - if else
+let temperature1 = 36.5
+if(temperature1 >= 37) {
+    console.log("fever");
+} else {
+    console.log("healthy"); // healthy
+}
+let temperature2 = 37
+if(temperature2 >= 37.5) {
+    console.log("high fever");
+} else if(temperature2 < 37.5 && temperature2 >= 37) {
+    console.log("fever");   // fever
+} else {
+    console.log("healthy");
+}
+let temperature3 = 37
+let highTemperature = temperature3 >= 37.5
+let fever = temperature3 < 37.5 && temperature3 >= 37
+if(highTemperature) {
+    console.log("high fever");
+} else if(fever) {
+    console.log("fever");   // fever
+} else {
+    console.log("healthy");
+}
+// - switch
+let expression = "a"
+switch(expression) {
+    case "a":
+        console.log("a"); // a
+        break
+    case "b":
+        console.log("b");
+        break
+    default:
+        console.log("default");
+        break
+}
+let expression2 = "a"
+switch(expression2) {
+    case "a":
+        console.log("a");       // a
+    case "b":
+        console.log("b");       // b
+        break
+    default:
+        console.log("default");
+        break
+}
+let expression3 = "a"
+switch(expression3) {
+    case "a":
+        console.log("a");       // a
+    case "b":
+        console.log("b");       // b
+    default:
+        console.log("default"); // default
+        break
+}
+let expression4 = "b"
+switch(expression4) {
+    case "a":
+        console.log("a");
+    case "b":
+        console.log("b");       // b
+    default:
+        console.log("default"); // default
+        break
+}
+function calculator(number1, operator, number2) {
+    let result
+
+    switch (operator) {
+        case "+":
+            result = number1 + number2
+            break
+        case "-":
+            result = number1 - number2
+            break
+        case "*":
+            result = number1 * number2
+            break
+        case "/":
+            result = number1 / number2
+            break
+        default:
+            result = 'choose a valid operator ("+", "-", "*", or "/")';
+            break
+    }
+
+    return result
+}
+console.log(calculator(2, "+", 2)); // 4
+console.log(calculator(2, "-", 2)); // 0
+console.log(calculator(2, "*", 2)); // 4
+console.log(calculator(2, "/", 2)); // 1
+console.log(calculator(2, " ", 2));  // choose a valid operator ("+", "-", "*", or "/")
+
+// - throw
+function sayMyName2(name = "") {
+    if(name === "") {
+        // throw new Error("The name is necessary")
+        throw "The name is necessary"
+    }
+    console.log(name);
+    //console.log("after the error");
+}
+// sayMyName2() // Uncaught The name is necessary
+// - try catch
+try {
+    sayMyName2()
+} catch(e) {
+    console.log(e);                        // The name is necessary
+}
+console.log("after the error");            // after the error
+try {
+    sayMyName2("Marcelo")
+} catch(e) {
+    console.log(e);
+}
+console.log("after the second try catch"); // after the second try catch
