@@ -986,3 +986,186 @@ console.log(getGrade(69));  // D
 console.log(getGrade(59));  // F
 console.log(getGrade(101)); // invalid grade
 console.log(getGrade(-1));  // invalid grade
+
+console.log("");
+
+/*
+2. Cash flow
+
+Create an object with two properties - both array type.
+    * incomes: []
+    * expenses: []
+
+Create a function to calculate the total of incomes and expenses
+that show a message about the balance (negative/positive) and the balance numeric value.
+
+*/
+
+let family = {
+    incomes: [950, 3200, 50.20],
+    expenses: [580, 66, 10, 200.10]
+}
+function sum(array) {
+    let total = 0;
+
+    for(let value of array) {
+        total += value
+    }
+
+    return total;
+}
+function calculateBalance() {
+    const calculateIncomes = sum(family.incomes)
+    const calculateExpenses = sum(family.expenses)
+
+    const total = calculateIncomes - calculateExpenses
+
+    const positiveBalance = total >= 0
+
+    let balanceMessage = "negative"
+
+    if(positiveBalance) {
+        balanceMessage = "positive"
+    }
+
+    console.log(`Your balance is ${balanceMessage}: ${total.toFixed(2)} EUR`);
+}
+calculateBalance() // Your balance is positive: 3344.1 EUR
+
+/*
+3. Celsius to Fahrenheit
+
+Create a function that takes a string (celsius or fahrenheit value)
+and do the conversion.
+
+C = (F - 32) * 5/9
+
+F = C * 9/5 + 32
+*/
+
+function transformDegree(degree) {
+    const celsius = degree.toUpperCase().includes("C")
+    const fahrenheit = degree.toUpperCase().includes("F")
+
+    if(!celsius && !fahrenheit) {
+        throw new Error("Use value + 'C' for Celsius or value + 'F' for Fahrenheit - e.g. 30C")
+    }
+
+    // Fahrenheit to Celsius
+    let updatedDegree = Number(degree.toUpperCase().replace("F", ""));
+    // let formula = (fahrenheit) => (fahrenheit - 32) * 5/9
+    // or
+    let formula = fahrenheit => (fahrenheit - 32) * 5/9
+    let degreeNewUnitOfMeasurement = "C"
+
+    // Celsius to Fahrenheit
+    if(celsius) {
+        updatedDegree = Number(degree.toUpperCase().replace("C", ""));
+        formula = celsius => celsius * 9/5 + 32
+        degreeNewUnitOfMeasurement = "F"
+    }
+
+    return formula(updatedDegree) + degreeNewUnitOfMeasurement
+}
+try {
+    console.log(transformDegree("50F")); // 10C
+    console.log(transformDegree("10C")); // 50F
+} catch (error) {
+    console.log(error.message);
+}
+
+/*
+4. Searching for elements in arrays
+
+- Inform the amount of categories and books in each category;
+- Inform the amount of authors;
+- Show the Augusto Cury's books;
+- Create a function that takes the authors name and show the author's books.
+
+*/
+
+const booksByCategory = [
+    {
+        category: "Motivational",
+        books: [
+            {
+                title: "Secrets of the Millionaire Mind",
+                author: "T. Harv Eker"
+            },
+            {
+                title: "The Richest Man in Babylon",
+                author: "George S. Clason"
+            },
+            {
+                title: "Rich Dad, Poor Dad",
+                author: "Robert T. Kiyosaki and Sharon L. Lechter"
+            },
+        ],
+    },
+    {
+        category: "Lifestyle",
+        books: [
+            {
+                title: "Você é Insubstituível",
+                author: "Augusto Cury"
+            },
+            {
+                title: "Ansiedade - Como enfrentar o mal do século",
+                author: "Augusto Cury"
+            },
+            {
+                title: "The 7 Habits of Highly Effective People",
+                author: "Stephen R. Covey"
+            },
+        ],
+    }
+];
+
+const totalCategories = booksByCategory.length
+console.log("Total of categories: " + totalCategories);
+for(let category of booksByCategory) {
+    console.log(`Total of books from ${category.category} category:`);
+    console.log(category.books.length);
+}
+function countAuthors() {
+    let authors = [];
+    for(let category of booksByCategory) {
+        for(let book of category.books) {
+            if(authors.indexOf(book.author) == -1) {
+                authors.push(book.author)
+            }
+        }
+    }
+    console.log(`Authors total: ${authors.length}`);
+}
+countAuthors()
+
+function booksByAugustoCury() {
+    let books = [];
+    for(let category of booksByCategory) {
+        for(let book of category.books) {
+            if(book.author === "Augusto Cury") {
+                books.push(" " + book.title)
+            }
+        }
+    }
+    console.log(`Books by Augusto Cury: ${books}`);
+}
+booksByAugustoCury()
+// Books by Augusto Cury:  Você é Insubstituível, Ansiedade - Como enfrentar o mal do século
+
+function booksByAuthor(author) {
+    let books = [];
+    for(let category of booksByCategory) {
+        for(let book of category.books) {
+            if(book.author === author) {
+                books.push(book.title)
+            }
+        }
+    }
+    console.log(`Books by ${author}: ${books.join(", ")}`);
+}
+booksByAuthor("Augusto Cury");
+// Books by Augusto Cury: Você é Insubstituível, Ansiedade - Como enfrentar o mal do século
+booksByAuthor("George S. Clason");
+// Books by George S. Clason: The Richest Man in Babylon
