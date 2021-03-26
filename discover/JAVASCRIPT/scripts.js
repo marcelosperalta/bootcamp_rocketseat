@@ -772,3 +772,217 @@ try {
     console.log(e);
 }
 console.log("after the second try catch"); // after the second try catch
+
+// for
+for(let i = 0; i < 10; i++) {
+    console.log(i);
+}
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+console.log("");
+for(let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+//  1
+//  2
+//  3
+//  4
+//  5
+//  6
+//  7
+//  8
+//  9
+// 10
+console.log("");
+for(let i = 10; i > 0; i--) {
+    console.log(i);
+}
+// 10
+//  9
+//  8
+//  7
+//  6
+//  5
+//  4
+//  3
+//  2
+//  1
+console.log("");
+for(let i = 10; i > 0; i--) {
+    if(i === 5) {
+        break;
+    }
+    console.log(i);
+}
+// 10
+// 9
+// 8
+// 7
+// 6
+console.log("");
+for(let i = 10; i > 0; i--) {
+    if(i === 5) {
+        continue;
+    }
+    console.log(i);
+}
+// 10
+// 9
+// 8
+// 7
+// 6
+// 4
+// 3
+// 2
+// 1
+
+console.log("");
+
+// while
+let i = 0;
+while(i < 10) {
+    console.log(i);
+    i++;
+}
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+console.log("");
+i = 4;
+while(i > 1) {
+    console.log(i); // 4
+                    // 2
+    i /= 2;
+}
+console.log(`final value of ${i}`); // 1
+
+console.log("");
+
+// for of
+let name8 = "Marcelo"
+let names8 = ["Marcelo", "Priscila", "Isaac"]
+for(let char of name8) {
+    console.log(char);
+}
+// M
+// a
+// r
+// c
+// e
+// l
+// o
+for(let name of names8) {
+    console.log(name);
+}
+// Marcelo
+// Priscila
+// Isaac
+for(let n of names8) {
+    console.log(n);
+}
+// Marcelo
+// Priscila
+// Isaac
+for(let whatever of names8) {
+    console.log(whatever);
+}
+// Marcelo
+// Priscila
+// Isaac
+
+console.log("");
+
+// for in
+let person3 = {
+    name: "Marcelo",
+    age: 40,
+    weight: 86
+}
+for(let property in person3){
+    console.log(property);
+}
+// name
+// age
+// weight
+for(let property in person3){
+    console.log(person3["name"]); // Marcelo
+                                  // Marcelo
+                                  // Marcelo
+    console.log(person3.name);    // Marcelo
+                                  // Marcelo
+                                  // Marcelo
+}
+for(let property in person3){
+    console.log(property);         
+    console.log(person3[property]);
+}
+// name
+// Marcelo
+// age
+// 40
+// weight
+// 86
+
+console.log("");
+
+// Exercicies
+
+/*
+1. School grade system
+
+Create an algorithm that transform the grades 
+from decimal numeral system in characters like A, B, C, ...
+
+from 90           - A
+betewen 80 and 89 - B
+betewen 70 and 79 - C
+betewen 60 and 69 - D
+less than 60      - F
+*/ 
+function getGrade(grade) {
+    let gradeA = grade >= 90 && grade <= 100;
+    let gradeB = grade >= 80 && grade <= 89;
+    let gradeC = grade >= 70 && grade <= 79;
+    let gradeD = grade >= 60 && grade <= 69;
+    let gradeF = grade <= 59 && grade >= 0;
+    
+    let finalGrade; 
+
+    if (gradeA) {
+        finalGrade = "A"
+    } else if (gradeB) {
+        finalGrade = "B"
+    } else if (gradeC) {
+        finalGrade = "C"
+    } else if (gradeD) {
+        finalGrade = "D"
+    } else if (gradeF)  {
+        finalGrade = "F"
+    } else {
+        finalGrade = "invalid grade";
+    }
+
+    return finalGrade;
+}
+console.log(getGrade(100)); // A
+console.log(getGrade(89));  // B
+console.log(getGrade(79));  // C
+console.log(getGrade(69));  // D
+console.log(getGrade(59));  // F
+console.log(getGrade(101)); // invalid grade
+console.log(getGrade(-1));  // invalid grade
