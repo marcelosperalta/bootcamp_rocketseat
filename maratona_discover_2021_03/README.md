@@ -4,7 +4,7 @@
 
 # Finance App
 
-A finance app using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/Style/CSS/)**, **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**, and **[Node.js](https://nodejs.org/)**.  
+A ... app using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/Style/CSS/)**, **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**, and **[Node.js](https://nodejs.org/)**.  
 
 <br>
 
@@ -15,6 +15,9 @@ A finance app using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/
 &nbsp;
 &nbsp;
 <img src="./readme/logos/JS.png" width="70">
+&nbsp;
+&nbsp;
+<img src="./readme/logos/node.png" width="110">
 </div>
 
 <br>
@@ -25,7 +28,7 @@ A finance app using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/
 
 #### [Maratona Discover](https://maratonadiscover.rocketseat.com.br/)
 
-with [Mayk Brito](https://github.com/maykbrito)  
+with [Mayk Brito](https://github.com/maykbrito) and [Jakeliny Gracielly](https://github.com/jakeliny)  
 
 ![MaratonaDiscover2021](./readme/logos/logo_rocketseat_maratona_discover.png)
 <br>
