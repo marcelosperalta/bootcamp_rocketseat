@@ -37,3 +37,15 @@ _concepts_:
 [Status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)  
 
 [Proxy server](https://en.wikipedia.org/wiki/Proxy_server)  
+
+[IP](https://en.wikipedia.org/wiki/Internet_Protocol)  
+
+[URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)  
+
+- [URL](https://en.wikipedia.org/wiki/URL)  
+
+- [URN](https://en.wikipedia.org/wiki/Uniform_Resource_Name)  
+
+[]()  
+[]()  
+[]()  
