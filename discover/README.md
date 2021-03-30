@@ -46,6 +46,9 @@ _concepts_:
 
 - [URN](https://en.wikipedia.org/wiki/Uniform_Resource_Name)  
 
-[]()  
-[]()  
-[]()  
+[HTTP Messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages)  
+
+[HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)  
+
+[Idempotence](https://en.wikipedia.org/wiki/Idempotence)  
+- In the Hypertext Transfer Protocol (HTTP), idempotence and safety are the major attributes that separate HTTP verbs. Of the major HTTP verbs, GET, PUT, and DELETE should be implemented in an idempotent manner according to the standard, but POST need not be. GET retrieves a resource; PUT stores content at a resource; and DELETE eliminates a resource. As in the example above, reading data usually has no side effects, so it is idempotent (in fact nullipotent). Storing and deleting a given set of content are each usually idempotent as long as the request specifies a location or identifier that uniquely identifies that resource and only that resource again in the future. The PUT and DELETE operations with unique identifiers reduce to the simple case of assignment to an immutable variable of either a value or the null-value, respectively, and are idempotent for the same reason; the end result is always the same as the result of the initial execution, even if the response differs.  
