@@ -2,13 +2,8 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
+      "title": "JSON",
       "author": "typicode"
-    },
-    {
-      "id": 2,
-      "title": "json-server-2",
-      "author": "marcelo"
     }
   ],
   "comments": [
@@ -19,6 +14,6 @@
     }
   ],
   "profile": {
-    "name": "typicode"
+    "name": "marcelo"
   }
 }

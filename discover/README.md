@@ -122,7 +122,7 @@ HEAD
 curl -I http://localhost:3000/posts
 ```
 
-POST
+POST _(often used to store data)_
 
 ```
 cd JSON
@@ -141,17 +141,48 @@ curl -d '{ "id": 2, "title": "json-server-2", "author": "marcelo" }' -H "Content
 cat db.json
 ```
 
-PUT
+PUT _(often used to update data)_
 
 ```
+cd JSON
 ```
 
-PATCH
+```
+json-server --watch db.json
+```
 
 ```
+curl http://localhost:3000/profile
+```
+
+```
+curl -d '{"name": "marcelo"}' -H 'Content-type: application/json' -X PUT http://localhost:3000/profile
+```
+
+```
+curl -d '{"name": "marcelo"}' -H 'Content-type: application/json' -X PUT http://localhost:3000/profile -i
+```
+
+PATCH (used for making partial changes to an existing resource)
+
+```
+curl -X OPTIONS http://localhost:3000/posts -i
+```
+
+```
+curl -d '{"title": "my-title"}' -H 'Content-type: application/json' -X PATCH http://localhost:3000/posts/1
+```
+
+```
+curl -d '{"title": "JSON"}' -H 'Content-type: application/json' -X PATCH http://localhost:3000/posts/1
 ```
 
 DELETE
 
 ```
+curl http://localhost:3000/posts
+```
+
+```
+curl http://localhost:3000/posts
 ```
