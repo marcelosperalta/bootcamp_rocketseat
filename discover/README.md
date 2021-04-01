@@ -184,5 +184,13 @@ curl http://localhost:3000/posts
 ```
 
 ```
-curl http://localhost:3000/posts
+curl http://localhost:3000/posts/1
+```
+
+```
+curl http://localhost:3000/posts/2
+```
+
+```
+curl -X DELETE http://localhost:3000/posts/2
 ```
