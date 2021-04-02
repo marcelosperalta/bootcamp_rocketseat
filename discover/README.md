@@ -204,3 +204,17 @@ curl -X DELETE http://localhost:3000/posts/2
 - Request Headers
 
 ![devtools](README_img_headers.PNG)
+
+[*DevDocs*](https://devdocs.io/)  
+
+[DevDocs - HTTP/Headers](https://devdocs.io/http-headers/)  
+
+[List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)  
+
+- 100
+- 200
+- 300
+- 400
+- 500
+
+[DevDocs - HTTP/Status](https://devdocs.io/http-status/)  
