@@ -194,3 +194,13 @@ curl http://localhost:3000/posts/2
 ```
 curl -X DELETE http://localhost:3000/posts/2
 ```
+
+[List of HTTP header fields](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)  
+
+- General
+
+- Response Headers
+
+- Request Headers
+
+![devtools](README_img_headers.PNG)
