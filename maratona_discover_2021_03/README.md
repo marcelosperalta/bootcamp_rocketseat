@@ -42,3 +42,29 @@ with [Mayk Brito](https://github.com/maykbrito) and [Jakeliny Gracielly](https:/
 ### :computer:  
 
 ![home](./readme/screenshots/...)  
+
+## install
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
