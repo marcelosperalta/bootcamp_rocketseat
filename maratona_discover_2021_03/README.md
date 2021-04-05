@@ -46,9 +46,11 @@ with [Mayk Brito](https://github.com/maykbrito) and [Jakeliny Gracielly](https:/
 ## install
 
 ```
+npm init -y
 ```
 
 ```
+npm i express
 ```
 
 ```
