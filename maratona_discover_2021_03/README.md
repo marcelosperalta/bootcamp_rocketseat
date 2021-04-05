@@ -4,7 +4,7 @@
 
 # JobsCalc App
 
-An app to help freelancers to calculate how much they shold charge for services using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/Style/CSS/)**, **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**, and **[Node.js](https://nodejs.org/)**.  
+An app to help freelancers to calculate how much they should charge for your services using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/Style/CSS/)**, **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**, and **[Node.js](https://nodejs.org/)**.  
 
 <br>
 
