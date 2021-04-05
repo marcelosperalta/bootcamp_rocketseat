@@ -53,10 +53,20 @@ npm init -y
 npm i express
 ```
 
+## tests
+
 ```
+node src/server.js
 ```
 
 ```
+http://localhost:3000/
+```
+
+## install
+
+```
+npm i nodemon -D
 ```
 
 ```
