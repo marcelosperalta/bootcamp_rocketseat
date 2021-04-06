@@ -19,7 +19,8 @@ An app to help freelancers to calculate how much they should charge for your ser
 &nbsp;
 <img src="./.github/logo_Node.png" width="110">
 &nbsp;
-<img src="./.github/logo_Express.png" width="110">
+&nbsp;
+<img src="./.github/logo_Express.png" width="120">
 </div>
 
 <br>
