@@ -29,11 +29,11 @@ An app to help freelancers to calculate how much they should charge for your ser
 
 ### [Rocketseat](https://rocketseat.com.br/)
 
-#### [Maratona Discover](https://maratonadiscover.rocketseat.com.br/)
+#### [Maratona Discover #2](https://maratonadiscover.rocketseat.com.br/)
 
 with [Mayk Brito](https://github.com/maykbrito) and [Jakeliny Gracielly](https://github.com/jakeliny)  
 
-![MaratonaDiscover2021#3](./.github/logo_Rocketseat_Maratona_Discover.png)
+![MaratonaDiscover2021#2](./.github/logo_Rocketseat_Maratona_Discover.png)
 <br>
 
 ## :camera: **_screenshots:_**  
