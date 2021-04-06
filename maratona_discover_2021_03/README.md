@@ -40,11 +40,14 @@ with [Mayk Brito](https://github.com/maykbrito) and [Jakeliny Gracielly](https:/
 
 ### :iphone:  
 
-![mobile](./readme/screenshots/...)  
+<div>
+    <img src="./.github/screenshot_mobile_1.png"/>
+    <img src="./.github/screenshot_mobile_2.png"/>
+</div>
 
 ### :computer:  
 
-![home](./readme/screenshots/...)  
+![home](./.github/screenshot_desktop.png)  
 
 ## :computer: **_app:_**  
 
