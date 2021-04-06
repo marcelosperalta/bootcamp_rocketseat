@@ -42,6 +42,7 @@ with [Mayk Brito](https://github.com/maykbrito) and [Jakeliny Gracielly](https:/
 
 <div>
     <img src="./.github/screenshot_mobile_1.png"/>
+    &nbsp;
     <img src="./.github/screenshot_mobile_2.png"/>
 </div>
 
