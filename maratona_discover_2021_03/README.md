@@ -32,7 +32,7 @@ An app to help freelancers to calculate how much they should charge for your ser
 
 with [Mayk Brito](https://github.com/maykbrito) and [Jakeliny Gracielly](https://github.com/jakeliny)  
 
-![MaratonaDiscover2021](./readme/logos/logo_rocketseat_maratona_discover.png)
+![MaratonaDiscover2021](./.github/logo_Rocketseat_Maratona_Discover.png)
 <br>
 
 ## :camera: **_screenshots:_**  
