@@ -4,7 +4,7 @@
 
 # JobsCalc App
 
-An app to help freelancers to calculate how much they should charge for your services using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/Style/CSS/)**, **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**, **[Node.js](https://nodejs.org/)**, and [Express](https://expressjs.com/).  
+An app to help freelancers to calculate how much they should charge for your services using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/Style/CSS/)**, **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**, **[Node.js](https://nodejs.org/)**, and **[Express](https://expressjs.com/)**.  
 
 <br>
 
@@ -80,6 +80,16 @@ npm i nodemon -D
 npm run dev
 ```
 
-## Articles
+### install
+
+```
+npm i nodemon -D
+```
+
+## :hammer: **_tools_**
+
+[EJS - Embedded JavaScript templating](https://ejs.co/)  
+
+## :newspaper: **_articles_**
 
 [Using template engines with Express](https://expressjs.com/en/guide/using-template-engines.html)  
