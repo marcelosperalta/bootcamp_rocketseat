@@ -32,7 +32,7 @@ An app to help freelancers to calculate how much they should charge for your ser
 
 with [Mayk Brito](https://github.com/maykbrito) and [Jakeliny Gracielly](https://github.com/jakeliny)  
 
-![MaratonaDiscover2021](./.github/logo_Rocketseat_Maratona_Discover.png)
+![MaratonaDiscover2021#3](./.github/logo_Rocketseat_Maratona_Discover.png)
 <br>
 
 ## :camera: **_screenshots:_**  
@@ -45,7 +45,9 @@ with [Mayk Brito](https://github.com/maykbrito) and [Jakeliny Gracielly](https:/
 
 ![home](./readme/screenshots/...)  
 
-## install
+## :computer: **_app:_**  
+
+### install
 
 ```
 npm init -y
@@ -55,7 +57,7 @@ npm init -y
 npm i express
 ```
 
-## tests
+### tests
 
 ```
 node src/server.js
@@ -65,18 +67,18 @@ node src/server.js
 http://localhost:3000/
 ```
 
-## install
+### install
 
 ```
 npm i nodemon -D
 ```
 
-## run
+### run
 
 ```
 npm run dev
 ```
 
-# Articles
+## Articles
 
 [Using template engines with Express](https://expressjs.com/en/guide/using-template-engines.html)  
