@@ -3,6 +3,7 @@ const server = express()
 const routes = require("./routes")
 //console.log(server);
 
+// template engine
 server.set('view engine', 'ejs')
 
 // middleware
