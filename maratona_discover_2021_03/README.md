@@ -4,20 +4,22 @@
 
 # JobsCalc App
 
-An app to help freelancers to calculate how much they should charge for your services using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/Style/CSS/)**, **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**, and **[Node.js](https://nodejs.org/)**.  
+An app to help freelancers to calculate how much they should charge for your services using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/Style/CSS/)**, **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**, **[Node.js](https://nodejs.org/)**, and [Express](https://expressjs.com/).  
 
 <br>
 
 <div align="center">
-<img src="./readme/logos/HTML5.png" width="69">
+<img src="./.github/logo_HTML5.png" width="69">
 &nbsp;
-<img src="./readme/logos/CSS3.png" width="50">
-&nbsp;
-&nbsp;
-<img src="./readme/logos/JS.png" width="70">
+<img src="./.github/logo_CSS3.png" width="50">
 &nbsp;
 &nbsp;
-<img src="./readme/logos/node.png" width="110">
+<img src="./.github/logo_JS.png" width="70">
+&nbsp;
+&nbsp;
+<img src="./.github/logo_Node.png" width="110">
+&nbsp;
+<img src="./.github/logo_Express.png" width="110">
 </div>
 
 <br>
@@ -69,14 +71,12 @@ http://localhost:3000/
 npm i nodemon -D
 ```
 
-```
-```
+## run
 
 ```
+npm run dev
 ```
 
-```
-```
+# Articles
 
-```
-```
+[Using template engines with Express](https://expressjs.com/en/guide/using-template-engines.html)  
