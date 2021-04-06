@@ -90,10 +90,20 @@ npm run dev
 npm i nodemon -D
 ```
 
+```
+npm i ejs
+```
+
 ## :hammer: **_tools_**
 
 [EJS - Embedded JavaScript templating](https://ejs.co/)  
 
+**_Visual Sudio Code extension_**  
+
+[EJS language support](https://marketplace.visualstudio.com/items?itemName=DigitalBrainstem.javascript-ejs-support)  
+
 ## :newspaper: **_articles_**
+
+[Template engine](https://en.wikipedia.org/wiki/Template_processor)  
 
 [Using template engines with Express](https://expressjs.com/en/guide/using-template-engines.html)  

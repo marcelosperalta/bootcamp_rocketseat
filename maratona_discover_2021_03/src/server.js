@@ -3,6 +3,8 @@ const server = express()
 const routes = require("./routes")
 //console.log(server);
 
+server.set('view engine', 'ejs')
+
 // middleware
 // - enable static files
 server.use(express.static("public"))
