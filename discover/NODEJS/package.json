@@ -1,0 +1,18 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "tests",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "learning",
+    "nodejs"
+  ],
+  "author": "Marcelo",
+  "license": "ISC",
+  "dependencies": {
+    "cfonts": "^2.9.1"
+  }
+}
