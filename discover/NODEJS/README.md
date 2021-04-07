@@ -1,0 +1,16 @@
+# NodeJS
+
+- Backend
+- Front End
+- [Microservice](https://en.wikipedia.org/wiki/Microservices)
+- API
+- Scripts
+- Automation
+
+[Node.JS Use Case: When & How Node.JS Should be Used](http://www.simform.com/nodejs-use-case/)  
+
+NodeJS is a JS Runtime Enviroment  
+
+[Google V8](https://v8.dev/)  
+
+[libuv](https://en.wikipedia.org/wiki/Libuv)  
