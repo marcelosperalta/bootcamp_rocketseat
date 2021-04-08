@@ -83,6 +83,10 @@ npm i nodemon -D
 ### run
 
 ```
+npm i
+```
+
+```
 npm run dev
 ```
 

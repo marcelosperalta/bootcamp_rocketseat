@@ -3,12 +3,19 @@ const server = express()
 const routes = require("./routes")
 //console.log(server);
 
+
 // template engine
 server.set('view engine', 'ejs')
+
 
 // middleware
 // - enable static files
 server.use(express.static("public"))
+
+
+// use "request.body" (routes.js)
+server.use(express.urlencoded({ extended: true }))
+
 
 // request, response
 // server.get('/', (request, response) => {
