@@ -89,7 +89,15 @@
               </div>
               <div class="deadline column">
                 <span>Deadline</span>
-                <p><%= job.remaining %> remaining day(s) for deliver </p>
+
+                <p>
+                  <% if(job.status === 'progress') { %>
+                    <%= job.remaining %> remaining day(s) for deliver
+                  <% } else { %>
+                     Deadline ended
+                  <% } %> 
+
+                </p>
               </div>
               <div class="amount column">
                 <span>Price</span>

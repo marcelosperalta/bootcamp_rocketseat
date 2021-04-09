@@ -113,3 +113,5 @@ npm i ejs
 [Template engine](https://en.wikipedia.org/wiki/Template_processor)  
 
 [Using template engines with Express](https://expressjs.com/en/guide/using-template-engines.html)  
+
+[Object literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals)  
