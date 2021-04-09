@@ -95,7 +95,7 @@ routes.post('/job', (request, response) => {
         id: lastId + 1,
         name: request.body.name,
         "daily-hours": request.body["daily-hours"],
-        "'total-hours": request.body["total-hours"],
+        "total-hours": request.body["total-hours"],
         created_at: Date.now() // attributing date
     })
 
