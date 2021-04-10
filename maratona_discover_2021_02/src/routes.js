@@ -15,17 +15,30 @@ const routes = express.Router()
 
 const views = __dirname + "/views/";
 
-const profile = {
-    name: "Marcelo",
-    avatar: "http://github.com/marcelosperalta.png",
-    "monthly-budget": 3000,
-    "days-per-week": 5,
-    "hours-per-day": 5,
-    "vacation-per-year": 4,
-    "costs-per-hour": 75
+const Profile = {
+    data: {
+        name: "Marcelo",
+        avatar: "http://github.com/marcelosperalta.png",
+        "monthly-budget": 3000,
+        "days-per-week": 5,
+        "hours-per-day": 5,
+        "vacation-per-year": 4,
+        "costs-per-hour": 75
+    },
+
+    controllers: {
+        index(request, response) {
+            return response.render(views + "profile", { profile: Profile.data })
+        },
+
+        update(request, response) {
+            
+        }
+    }
 }
 
 const Job = {
+
     data: [
         {
             id: 1,
@@ -42,6 +55,7 @@ const Job = {
             created_at: Date.now(),
         }
     ],
+
     controllers: {
         // index: function() {}
         // index: () => {}
@@ -55,13 +69,32 @@ const Job = {
                     ...job,
                     remaining,
                     status,
-                    budget: profile["costs-per-hour"] * job["total-hours"]
+                    budget: Profile.data["costs-per-hour"] * job["total-hours"]
                 }
             })
             
             return response.render(views + "index", { jobs: updatedJobs })
         },
+
+        create(request, response) {
+            return response.render(views + "job")
+        },
+
+        save(request, response) {
+            const lastId = Job.data[Job.data.length - 1]?.id || 1;
+
+            Job.data.push({
+                id: lastId + 1,
+                name: request.body.name,
+                "daily-hours": request.body["daily-hours"],
+                "total-hours": request.body["total-hours"],
+                created_at: Date.now() // attributing date
+            })
+        
+            return response.redirect('/')
+        }
     },
+
     services: {
         remainingDays(job) {
             const remainingDays = (job["total-hours"] / job["daily-hours"]).toFixed()
@@ -74,39 +107,19 @@ const Job = {
             return dayDifference
         }
     },
+
 }
 
-// *****  GET  ******
 routes.get('/', Job.controllers.index);
-routes.get('/job', (request, response) => response.render(views + "job"));
+
+routes.get('/job', Job.controllers.create);
+routes.post('/job', Job.controllers.save)
+
 routes.get('/job/edit', (request, response) => response.render(views + "job-edit"));
+
 // routes.get('/profile', (request, response) => response.render(views + "profile"));
 // routes.get('/profile', (request, response) => response.render(views + "profile", { profile: profile }));
-routes.get('/profile', (request, response) => response.render(views + "profile", { profile }));
-
-// ******  POST  ******
-routes.post('/job', (request, response) => {
-    // console.log("Save data");
-    // console.log(request.body);
-
-    // reference:
-    // { name: 'Front-End', 'daily-hours': '2', 'total-hours': '20' }
-    // jobs.push(request.body)
-
-    // const job = request.body
-    // job.created_at = Date.now()
-
-    const lastId = jobs[jobs.length - 1]?.id || 1;
-
-    jobs.push({
-        id: lastId + 1,
-        name: request.body.name,
-        "daily-hours": request.body["daily-hours"],
-        "total-hours": request.body["total-hours"],
-        created_at: Date.now() // attributing date
-    })
-
-    return response.redirect('/')
-});
+routes.get('/profile', Profile.controllers.index);
+routes.post('/profile', Profile.controllers.update);
 
 module.exports = routes;
