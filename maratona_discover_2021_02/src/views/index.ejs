@@ -35,7 +35,7 @@
           <span id="notification">
             <!-- <img src="/images/alert-octagon.svg" alt="Alerta" /> -->
             <img src="/images/alert-octagon.svg" alt="Alerta" />
-            Você tem 2 horas livres no seu dia
+              Você tem 2 horas livres no seu dia
           </span>
           <a href="/profile" id="avatar-profile">
             <p>Jakeliny <span>Ver perfil</span></p>
@@ -108,12 +108,18 @@
               </div>
               <div class="actions column flex">
                 <p class="sr-only">Ações</p>
-                <a 
-                  href="/job/edit" 
+                <!-- <a 
+                  href="/job/edit"
                   class="button white edit" 
                   title="Editar Job">
                   <img src="/images/edit-24.svg" alt="Editar Job" />
-                </a>
+                </a> -->
+                <a 
+                href="/job/<%= job.id %> "
+                class="button white edit" 
+                title="Editar Job">
+                <img src="/images/edit-24.svg" alt="Editar Job" />
+              </a>
                 <button class="delete button white" title="Excluir Job">
                   <img src="/images/trash-24.svg" alt="Excluir Job" />
                 </button>

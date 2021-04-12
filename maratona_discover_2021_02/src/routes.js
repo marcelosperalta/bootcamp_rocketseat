@@ -32,7 +32,19 @@ const Profile = {
         },
 
         update(request, response) {
-            
+            const data = request.body
+            const weeksPerYear = 52
+            const weeksPerMouth = (weeksPerYear - data["vacation-per-year"]) / 12
+            const weekTotalHours = data["hours-per-day"] * data["days-per-week"]
+            const monthlyTotalHours = weekTotalHours * weeksPerMouth
+            const costsPerHour = data["monthly-budget"] / monthlyTotalHours
+            Profile.data = {
+                ...Profile.data,
+                ...request.body,
+                "costs-per-hour": costsPerHour
+            }
+
+            return response.redirect('./profile')
         }
     }
 }
@@ -92,7 +104,15 @@ const Job = {
             })
         
             return response.redirect('/')
-        }
+        },
+
+        show(request, response) {
+            const jobId = request.params.id
+
+            const job = Job.data.find(job => job.id === jobId)
+
+            return response.render(views + "job-edit", { job })
+        },
     },
 
     services: {
@@ -107,15 +127,16 @@ const Job = {
             return dayDifference
         }
     },
-
 }
 
 routes.get('/', Job.controllers.index);
 
 routes.get('/job', Job.controllers.create);
-routes.post('/job', Job.controllers.save)
+routes.post('/job', Job.controllers.save);
 
-routes.get('/job/edit', (request, response) => response.render(views + "job-edit"));
+// routes.get('/job/edit', (request, response) => response.render(views + "job-edit"));
+// routes.get('/job/edit', Job.controllers.show);
+routes.get('/job/:id', Job.controllers.show);
 
 // routes.get('/profile', (request, response) => response.render(views + "profile"));
 // routes.get('/profile', (request, response) => response.render(views + "profile", { profile: profile }));
