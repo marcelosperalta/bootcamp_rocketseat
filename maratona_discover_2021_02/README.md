@@ -110,6 +110,8 @@ npm i ejs
 
 ## :newspaper: **_articles_**
 
+[Spread syntax (...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)  
+
 [Template engine](https://en.wikipedia.org/wiki/Template_processor)  
 
 [Using template engines with Express](https://expressjs.com/en/guide/using-template-engines.html)  
@@ -117,3 +119,5 @@ npm i ejs
 [Object literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals)  
 
 [Optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)  
+
+[Model–view–controller pattern (MVC pattern)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)  
