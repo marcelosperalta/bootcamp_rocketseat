@@ -37,11 +37,15 @@
             <img src="/images/alert-octagon.svg" alt="Alerta" />
               You have 2 free hour(s) today
           </span>
-          <a href="/profile" id="avatar-profile">
+          <!-- <a href="/profile" id="avatar-profile">
             <p>Marcelo<span>Profile</span></p>
             <img
               src="http://github.com/marcelosperalta.png"
             />
+          </a> -->
+          <a href="/profile" id="avatar-profile">
+            <p><%= profile.name %> <span>Profile</span> </p>
+            <img src="<%= profile.avatar %>" />
           </a>
         </section>
 
@@ -52,15 +56,15 @@
 
           <div class="info">
             <div class="total">
-              <strong>12</strong>
+              <strong><%= statusCount.projects %> </strong>
               Projects
             </div>
             <div class="in-progress">
-              <strong>7</strong>
+              <strong><%= statusCount.progress %> </strong>
               In progress
             </div>
             <div class="finished">
-              <strong>4</strong>
+              <strong><%= statusCount.done %></strong>
               Done
             </div>
           </div>
