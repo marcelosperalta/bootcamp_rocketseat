@@ -35,7 +35,12 @@
           <span id="notification">
             <!-- <img src="/images/alert-octagon.svg" alt="Alerta" /> -->
             <img src="/images/alert-octagon.svg" alt="Alerta" />
-              You have 2 free hour(s) today
+            <% if(freeHours <= 0 ){ %>
+              You do not have free hours today
+            <% } else { %>
+              You have <%= freeHours %> free hour(s) today
+            <% } %>
+
           </span>
           <!-- <a href="/profile" id="avatar-profile">
             <p>Marcelo<span>Profile</span></p>
