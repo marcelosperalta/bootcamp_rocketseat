@@ -9,20 +9,20 @@ An app to help freelancers to calculate how much they should charge for your ser
 <br>
 
 <div align="center">
-<img src="./.github/logo_HTML5.png" width="69">
-&nbsp;
-<img src="./.github/logo_CSS3.png" width="50">
-&nbsp;
-&nbsp;
-<img src="./.github/logo_JS.png" width="70">
-&nbsp;
-&nbsp;
-<img src="./.github/logo_Node.png" width="110">
-&nbsp;
-&nbsp;
-<img src="./.github/logo_Express.png" width="120">
-&nbsp;
-<img src="./.github/logo_SQLite.png" width="70">
+    <img src="./.github/logo_HTML5.png" width="69">
+        &nbsp;
+    <img src="./.github/logo_CSS3.png" width="50">
+        &nbsp;
+        &nbsp;
+    <img src="./.github/logo_JS.png" width="70">
+        &nbsp;
+        &nbsp;
+    <img src="./.github/logo_Node.png" width="110">
+        &nbsp;
+        &nbsp;
+    <img src="./.github/logo_Express.png" width="120">
+        &nbsp;
+    <img src="./.github/logo_SQLite.png" width="70">
 </div>
 
 <br>
@@ -46,7 +46,7 @@ _rocketseat-education repo:_ https://github.com/rocketseat-education/maratona-di
 
 <div>
     <img src="./.github/screenshot_mobile_1.png"/>
-    &nbsp;
+        &nbsp;
     <img src="./.github/screenshot_mobile_2.png"/>
 </div>
 
@@ -102,6 +102,14 @@ npm i nodemon -D
 npm i ejs
 ```
 
+```
+npm i sqlite3
+```
+
+```
+npm i sqlite
+```
+
 ## :hammer: **_tools_**
 
 [EJS - Embedded JavaScript templating](https://ejs.co/)  
@@ -123,3 +131,5 @@ npm i ejs
 [Optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)  
 
 [Model–view–controller pattern (MVC pattern)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)  
+
+[Code refactoring](https://en.wikipedia.org/wiki/Code_refactoring)  

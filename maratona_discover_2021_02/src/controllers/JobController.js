@@ -16,13 +16,24 @@ module.exports = {
         const lastId = jobs[jobs.length - 1]?.id || 0;
 
      // Job.data.push({
-        jobs.push({
-            id: lastId + 1,
-            name: request.body.name,
-            "daily-hours": request.body["daily-hours"],
-            "total-hours": request.body["total-hours"],
-            created_at: Date.now() // attributing date
-        })
+        // jobs.push({
+        //     id: lastId + 1,
+        //     name: request.body.name,
+        //     "daily-hours": request.body["daily-hours"],
+        //     "total-hours": request.body["total-hours"],
+        //     created_at: Date.now() // attributing date
+        // })
+
+        Job.create(
+            {
+                id: lastId + 1,
+                name: request.body.name,
+                "daily-hours": request.body["daily-hours"],
+                "total-hours": request.body["total-hours"],
+                created_at: Date.now() // attributing date
+            }
+        );
+
     
         return response.redirect('/')
     },
