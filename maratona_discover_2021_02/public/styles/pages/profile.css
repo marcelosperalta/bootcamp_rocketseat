@@ -51,3 +51,20 @@ aside p {
 main {
   flex: 1;
 }
+
+@media(max-width:770px) {
+
+  aside.card {
+    width: 18rem;
+
+    margin-right: 1rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}

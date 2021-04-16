@@ -1,7 +1,3 @@
-:link: _front-end version:_ ...
-
-:link: _fullstack version:_ ...
-
 # JobsCalc App
 
 An app to help freelancers to calculate how much they should charge for your services using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/Style/CSS/)**, **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**, **[Node.js](https://nodejs.org/)**, **[Express](https://expressjs.com/)**, and **[SQLite](https://www.sqlite.org/)**.  
@@ -66,34 +62,6 @@ npm init -y
 npm i express
 ```
 
-### tests
-
-```
-node src/server.js
-```
-
-```
-http://localhost:3000/
-```
-
-### install
-
-```
-npm i nodemon -D
-```
-
-### run
-
-```
-npm i
-```
-
-```
-npm run dev
-```
-
-### install
-
 ```
 npm i nodemon -D
 ```
@@ -108,6 +76,26 @@ npm i sqlite3
 
 ```
 npm i sqlite
+```
+
+### tests
+
+```
+node src/server.js
+```
+
+```
+http://localhost:3000/
+```
+
+### run
+
+```
+npm i
+```
+
+```
+npm run dev
 ```
 
 ## :hammer: **_tools_**

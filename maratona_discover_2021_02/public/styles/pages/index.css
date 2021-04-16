@@ -89,6 +89,14 @@
   margin-bottom: 2rem;
 }
 
+.info {
+  width: 70%;
+}
+
+.info div {
+  width: 10%;
+}
+
 .info > div {
   font-size: 1rem;
   font-weight: 400;
@@ -228,12 +236,28 @@ main {
 }
 
 @media(max-width:1390px) {
+  .info {
+    width: 65%;
+  }
+
+  .info div {
+    width: 30%;
+  }
+
   .card {
     grid-template-columns: 5% 30% 20% 15% 17.25% 12.25%;
   }
 }
 
 @media(max-width:970px) {
+  .info {
+    width: 65%;
+  }
+
+  .info div {
+    width: 30%;
+  }
+
   .card {
     grid-template-columns: 31% 23% 13% 20.25% 12.25%;
   }
@@ -244,6 +268,20 @@ main {
 }
 
 @media(max-width:770px) {
+  .info {
+    width: 60%;
+  }
+
+  .info div {
+    width: 30%;
+  }
+
+  .info div.total,
+  .info div.in-progress,
+  .info div.finished {
+    font-size: 8px;
+  }
+  
   .card {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 

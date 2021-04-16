@@ -37,8 +37,10 @@
             <img src="/images/alert-octagon.svg" alt="Alerta" />
             <% if(freeHours <= 0 ){ %>
               You do not have free hours today
+            <% } else if (freeHours == 1) { %>
+              You have <%= freeHours %> free hour today
             <% } else { %>
-              You have <%= freeHours %> free hour(s) today
+              You have <%= freeHours %> free hours today
             <% } %>
 
           </span>
@@ -98,14 +100,14 @@
               </div>
               <div class="deadline column">
                 <span>Deadline</span>
-
                 <p>
-                  <% if(job.status === 'progress') { %>
-                    <%= job.remaining %> remaining day(s) for deliver
+                  <% if(job.status === 'progress' && job.remaining === 1) { %>
+                    <%= job.remaining %> remaining day for deliver
+                  <% } else if(job.status === 'progress') { %>
+                    <%= job.remaining %> remaining days for deliver
                   <% } else { %>
                      Deadline ended
                   <% } %> 
-
                 </p>
               </div>
               <div class="amount column">
