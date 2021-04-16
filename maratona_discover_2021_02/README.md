@@ -41,9 +41,9 @@ _rocketseat-education repo:_ https://github.com/rocketseat-education/maratona-di
 ### :iphone:  
 
 <div>
-    <img src="./.github/screenshot_mobile_1.png"/>
+    <img src="./.github/screenshot_mobile_1.png" width="400"  />
         &nbsp;
-    <img src="./.github/screenshot_mobile_2.png"/>
+    <img src="./.github/screenshot_mobile_2.png" width="400" />
 </div>
 
 ### :computer:  
