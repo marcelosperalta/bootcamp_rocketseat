@@ -35,5 +35,15 @@ Database.exec(`
     )
 `);
 
+Database.exec(`
+    CREATE TABLE jobs (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT,
+        daily-hours INT,
+        total-hours INT,
+        created_at DATETIME
+    )
+`);
+
 // close database
 Database.close()
