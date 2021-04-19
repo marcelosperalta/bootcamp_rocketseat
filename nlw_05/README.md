@@ -6,7 +6,7 @@ _trilha:_
 
 _app:_  
 
-**app's name...**
+**Podcastr**
 
 _screenshot:_  
 
@@ -16,7 +16,9 @@ _screenshot:_
 
 - Visual Studio Code;
 - Node + NPM;
-- Yarn.
+- Yarn;
+- React;
+- Next.js;
 
 #### update [Node.js](https://nodejs.org/en/)
 
@@ -46,27 +48,60 @@ yarn set version latest
 npm -v
 ```
 
-## Aula 1 - 19.04.2021 - ...
+## Aula 1 - 19.04.2021 - Liftoff (React e Next.js)
 
-**folder**
+**topics**
 
-...
+- SPA;
+- API;
+- API RESTful;
+- JSON;
+- SSR;
+- SSG;
+
+### **folder**
+
+podcastr
 
 **install**  
 
+https://create-react-app.dev/  
+
 ```
-...
+npx create-react-app podcastr
 ```
 
 **start**  
 
 ```
-cd ...
+cd podcastr
 ```
 
 ```
 yarn start
 ```
+
+### **folder**
+
+podcastrnext
+
+**install**  
+
+```
+npx create-next-app podcastrnext
+```
+
+**start**  
+
+```
+cd podcastrnext
+```
+
+```
+yarn dev
+```
+
+http://localhost:3000/  
 
 ## Aula 2 - 20.04.2021 - ...
 
