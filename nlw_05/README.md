@@ -19,7 +19,10 @@ _screenshot:_
 - Yarn;
 - React;
 - Next.js;
-- TypeScript.
+- TypeScript;
+- Sass;
+- [date-fns](https://date-fns.org/);
+- [json-server](https://github.com/typicode/json-server).
 
 #### update [Node.js](https://nodejs.org/en/)
 
@@ -108,22 +111,65 @@ http://localhost:3000/
 
 **folder**
 
-...
+podcastrnext
 
 **install**  
 
 ```
-yarn ...
+yarn add typescript @types/react @types/node -D
+```
+
+```
+yarn add sass
+```
+
+```
+yarn add date-fns
 ```
 
 **start**  
 
 ```
-yarn ...
+yarn dev
 ```
 
+http://localhost:3000/  
+
+**JSON server**
+
+_install_  
 ```
-http://localhost:3000/
+yarn add json-server -D
+```
+
+_add to package.json_  
+```
+{
+  "name": "podcastrnext",
+  ...
+  "scripts": {
+    ...
+    "server": "json-server server.json -w -d 750 -p 3333"
+  },
+  ...
+}
+```
+
+_run_  
+```
+yarn server
+```
+
+**Build**
+
+```
+yarn build
+```
+
+**Run in Production**
+
+```
+yarn start
 ```
 
 ## Aula 3 - 21.04.2021 - ...
