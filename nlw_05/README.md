@@ -19,6 +19,7 @@ _screenshot:_
 - Yarn;
 - React;
 - Next.js;
+- TypeScript.
 
 #### update [Node.js](https://nodejs.org/en/)
 
@@ -103,7 +104,7 @@ yarn dev
 
 http://localhost:3000/  
 
-## Aula 2 - 20.04.2021 - ...
+## Aula 2 - 20.04.2021 - Maximum Speed (Consumo de API)
 
 **folder**
 
