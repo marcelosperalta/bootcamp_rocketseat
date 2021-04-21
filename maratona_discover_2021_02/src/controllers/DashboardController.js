@@ -6,10 +6,12 @@ module.exports = {
 
     // index: function() {}
     // index: () => {}
-    index(request, response) {
+    // index(request, response) {
+    async index(request, response) {
 
         const jobs = Job.get()
-        const profile = Profile.get()
+        // const profile = Profile.get()
+        const profile = await Profile.get()
         const statusCount = {
             progress: 0,
             done: 0,

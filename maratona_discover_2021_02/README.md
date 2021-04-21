@@ -102,6 +102,8 @@ npm run dev
 
 [EJS - Embedded JavaScript templating](https://ejs.co/)  
 
+[Beekeeper Studio](https://www.beekeeperstudio.io/)  
+
 **_Visual Sudio Code extension_**  
 
 [EJS language support](https://marketplace.visualstudio.com/items?itemName=DigitalBrainstem.javascript-ejs-support)  
