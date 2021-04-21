@@ -63,7 +63,7 @@ npm -v
 - SSR;
 - SSG;
 
-### **folder**
+### :file_folder: **folder**
 
 podcastr
 
@@ -85,7 +85,7 @@ cd podcastr
 yarn start
 ```
 
-### **folder**
+### :file_folder: **folder**
 
 podcastrnext
 
@@ -109,7 +109,7 @@ http://localhost:3000/
 
 ## Aula 2 - 20.04.2021 - Maximum Speed (Consumo de API)
 
-### **folder**
+### :file_folder: **folder**
 
 podcastrnext
 
