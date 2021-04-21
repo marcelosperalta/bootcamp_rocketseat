@@ -54,7 +54,7 @@ npm -v
 
 ## Aula 1 - 19.04.2021 - Liftoff (React e Next.js)
 
-**topics**
+### **topics**
 
 - SPA;
 - API;
@@ -109,7 +109,7 @@ http://localhost:3000/
 
 ## Aula 2 - 20.04.2021 - Maximum Speed (Consumo de API)
 
-**folder**
+### **folder**
 
 podcastrnext
 
