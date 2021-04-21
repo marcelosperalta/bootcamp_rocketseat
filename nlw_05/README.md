@@ -22,7 +22,8 @@ _screenshot:_
 - TypeScript;
 - Sass;
 - [date-fns](https://date-fns.org/);
-- [json-server](https://github.com/typicode/json-server).
+- [json-server](https://github.com/typicode/json-server);
+- [axios](https://axios-http.com/).
 
 #### update [Node.js](https://nodejs.org/en/)
 
@@ -62,6 +63,7 @@ npm -v
 - JSON;
 - SSR;
 - SSG;
+- [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration);
 
 ### :file_folder: **folder**
 
@@ -160,23 +162,49 @@ _run_
 yarn server
 ```
 
-**Build**
+**build**
 
 ```
 yarn build
 ```
 
-**Run in Production**
+**run in production**
 
 ```
 yarn start
 ```
 
-## Aula 3 - 21.04.2021 - ...
+http://localhost:3000/  
 
-## Aula 4 - 22.04.2021 - ...
+## Aula 3 - 21.04.2021 - In Orbit (Páginas do app)
 
-## Aula 5 - 26.02.2021 - Próximo nível com React
+**run**
+
+_terminal 1_  
+
+```
+yarn server
+```
+
+_terminal 2_  
+
+```
+yarn run dev
+```
+
+_ web browser_  
+
+http://localhost:3000/  
+
+**install**
+
+```
+yarn add axios
+```
+
+## Aula 4 - 22.04.2021 - Landing (Contexto de áudio)
+
+## Aula 5 - 26.02.2021 - Surface Exploration (Controlando player)
 
 ### Cookies
 
