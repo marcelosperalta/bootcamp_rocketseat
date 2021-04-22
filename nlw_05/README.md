@@ -64,6 +64,7 @@ npm -v
 - SSR;
 - SSG;
 - [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration);
+- [Link prefetching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ).
 
 ### :file_folder: **folder**
 

@@ -24,9 +24,9 @@ type Episode = {
   id: string;
   title: string;
   thumbnail: string;
-  description: string;
+  // description: string;
   members: string;
-  duration: string;
+  duration: number;
   durationAsString: string;
   url: string;
   publishedAt: string;
@@ -200,7 +200,7 @@ export const getStaticProps: GetStaticProps = async () => {
       publishedAt: format(parseISO(episode.published_at), 'PPP'),
       duration: Number(episode.file.duration),
       durationAsString: convertDurationToTimeString(Number(episode.file.duration)),
-      description: episode.description,
+      // description: episode.description,
       url: episode.file.url,
     }
   })
