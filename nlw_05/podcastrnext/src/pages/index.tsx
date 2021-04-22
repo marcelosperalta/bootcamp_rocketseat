@@ -68,7 +68,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
       {/* <p>{JSON.stringify(props.episodes)}</p> */}
 
       <section className={styles.latestEpisodes}>
-        <h1>New episodes</h1>
+        <h2>New episodes</h2>
 
         <ul>
           {latestEpisodes.map(episode => {

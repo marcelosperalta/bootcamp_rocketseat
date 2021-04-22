@@ -1,6 +1,7 @@
 import { format, parseISO } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
+import Link from 'next/link'
 // import { useRouter} from 'next/router'
 import { api } from '../../services/api';
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString';
@@ -29,10 +30,13 @@ export default function Episode ( { episode }: EpisodeProps) {
     return (
         // <h1>{episode.title}</h1>
         <div className={styles.episode}>
+
             <div className={styles.thumbnailContainer}>
-                <button type="button">
-                    <img src="/arrow-left.svg" alt="Go back"/>
-                </button>
+                <Link href="/">
+                    <button type="button">
+                        <img src="/arrow-left.svg" alt="Go back"/>
+                    </button>
+                </Link>
 
                 <Image 
                     width={700} 
@@ -52,6 +56,7 @@ export default function Episode ( { episode }: EpisodeProps) {
                 <span>{episode.publishedAt}</span>
                 <span>{episode.durationAsString}</span>
             </header>
+
             {/* <div className={styles.description}>
                 {episode.description}
             </div> */}
@@ -59,6 +64,7 @@ export default function Episode ( { episode }: EpisodeProps) {
                 className={styles.description}
                 dangerouslySetInnerHTML={{ __html: episode.description }}
             />
+
         </div>
     )
 }
