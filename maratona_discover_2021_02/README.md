@@ -129,3 +129,5 @@ npm run dev
 [Model–view–controller pattern (MVC pattern)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)  
 
 [Code refactoring](https://en.wikipedia.org/wiki/Code_refactoring)  
+
+[Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)  

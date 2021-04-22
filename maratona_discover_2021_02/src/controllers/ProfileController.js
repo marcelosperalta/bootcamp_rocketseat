@@ -18,14 +18,16 @@ module.exports = {
         const monthlyTotalHours = weekTotalHours * weeksPerMouth
         const costsPerHour = data["monthly-budget"] / monthlyTotalHours
 
-        const profile = await Profile.get()
-
         // Profile.data = {
         //     ...Profile.data,
         //     ...request.body,
         //     "costs-per-hour": costsPerHour
         // }
-        Profile.update({
+
+        const profile = await Profile.get()
+
+        // Profile.update({
+        await Profile.update({
             // ...Profile.get(),
             // ... await Profile.get(),
             ...profile,
