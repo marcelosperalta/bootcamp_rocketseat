@@ -29,7 +29,7 @@ module.exports = {
         return {
             name: data.name,
             avatar: data.avatar,
-            "monthly-budget": data.module_budget,
+            "monthly-budget": data.monthly_budget,
             "days-per-week": data.days_per_week,
             "hours-per-day": data.hours_per_day,
             "vacation-per-year": data.vacation_per_year,

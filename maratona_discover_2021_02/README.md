@@ -88,6 +88,12 @@ node src/server.js
 http://localhost:3000/
 ```
 
+### create tables using SQLite (database.sqlite)
+
+```
+npm run init-db
+```
+
 ### run
 
 ```
