@@ -67,7 +67,9 @@ npm -v
 - [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration);
 - [Link prefetching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ);
 - [React - Context API](https://reactjs.org/docs/context.html);
-- [React - Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html).
+- [React - Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html);
+- [Code refactoring](https://en.wikipedia.org/wiki/Code_refactoring);
+- [React - Why Immutability Is Important](https://reactjs.org/tutorial/tutorial.html#why-immutability-is-important).
 
 ### :file_folder: **folder**
 
@@ -223,59 +225,5 @@ yarn add rc-slider
 
 ## Aula 5 - 26.02.2021 - Surface Exploration (Controlando player)
 
-### Cookies
-
-[js-cookie](https://github.com/js-cookie/js-cookie)  
-
-```
-yarn add js-cookie
-```
-
-```
-yarn add @types/js-cookie -D
-```
-
-### Deploy
-
-[netlify](https://www.netlify.com/)  
-[Vercel](https://vercel.com/)  
-
-#### Vercel
-
-[Vercel CLI](https://vercel.com/download)  
-
-```
-npm i -g vercel
-```
-
-```
-vercel -h
-```
-
-```
-vercel login
-```
-
-_from your project folder:_  
-
-```
-cd moveit-next
-```
-
-```
-vercel
-```
-
-_project updates:_  
-
-stage:  
-
-```
-vercel
-```
-
-prod:  
-
-```
-vercel --prod
-```
+Code refactoring  
+Immutability  
