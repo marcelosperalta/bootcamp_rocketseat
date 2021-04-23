@@ -66,7 +66,8 @@ npm -v
 - SSG;
 - [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration);
 - [Link prefetching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ);
-- [Context API](https://reactjs.org/docs/context.html);
+- [React - Context API](https://reactjs.org/docs/context.html);
+- [React - Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html).
 
 ### :file_folder: **folder**
 
