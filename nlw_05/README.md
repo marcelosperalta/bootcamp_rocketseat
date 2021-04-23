@@ -64,7 +64,8 @@ npm -v
 - SSR;
 - SSG;
 - [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration);
-- [Link prefetching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ).
+- [Link prefetching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ);
+- [Context API](https://reactjs.org/docs/context.html);
 
 ### :file_folder: **folder**
 
@@ -204,6 +205,13 @@ yarn add axios
 ```
 
 ## Aula 4 - 22.04.2021 - Landing (Contexto de áudio)
+
+layer: client (browser) 
+layer: next.js (node.js)
+layer: server (back-end)
+
+" fallback: 'blocking' " > layer: next.js (node.js) 
+" fallback: 'blocking' " > incremental static regeneration
 
 ## Aula 5 - 26.02.2021 - Surface Exploration (Controlando player)
 

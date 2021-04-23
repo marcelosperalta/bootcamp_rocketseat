@@ -10,6 +10,8 @@ import { format, parseISO } from 'date-fns';
 // import ptBR from 'date-fns/locale/pt-BR';
 import { api } from '../services/api';
 import { convertDurationToTimeString } from '../utils/convertDurationToTimeString';
+import { useContext } from 'react';
+import { PlayerContext } from '../contexts/PlayerContext';
 
 import styles from './home.module.scss'
 
@@ -57,6 +59,8 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
   //     .then(data => console.log(data))
   // }, [])
 
+  const player = useContext(PlayerContext);
+
   return (
     <div className={styles.homepage}>
       {/* <Header /> */}
@@ -68,7 +72,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
       {/* <p>{JSON.stringify(props.episodes)}</p> */}
 
       <section className={styles.latestEpisodes}>
-        <h2>New episodes</h2>
+        <h2>New episodes {player}</h2>
 
         <ul>
           {latestEpisodes.map(episode => {

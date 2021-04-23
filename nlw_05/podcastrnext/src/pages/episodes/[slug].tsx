@@ -25,7 +25,12 @@ type EpisodeProps = {
 }
 
 export default function Episode ( { episode }: EpisodeProps) {
+    
+    // // fallback: true 
     // const router = useRouter();
+    // if (router.isFallback) {
+    //     return <p>Loading...</p>
+    // }
 
     return (
         // <h1>{episode.title}</h1>
@@ -70,8 +75,31 @@ export default function Episode ( { episode }: EpisodeProps) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
+    const { data } = await api.get('episodes', {
+        params: {
+          _limit: 2,
+          _sort: 'published_at',
+          _order: 'desc'
+        }
+    })
+
+    const paths = data.map(episode => {
+        return {
+            params: {
+                slug: episode.id
+            }
+        }
+    })
+
     return {
-        paths: [],
+        // paths: []
+        // paths: [
+        //     { params: { slug: 'a-importancia-da-contribuicao-em-open-source' }}
+        // ],
+        paths,
+
+        // fallback: false
+        // fallback: true 
         fallback: 'blocking'
     }
 }
