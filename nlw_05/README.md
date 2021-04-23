@@ -24,7 +24,7 @@ _screenshot:_
 - [date-fns](https://date-fns.org/);
 - [json-server](https://github.com/typicode/json-server);
 - [axios](https://axios-http.com/);
-- [rc-slider](https://github.com/react-component/slider/)
+- [rc-slider](https://github.com/react-component/slider/);
 
 #### update [Node.js](https://nodejs.org/en/)
 
@@ -44,7 +44,7 @@ npm install npm@latest -g
 npm -v
 ```
 
-### update [Yarn](https://yarnpkg.com/)
+#### update [Yarn](https://yarnpkg.com/)
 
 ```
 yarn set version latest
@@ -195,7 +195,7 @@ _terminal 2_
 yarn run dev
 ```
 
-_ web browser_  
+_web browser_  
 
 http://localhost:3000/  
 
@@ -207,12 +207,12 @@ yarn add axios
 
 ## Aula 4 - 22.04.2021 - Landing (Contexto de áudio)
 
-layer: client (browser) 
-layer: next.js (node.js)
-layer: server (back-end)
+layer: client (browser)  
+layer: next.js (node.js)  
+layer: server (back-end)  
 
-" fallback: 'blocking' " > layer: next.js (node.js) 
-" fallback: 'blocking' " > incremental static regeneration
+" fallback: 'blocking' " > layer: next.js (node.js)  
+" fallback: 'blocking' " > incremental static regeneration  
 
 **install**
 
