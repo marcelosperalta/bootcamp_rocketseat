@@ -23,7 +23,8 @@ _screenshot:_
 - Sass;
 - [date-fns](https://date-fns.org/);
 - [json-server](https://github.com/typicode/json-server);
-- [axios](https://axios-http.com/).
+- [axios](https://axios-http.com/);
+- [rc-slider](https://github.com/react-component/slider/)
 
 #### update [Node.js](https://nodejs.org/en/)
 
@@ -212,6 +213,12 @@ layer: server (back-end)
 
 " fallback: 'blocking' " > layer: next.js (node.js) 
 " fallback: 'blocking' " > incremental static regeneration
+
+**install**
+
+```
+yarn add rc-slider
+```
 
 ## Aula 5 - 26.02.2021 - Surface Exploration (Controlando player)
 
