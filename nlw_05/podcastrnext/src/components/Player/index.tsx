@@ -1,10 +1,12 @@
 import Image from 'next/image';
-import { useContext, useRef, useEffect } from 'react';
+// import { useContext, useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import Slider from 'rc-slider';
 
 import 'rc-slider/assets/index.css';
 
-import { PlayerContext } from '../../contexts/PlayerContext';
+// import { PlayerContext } from '../../contexts/PlayerContext';
+import { usePlayer } from '../../contexts/PlayerContext';
 
 import styles from './styles.module.scss';
 
@@ -20,7 +22,12 @@ export function Player() {
         isPlaying, 
         togglePlay,
         setPlayingState,
-    } = useContext(PlayerContext);
+        playPrevious,
+        playNext,
+        hasPrevious,
+        hasNext,
+    // } = useContext(PlayerContext);
+    } = usePlayer();
 
     useEffect(() => {
 
@@ -98,7 +105,7 @@ export function Player() {
                         <img src="/shuffle.svg" alt="Shuffle"/>
                     </button>
 
-                    <button type="button" disabled={!episode}>
+                    <button type="button" onClick={playPrevious} disabled={!episode || !hasPrevious}>
                         <img src="/play-previous.svg" alt="Previous"/>
                     </button>
 
@@ -114,7 +121,7 @@ export function Player() {
                         }
                     </button>
 
-                    <button type="button" disabled={!episode}>
+                    <button type="button" onClick={playNext} disabled={!episode || !hasNext}>
                         <img src="/play-next.svg" alt="Next"/>
                     </button>
 
