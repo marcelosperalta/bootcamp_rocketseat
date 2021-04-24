@@ -227,3 +227,4 @@ yarn add rc-slider
 
 Code refactoring  
 Immutability  
+[next-pwa](https://github.com/shadowwalker/next-pwa)  

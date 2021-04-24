@@ -5,6 +5,7 @@
 
 import { GetStaticProps } from 'next';
 import Image from 'next/image';
+import Head from 'next/head'
 import Link from 'next/link';
 import { format, parseISO } from 'date-fns';
 // import ptBR from 'date-fns/locale/pt-BR';
@@ -76,6 +77,10 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
       {/* <p>{JSON.stringify(props.episodes)}</p> */}
       {/* <p>{new Date(props.episodes[0].published_at).toLocaleDateString}</p> */}
       {/* <p>{JSON.stringify(props.episodes)}</p> */}
+
+      <Head>
+        <title>Podcastr</title>
+      </Head>
 
       <section className={styles.latestEpisodes}>
         {/* <h2>Latest episodes {player}</h2> */}

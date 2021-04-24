@@ -2,6 +2,8 @@ import { format, parseISO } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Image from 'next/image';
 import Link from 'next/link'
+import React from 'react';
+import Head from 'next/head';
 // import { useContext } from 'react';
 // import { PlayerContext } from '../../contexts/PlayerContext';
 // import { useRouter} from 'next/router'
@@ -41,6 +43,10 @@ export default function Episode ( { episode }: EpisodeProps) {
     return (
         // <h1>{episode.title}</h1>
         <div className={styles.episode}>
+
+            <Head>
+                <title>{episode.title} | Podcastr</title>
+            </Head>
 
             <div className={styles.thumbnailContainer}>
                 <Link href="/">
