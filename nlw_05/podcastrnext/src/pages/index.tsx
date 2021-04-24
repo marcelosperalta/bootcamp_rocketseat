@@ -63,7 +63,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
   // const player = useContext(PlayerContext);
   // const { play } = useContext(PlayerContext);
   // const { playList } = useContext(PlayerContext);
-  const { playList } = usePlayer;
+  const { playList } = usePlayer();
 
   const episodeList = [...latestEpisodes, ...allEpisodes];
 
