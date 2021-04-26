@@ -1,11 +1,18 @@
-import './App.css';
+import React, { Component } from 'react';
+import { ApolloProvider } from 'react-apollo';
 
-function App() {
-  return (
-    <div className="App">
-          Learn React
-    </div>
-  );
+import apolloClient from './services/apollo';
+
+import TodoList from './components/TodoList';
+
+class App extends Component {
+  render() {
+    return (
+      <ApolloProvider client={apolloClient}>
+        <TodoList />
+      </ApolloProvider>
+    );
+  }
 }
 
 export default App;
