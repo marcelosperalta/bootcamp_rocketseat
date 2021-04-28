@@ -9,11 +9,11 @@ module.exports = {
         return response.render("job")
     },
 
-    save(request, response) {
+    async save(request, response) {
         // Optional chaining "?."
         // const lastId = Job.get()[Job.data.length - 1]?.id || 0; // or
-        const jobs = Job.get()
-        const lastId = jobs[jobs.length - 1]?.id || 0;
+        // const jobs = await Job.get()
+        // const lastId = jobs[jobs.length - 1]?.id || 0;
 
      // Job.data.push({
         // jobs.push({
@@ -24,9 +24,9 @@ module.exports = {
         //     created_at: Date.now() // attributing date
         // })
 
-        Job.create(
+        await Job.create(
             {
-                id: lastId + 1,
+                // id: lastId + 1,
                 name: request.body.name,
                 "daily-hours": request.body["daily-hours"],
                 "total-hours": request.body["total-hours"],
@@ -38,11 +38,11 @@ module.exports = {
         return response.redirect('/')
     },
 
-    show(request, response) {
+    async show(request, response) {
 
         const jobId = request.params.id
 
-        const jobs = Job.get()
+        const jobs = await Job.get()
         // const job = Job.data.find(job => Number(job.id) === Number(jobId))
         // const job = Job.get().find(job => Number(job.id) === Number(jobId))
         const job = jobs.find(job => Number(job.id) === Number(jobId))
@@ -51,7 +51,7 @@ module.exports = {
             return response.send("Job not found!")
         }
 
-        const profile = Profile.get()
+        const profile = await Profile.get()
         job.budget = JobUtils.calculateBudget(job, profile["costs-per-hour"])
 
         // return response.render(views + "job-edit", { job })
@@ -59,44 +59,47 @@ module.exports = {
 
     },
 
-    update(request, response) {
+    async update(request, response) {
 
         const jobId = request.params.id
-        const jobs = Job.get()
 
-        const job = jobs.find(job => Number(job.id) === Number(jobId))
+        // const jobs = await Job.get()
 
-        if (!job) {
-            return response.send("Job not found!")
-        }
+        // const job = jobs.find(job => Number(job.id) === Number(jobId))
+
+        // if (!job) {
+        //     return response.send("Job not found!")
+        // }
 
         const updatedJob = {
-            ...job,
+            // ...job,
             name: request.body.name,
             "daily-hours": request.body["daily-hours"],
             "total-hours": request.body["total-hours"],
         }
 
-       const newJobs = jobs.map(job => {
+    //    const newJobs = jobs.map(job => {
 
-            if(Number(job.id) === Number(jobId)) {
-                job = updatedJob
-            }
+    //         if(Number(job.id) === Number(jobId)) {
+    //             job = updatedJob
+    //         }
 
-            return job
+    //         return job
 
-        })
-        Job.update(newJobs)
+    //     })
+
+        // Job.update(newJobs)
+        await Job.update(updatedJob, jobId)
 
         response.redirect('/job/' + jobId)
 
     },
 
-    delete(request, response) {
+    async delete(request, response) {
         const jobId = request.params.id
 
         // Job.data = jobs.filter(job => Number(job.id) !== Number(jobId))
-        Job.delete(jobId)
+        await Job.delete(jobId)
 
         return response.redirect('/')
     }

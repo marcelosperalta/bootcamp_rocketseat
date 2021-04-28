@@ -9,7 +9,7 @@ module.exports = {
     // index(request, response) {
     async index(request, response) {
 
-        const jobs = Job.get()
+        const jobs = await Job.get()
         // const profile = Profile.get()
         const profile = await Profile.get()
         const statusCount = {
