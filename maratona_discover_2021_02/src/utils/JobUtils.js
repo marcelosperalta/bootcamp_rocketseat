@@ -6,7 +6,8 @@ module.exports = {
         const dueDateInMilliseconds = createdDate.setDate(dueDay)
         const timeDifferenceInMilliseconds = dueDateInMilliseconds - Date.now()
         const dayInMilliseconds = 1000 * 60 * 60 * 24
-        const dayDifference = Math.floor(timeDifferenceInMilliseconds / dayInMilliseconds)
+        // const dayDifference = Math.floor(timeDifferenceInMilliseconds / dayInMilliseconds)
+        const dayDifference = Math.ceil(timeDifferenceInMilliseconds / dayInMilliseconds)
         return dayDifference
     },
 
