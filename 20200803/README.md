@@ -51,9 +51,9 @@ location.href = "http://localhost:4567/"
 ```
 
 será exibido:  
-___
+
 ![screenshot01](./.github/screenshot01.PNG)
-___
+
 
 4. Servir a API
 
