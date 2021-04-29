@@ -3,13 +3,12 @@
 ## Consumindo API no Front e no Back-end | CodeDrops #45
 
 https://www.youtube.com/watch?v=vYlz3SmNXQQ&t=32s  
-
-
+___
 ## API
 
 **Criar uma API:**  
 
-1. Iniciar o projeto
+1. Iniciar o projeto na pasta ```consuming-api```
 
         npm init -y
 
@@ -18,7 +17,43 @@ https://www.youtube.com/watch?v=vYlz3SmNXQQ&t=32s
 
         npm i express nodemon cors axios
 
-3. Criar uma rota para acessar a API
+3. Criar uma rota para acessar a API 
+
+criar o arquivo ```server.js```  
+
+```
+const express = require('express')
+const app = express()
+
+app.get('/', (request, response) => {
+    return response.json({
+        message: 'okay'
+    })
+})
+
+app.listen('4567')
+```
+
+rodar o arquivo ```server.js```  
+
+```
+node server.js
+```
+
+abrir o navegador, digitar o endereço http://localhost:4567/, clicar com o botão direito do mouse e selecionar a opção "Inspect"  
+
+selecionar o item "Console"  
+
+no console, digitar:
+
+```
+location.href = "http://localhost:4567/"
+```
+
+será exibido:  
+___
+![screenshot01](./.github/screenshot01.PNG)
+___
 
 4. Servir a API
 
@@ -26,6 +61,7 @@ https://www.youtube.com/watch?v=vYlz3SmNXQQ&t=32s
 
 6. Habilitar o [nodemon](https://nodemon.io/) para reiniciar o server
 
+___
 ## Front-end
 
 **Consumir uma API:**  
@@ -40,6 +76,7 @@ https://www.youtube.com/watch?v=vYlz3SmNXQQ&t=32s
 
 5. Mostrar a resposta na tela
 
+___
 ## Back-end
 
 **Consumir uma API:**  
