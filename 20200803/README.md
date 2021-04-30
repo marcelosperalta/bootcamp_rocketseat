@@ -143,6 +143,8 @@ ___
 
 1. [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 
+https://jsonplaceholder.typicode.com/users  
+
 2. Usar [axios](https://axios-http.com/)
 
 3. Semelhancas entre [axios](https://axios-http.com/) e [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)

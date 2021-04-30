@@ -1,6 +1,9 @@
 const cors = require('cors')
 const express = require('express')
 const app = express()
+//back-end
+const axios = require('axios')
+
 
 app.use(cors())
 
@@ -14,11 +17,22 @@ app.use(cors())
 //     })
 // })
 
-app.get('/', (request, response) => {
-    return response.json([
-        { name: 'Priscila' },
-        { name: 'Marcelo' }
-    ])
+app.get('/', async(request, response) => {
+
+    try {
+        // "response" é a resposta do axios, mas é possível tirar
+        // a resposta de dentro de "response" usando "{ }"
+        const { data } = await axios('https://jsonplaceholder.typicode.com/users')
+        // const dataFromJSONplaceholder = await response.json()
+        console.log(data); // esses dados irao aparecer no terminal (nodemon server.js)
+        return response.json(data)
+    } catch (error) {
+        console.log(error);
+    }
+    // return response.json([
+    //     { name: 'Priscila' },
+    //     { name: 'Marcelo' }
+    // ])
 })
 
 // localhost:4567
