@@ -22,6 +22,7 @@ app.get('/', async(request, response) => {
     try {
         // "response" é a resposta do axios, mas é possível tirar
         // a resposta de dentro de "response" usando "{ }"
+        // https://axios-http.com/docs/res_schema
         const { data } = await axios('https://jsonplaceholder.typicode.com/users')
         // const dataFromJSONplaceholder = await response.json()
         console.log(data); // esses dados irao aparecer no terminal (nodemon server.js)
