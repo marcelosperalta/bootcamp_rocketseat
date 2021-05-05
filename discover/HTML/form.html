@@ -1,0 +1,317 @@
+<!-- 
+    <form>
+
+    - Element that will define a form
+    - It is a container like <section> and <footer>
+
+    Basic attributes
+    - action
+    - method
+
+-->
+
+<!-- <form action="" method="GET"> -->
+    <!-- http://minhapagina.com.br/?name=Marcelo&email=marcelo@marcelo.com -->
+<!-- </form> -->
+
+<!--
+    <form action="" method="POST">
+    
+    </form>
+-->
+
+<!--
+    <fieldset>
+        - grouping of fields
+        - same purpose
+        - semantic
+        - accessibility
+
+        Special attributes
+        - disable
+            - disable all internal elements
+            - they will not be sent when the form is submitted
+        - form
+            - fieldset mother's ID (to link the fieldset with his mother)
+            - Do not need to be inside the form
+        - name
+            - group's name
+
+    <legend>
+        - grouping's name
+        - fieldset's first element
+-->
+
+<!--
+     <label>
+         - associate and identify one or more input tags
+         - accessibility
+         - you can click to change the input focus
+
+    Attributes
+    - for
+        - to link the label to the input tag
+        - it is done via input's ID
+        - only works with specific elements
+            - button, input (not hidden), meter, output, progress, select, textarea
+-->
+
+<!--
+    <button>
+        - represents a button
+        - used to send forms
+        - stylized by the "user agent" (a browser, for example)
+        (https://developer.mozilla.org/en-US/docs/Glossary/User_agent)
+
+    Attributes
+    - type
+        - submit
+        - reset
+        - button
+    - autofocus
+    - disabled
+    - name
+    - value
+    - form
+-->
+
+<!--
+    <datalist>
+        - data list as suggestion to a "input" tag
+        - suggestive values - are not mandatory
+        - user can use a value suggested or input a new one
+
+    <datalist id="fruitsdata">
+        <option>apple</option>
+        <option>banana</option>
+        <option>mango</option>
+        <option>orange</option>
+        <option>cherry</option>
+    </datalist>
+
+    list
+        - recieves as value the datalist's ID from the same document
+
+    supported input types
+        - text, search, url, tel, email, month, week, time, datetime-local, number, range and color
+
+        * values that are not compatible with the input types will not be shown.
+
+     input types not supported
+         - hidden, password, radio, file, our any button's type
+
+    User Agent
+
+        Check the browser compatibility
+        https://caniuse.com/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML tag "form"</title>
+
+    <style>
+        * {
+            margin: 0 20px 0 20px;
+        }
+        form {
+            margin: 0 0 0 0;
+        }
+        hr {
+            border: none;
+            border-top: 3px double #333;
+            color: #333;
+            overflow: visible;
+            text-align: center;
+            height: 5px;
+        }
+        hr:after {
+            background: #fff;
+            /* content: ''; */
+            padding: 0 4px;
+            position: relative;
+            top: -13px;
+        }
+        .hr1:after {
+            content: 'form';
+        }
+        .hr2:after {
+            content: 'label';
+        }
+        .hr3:after {
+            content: 'button';
+        }
+        .hr4:after {
+            content: 'datalist';
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <hr class="hr1">
+    <br>
+
+    <!-- form 1 -->
+    <form action="">
+        <fieldset>
+            <legend>Contact</legend>
+
+            <label for="">name</label>
+            <input type="text">
+        </fieldset>
+    </form>
+    <!-- form 1 -->
+
+     <br>
+
+    <!-- form 2 -->
+    <form action="">
+        <fieldset disabled>
+            <legend>Disable</legend>
+
+            <label for="">name</label>
+            <input type="text">
+        </fieldset>
+    </form>
+    <!-- form 2 -->
+
+    <br>
+
+    <!-- form 3 -->
+    <form id="contact" action="">
+        <button>Send</button>
+    </form>
+
+    <fieldset form="contact" name="input-contact">
+        <legend>Contact</legend>
+
+        <label for="">name</label>
+        <input type="text">
+    </fieldset>
+    <!-- form 3 -->
+
+    <br>
+
+    <!-- form 4 -->
+    <form action="" form="my-form-one"></form>
+    <!-- alternative to the tag "button": -->
+    <input type="submit" form="my-form-one" value="send some value"/>
+    <!-- form 4 -->
+
+    <br>
+    <br>
+    <hr class="hr2">
+    <br>
+    <br>
+
+    <!-- label -->
+    <label>
+        Name:
+        <input type="text">
+    </label>
+
+    <br>
+    <br>
+
+    <label>
+        Names:
+        <input type="text">
+        <input type="text">
+    </label>
+
+    <br>
+    <br>
+
+    <label for="name">Name</label>
+    <input id="name" type="text">
+
+    <br>
+    <br>
+    <br>
+    <hr class="hr3">
+    <br>
+    <br>
+
+    <!-- button -->
+    <button type="submit">Send</button> 
+    <button type="button">Send</button>
+    <button type="reset">Send</button>
+
+    <br>
+    <br>
+
+    <form action="">
+        <input type="text" value="write something and press 'Reset'" size="30">
+        <button type="reset">Reset</button>
+    </form>
+
+    <br>
+
+    <form action="">
+        <input type="text" value="" size="30">
+        <button type="reset">Reset</button>
+    </form>
+
+    <br>
+
+    <button autofocus>Send</button>
+
+    <br>
+    <br>
+
+    <button disabled>Disable</button>
+
+    <br>
+    <br>
+
+    <button type="submit" name="button" value="some value">Send</button>
+
+    <br>
+    <br>
+
+    <form action="" form="my-form-two">
+        <input type="text" size="20">
+    </form>
+    <button type="submit" form="my-form-two" style="width: 10em">Send from my form</button>
+
+    <br>
+    <br>
+    <br>
+    <hr class="hr4">
+    <br>
+    <br>
+
+    <input type="text" list="fruits" placeholder="choose a fruit">
+    <datalist id="fruits">
+        <option>apple</option>
+        <option>banana</option>
+        <option>mango</option>
+        <option>orange</option>
+        <option>cherry</option>
+    </datalist>
+
+    <br>
+    <br>
+
+    <input type="color">
+
+    <br>
+    <br>
+
+    <input type="color" list="colors">
+    <datalist id="colors">
+        <option>#ff0000</option>
+        <option>#00ff00</option>
+        <option>#0000ff</option>
+    </datalist>
+    <br>
+    <br>
+
+</body>
+</html>
