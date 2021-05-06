@@ -1,0 +1,113 @@
+<!-- 
+    <input>
+    - One of the most used tags in forms
+    - Accepts a lot of data types
+    - A large number of combinations
+
+    Attributes
+    - type
+    - name
+    - id
+    - autocomplete (https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)
+    - autofocus    (one per page)
+    - disabled
+    - value
+    - readonly
+    - form
+    - required
+    - placeholder (password, search, tel, text, url...)
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+    <style>
+        :root {
+            margin: 0 20px 0 20px;
+        }
+        hr {
+            border: none;
+            border-top: 3px double #333;
+            color: #333;
+            overflow: visible;
+            text-align: center;
+            height: 5px;
+        }
+        hr:after {
+            background: #fff;
+            /* content: ''; */
+            padding: 0 4px;
+            position: relative;
+            top: -13px;
+        }
+        .hr1:after {
+            content: 'input';
+        }
+        .hr2:after {
+            content: 'attributes';
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <hr class="hr1">
+    <br>
+    <input type="text" placeholder="text">
+    <br>
+    <br>
+    <input type="date">
+    <br>
+    <br>
+    <input type="number" placeholder="number">
+    <br>
+    <br>
+    <input type="email" placeholder="email">
+    <br>
+    <br>
+    <input type="file">
+    <br>
+    <br>
+    <input type="password" placeholder="password">
+    <br>
+    <br>
+    <hr class="hr2">
+    <br>
+    <input type="text" placeholder="autocomplete" autocomplete="email">
+    <br>
+    <br>
+    <input type="text" placeholder="autofocus on" autofocus>
+    <br>
+    <br>
+    <input type="text" placeholder="disabled" disabled>
+    <br>
+    <br>
+    <input type="text" value="disabled" disabled>
+    <br>
+    <br>
+    <input type="text" value="readonly" readonly>
+    <br>
+    <br>
+    <input type="text" placeholder="disabled" disabled><br>
+    <input type="text" value="value"><br>
+    <input type="text" value="readonly" readonly>
+    <br>
+    <br>
+    <form id="my-form"></form>
+    <input name="email" type="email" placeholder="linked with a form" form="my-form">
+    <br>
+    <br>
+    <input type="text" value="required" required>
+    <br>
+    <br>
+    <input type="email" placeholder="placeholder">
+    <br>
+    <br>
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="email">
+</body>
+</html>
