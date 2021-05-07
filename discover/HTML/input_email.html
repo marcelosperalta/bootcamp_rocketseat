@@ -1,0 +1,103 @@
+<!-- 
+    <input type="email"
+        - to use with emails (e.g. marcelo@marcelo.com)
+        - will validate the data
+
+    Attributes
+    - placeholder
+    - readonly / disable
+    - value
+
+    - require
+
+    - multiple
+        - the field will receives one or more emails separated using comma
+
+    - minlenght and maxlenght
+
+    - size
+
+    - pattern
+        - regular expression to validate the filed's data
+        - e.g.
+            pattern=".+@rocketseat\.com\.br"
+    
+    - list
+        - the tag's <datalist> id that is in the same document
+        - <datalist> will have a pre-defenided values as a suggestion to the user
+            - the datalist's values that is not compatible with the field will not be showed.
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         input {
+             margin: 0 0 0 20px;
+         }
+     </style>
+ </head>
+ <body>
+     <br>
+     <br>
+     <form action="">
+         <input type="email" placeholder="email">
+         <button type="submit">Send</button>
+     </form>
+     <br>
+     <input type="email" placeholder="marcelo@marcelo.com" readonly>
+     <br>
+     <br>
+     <input type="email" placeholder="marcelo@marcelo.com" disabled>
+     <br>
+     <br>
+     <input 
+        type="email" 
+        placeholder="marcelo@marcelo.com, priscila@priscila.com"
+        size="40"
+        multiple
+    >
+    <br>
+    <br>
+    <form action="">
+        <input 
+        type="email" 
+        placeholder="minlenght and maxlenght"
+        minlenght="7"
+        maxlenght="30"
+        >
+        <button type="submit">Send</button>
+    </form>
+    <br>
+    <form action="">
+        <input 
+        type="email" 
+        placeholder="only @rocketseat.com.br"
+        pattern=".+@rocketseat\.com\.br"
+        >
+        <button type="submit">Send</button>
+    </form>
+    <br>
+    <form action="">
+        <datalist 
+            id="emailsList"
+        >
+            <option>marcelo@a.com</option>
+            <option>priscila@a.com</option>
+        </datalist>
+        <input 
+            list="emailsList"
+            type="email" 
+        >
+        <button 
+            type="submit">
+            Send
+        </button>
+    </form>
+ </body>
+ </html>
