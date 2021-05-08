@@ -1,0 +1,107 @@
+<!-- 
+    <input type="url">
+        - needs to be filled with a url (web address)
+        - checks if the filled data is a url
+
+    Attributes
+        - placeholder
+        - readonly / disable
+        - value
+        - required
+        - minlength / maxlength
+            - minimum and maximum number of characters
+        - size
+            - the size of the field
+        - pattern
+            - regular expression
+            e.g.
+            pattern=".*\.com\.br/.*"
+        - list
+            - used with the tag <datalist> (+ id)
+            - do not work with the attribute value
+        - spellcheck
+            - enable spell check
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            margin: 0 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <form action="">
+        <input 
+            type="url"
+            placeholder="http://example.com"
+        >
+        <button type="submit">Send</button>
+    </form>
+    <br>
+    <form action="">
+        <input 
+            type="url"
+            value="http://example.com"
+            required
+        >
+        <button type="submit">Send</button>
+    </form>
+    <br>
+    <form action="">
+        <input 
+            type="url"
+            value="http://example.com"
+            minlength="5"
+            maxlength="255"
+        >
+        <button type="submit">Send</button>
+    </form>
+    <br>
+    <form action="">
+        <input 
+            type="url"
+            value="http://example.com"
+            disabled
+        >
+        <button type="submit">Send</button>
+    </form>
+    <br>
+    <form action="">
+        <input 
+            type="url"
+            value="http://example.com"
+            readonly
+        >
+        <button type="submit">Send</button>
+    </form>
+    <br>
+    <datalist id="urlsdata">
+        <option>http://www.rocketseat.com.br/</option>
+        <option>http://www.uol.com.br/</option>
+    </datalist>
+    <form action="">
+        <input 
+            type="url"
+            pattern=".*\.com\.br/.*"
+            title="Only Domain names with .com.br/"
+            list="urlsdata"
+            size="30"
+            required
+        >
+        <button type="submit">Send</button>
+    </form>
+    <br>
+    <input type="text" placeholder="spellcheck on" spellcheck="true">
+    <br>
+    <br>
+    <input type="text" placeholder="spellcheck off" spellcheck="false">
+</body>
+</html>
