@@ -1,0 +1,43 @@
+<!-- 
+    <input type="color">
+        - Color picker
+
+    Attributes
+        - value: RGB
+            - if invalid, the black color will be shown
+        - list
+            - using the datalist's ID
+            - <datalist> has the predefined colors
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            margin: 0 0 0 20px;
+        }
+    </style>
+<body>
+    <br>
+    <input type="color">
+    <br>
+    <br>
+    <input type="color" value="#ff0000">
+    <br>
+    <br>
+    <input type="color" value="#00ff00">
+    <br>
+    <br>
+    <datalist id="colorslist">
+        <option>#ff0000</option>
+        <option>#00ff00</option>
+        <option>#0000ff</option>
+    </datalist>
+    <input type="color" list="colorslist">
+</body>
+</html>

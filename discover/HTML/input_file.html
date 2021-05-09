@@ -1,0 +1,52 @@
+<!-- 
+    <input type="file">
+        - the user can choose one or more file to send using the form
+    
+    Attributes
+        - value
+            - the file to be sent
+        - accept
+            - the types of files permitted
+                e.g.: .doc, .docx, .pdf, audio/*, video/*, image/*, image/png, .png
+        - files
+            - file list or a file
+        - multible
+            - accept multiples files to be sent
+
+        Sending files
+        - To send the files, the form needs to be configured using the POST method
+          and the attribute "enctype", for example, "multipart/form-data"
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            margin: 0 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <form action="POST" enctype="multipart/form-data">
+        <input type="file">
+    </form>
+    <br>
+    <form action="POST" enctype="multipart/form-data">
+        <input type="file" accept=".doc">
+    </form>
+    <br>
+    <form action="POST" enctype="multipart/form-data">
+        <input type="file" multiple>
+    </form>
+    <br>
+    <form action="POST" enctype="multipart/form-data">
+        <input type="file">
+    </form>
+</body>
+</html>
