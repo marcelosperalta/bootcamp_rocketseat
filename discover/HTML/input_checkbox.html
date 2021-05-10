@@ -1,0 +1,66 @@
+<!-- 
+    <inpup type="checkbox">
+        - select some value to be sent
+        - if not selected, some value will not be sent
+
+    Attributes
+    - global
+    - value
+        - if not present the default value is "on"
+    - checked
+        - let the checkebox checked
+
+    Multiples values
+        - the same attribute "name" being used in more than one field
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            margin: 0 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <input type="checkbox">
+    <br>
+    <br>
+    <input type="checkbox" name="subscribe" id="subscribe">
+    <label for="subscribe">Subscribe</label>
+    <br>
+    <br>
+    <input type="checkbox" name="subscribe" id="subscribe" checked>
+    <label for="subscribe">Subscribe</label>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Choose your interest</legend>
+        <div>
+            <input 
+                type="checkbox" 
+                id="coding" 
+                name="interest" 
+                value="coding"
+                checked
+            >
+            <label for="coding">Coding</label>
+        </div>
+        <div>
+            <input 
+                type="checkbox" 
+                id="music" 
+                name="interest" 
+                value="music"
+            >
+            <label for="music">Music</label>
+        </div>
+    </fieldset>
+</body>
+</html>
