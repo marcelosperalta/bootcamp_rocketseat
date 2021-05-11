@@ -1,0 +1,45 @@
+<!-- 
+    <input type="radio">
+        - The user can choose only one option among two or more options.
+    
+    Attributes
+        - checked
+        - value
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:first-child {
+            margin: 0 0 0 20px;
+        }
+        fieldset {
+            margin: 0 0 0 20px;
+        }
+        label {
+            margin: 0 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <div>
+        <input type="radio">
+    </div>
+    <br>
+    <fieldset>
+        <legend>Shall we have coffee?</legend>
+
+        <label for="yes">yes</label>
+        <input type="radio" id="yes" name="coffee" value="yes">
+
+        <label for="no">no</label>
+        <input checked type="radio" id="no" name="coffee" value="no">
+    </fieldset>
+</body>
+</html>

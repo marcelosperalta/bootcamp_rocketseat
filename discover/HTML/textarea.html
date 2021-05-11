@@ -1,0 +1,89 @@
+<!-- 
+    <textarea>
+        - multiple lines
+        - good to use with large texts
+    
+    Attributes
+    - id
+    - name
+    - rows and cols
+    - maxlength and minlength
+    - wrap
+    - autocomplete
+    - autofocus
+    - disabled
+    - placeholder
+    - readonly
+    - form
+    - required
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         textarea,
+         label {
+             margin: 0 0 0 20px;
+         }
+     </style>
+ </head>
+ <body>
+    <br>
+    <label for="message">Message</label>
+    <br>
+    <textarea 
+        id="message" 
+        name="message" 
+        cols="30" 
+        rows="10"
+        autofocus
+    ></textarea>
+    <br>
+    <br>
+    <label for="message">Message</label>
+    <br>
+    <textarea 
+        id="message" 
+        name="message" 
+        cols="30" 
+        rows="10"
+        maxlength="5"
+    ></textarea>
+    <br>
+    <br>
+    <textarea 
+        id="message" 
+        name="message" 
+        cols="10" 
+        rows="10"
+        wrap="off"
+        placeholder="This text will be wrapped"
+    ></textarea>
+    <br>
+    <br>
+    <textarea 
+        id="message" 
+        name="message" 
+        cols="10" 
+        rows="10"
+        placeholder="disabled"
+        disabled
+    ></textarea>
+    <br>
+    <br>
+    <textarea 
+        id="message" 
+        name="message" 
+        cols="10" 
+        rows="10"
+        placeholder="readonly"
+        readonly
+    ></textarea>
+
+ </body>
+ </html>
