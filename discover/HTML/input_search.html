@@ -1,0 +1,74 @@
+<!-- 
+    <input type="search">
+        - it is a search field
+        - the appearance depends on user agent (browser)
+
+    Attributes
+        - list / <datalist>
+        - pattern
+        - aria-label (accessibility)
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,
+        label {
+            margin: 0 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <input type="search" name="q">
+    <br>
+    <br>
+    <datalist id="searchterm">
+        <option>Mac</option>
+        <option>Windows</option>
+        <option>Linux</option>
+    </datalist>
+    <input type="search" name="q" list="searchterm">
+    <br>
+    <br>
+    <datalist id="searchterm2">
+        <option>Mac</option>
+        <option>Windows</option>
+        <option>Linux</option>
+    </datalist>
+    <form action="">
+        <input 
+            type="search" 
+            name="q" 
+            list="searchterm2" 
+            placeholder="Type what you need to search"
+            size="26"
+            aria-label="Search field"
+        >
+        <button>Search</button>
+    </form>
+    <br>
+    <datalist id="searchterm2">
+        <option>Mac</option>
+        <option>Windows</option>
+        <option>Linux</option>
+    </datalist>
+    <label for="">Search for ID</label>
+    <br>
+    <form action="">
+        <input 
+            type="search" 
+            name="id" 
+            size="2"
+            pattern="[0-9]{2}"
+            title="ID number with two digits"
+        >
+        <button>Search</button>
+    </form>
+</body>
+</html>
