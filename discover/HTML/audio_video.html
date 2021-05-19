@@ -1,0 +1,121 @@
+<!-- 
+    <video>
+        - src
+        - controls
+        - if doesn't work?
+            - fallback content
+        - source
+            - src
+            - type
+
+        - 3rd party services
+
+    <audio>
+        - src
+        - controls
+        - if doesn't work?
+            - fallback content
+        - source
+            - src
+            - type
+    
+    <iframe>
+
+    Attributes
+        - src
+        - height
+        - width
+        - title (accessibility)
+        - allowfullscreen
+        - frameborder
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio and Video</title>
+    <style>
+        h2, 
+        video,
+        audio,
+        iframe {
+            margin: 0 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats">
+        <h2>MDN > Media type and format guide: <br> image, audio, and video content</h2>
+    </a>
+    <br>
+    <br>
+    <video width="150" controls autoplay loop>
+       <source src="../.media/video.mp4" type="video/mp4"> 
+       <p>Your browser doesn't support video</p>
+    </video>
+    <video width="150" controls preload="metadata">
+       <source src="../.media/video.mp4" type="video/mp4"> 
+    </video>
+    <br>
+    <br>
+    <video width="150" controls muted>
+        <source src="../.media/video.mp4" type="video/mp4"> 
+     </video>
+     <video width="150" controls poster="../.media/play.png">
+        <source src="../.media/video.mp4" type="video/mp4"> 
+     </video>
+     <br>
+     <br>
+     <audio controls>
+         <source src="../.media/audio.m4a">
+         <source src="../.media/audio.mp3">
+         <p>Your browser doesn't support audio</p>
+     </audio>
+     <br>
+     <audio controls autoplay loop>
+         <source src="../.media/audio.m4a">
+         <source src="../.media/audio.mp3">
+         <p>Your browser doesn't support audio</p>
+     </audio>
+     <br>
+     <audio controls muted>
+         <source src="../.media/audio.m4a">
+         <source src="../.media/audio.mp3">
+         <p>Your browser doesn't support audio</p>
+     </audio>
+     <br>
+     <br>
+     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">
+        <h2> <strong>iframe</strong> The Inline Frame element</h2>
+     </a>
+     <br>
+     <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/hQuz11fzmS0" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        title="Rocketseat"
+    >
+    </iframe>
+    <br>
+    <br>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8163.164776469915!2d13.34188075568653!3d52.53481993033793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a8517128ce63cf%3A0x937391b3c324c335!2sWesthafen!5e0!3m2!1sen!2sde!4v1621437212025!5m2!1sen!2sde" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+    >
+    </iframe>
+    <br>
+    <br>
+</body>
+</html>
