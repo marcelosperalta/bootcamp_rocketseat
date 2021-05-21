@@ -128,3 +128,41 @@ strong.innerText = "A new strong text"
 const body5 = document.querySelector("body")
 const header2 = document.querySelector("header")
 body4.insertBefore(strong, header2.nextSibling)
+
+// Events
+function print() {
+    console.log("Print");
+}
+// Events
+const input = document.querySelector("#input")
+input.onkeypress = function() {
+    console.log("ran");
+}
+// Events
+const title = document.querySelector("#h1")
+title.addEventListener("click", print2)
+function print2() {
+    console.log("Print H1");
+}
+// Events
+const title2 = document.querySelector("#h1_2")
+title2.onclick = print3
+function print3() {
+    console.log("Print H1_2");
+}
+// Events
+const title3 = document.querySelector("#h1_3")
+title3.addEventListener("click", print2)
+title3.addEventListener("click", print3)
+
+// "event" argument
+const title4 = document.querySelector("#h1_4")
+title4.onclick = function(event) {
+    console.log(event);
+}
+const input2 = document.querySelector("#input2")
+input2.onkeypress = function(event) {
+    console.log(event.key);
+    console.log(event.currentTarget);
+    console.log(event.currentTarget.value);
+}
