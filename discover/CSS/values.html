@@ -1,0 +1,87 @@
+<!-- 
+    values
+        - property: value
+
+    <color> <lenght>
+        - "values", "data types"
+
+    CSS Color
+    https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Color
+
+    <integer>    -10, 223
+    <number>     -2.4, 64, 0.123
+    <dimension>  90deg, 2s, 8px
+    <percentage> 50%, 70%
+
+    <lenght>     px, em, vw
+    <angle>      deg, rad, turn
+    <time>       s, ms
+    <resolution> dpi
+
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+
+    Absolute length units
+
+    centimeter  cm  1cm = 96px/2.54 
+    inches      in  1in = 2.54cm = 96px
+    pixels      px  1px = 1/96th of 1in
+
+    Relative length units
+
+    em   font size of the parent
+    rem  font size of the root element (:root or html)
+    vw   1% of the viewport's width
+    vh   1% of the viewport's height
+
+    :root or html
+    font default = 16px
+
+    Percentage %
+    - always will be relative to some value
+
+    Position (coordinates 2D)
+    - top, right, bottom, left and center
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         /* html {
+             font-size: 16px;
+         } */
+         div {
+             font-size: 18px;
+         }
+         p {
+             /* 2x 18px */
+             font-size: 2em;
+         }
+         span {
+             /* 50% of 16px */
+             font-size: 50%; 
+         }
+         .box {
+             height: 150px;
+             width: 200px;
+             border: 1px solid black;
+             background-image: url(https://source.unsplash.com/random);
+             background-repeat: no-repeat;
+             background-position: center;
+         }
+     </style>
+ </head>
+ <body>
+     <div>
+         <p>Paragraph</p>
+     </div>
+     <div>
+         <span>Percentage</span>
+     </div>
+     <div class="box"></div>
+ </body>
+ </html>
