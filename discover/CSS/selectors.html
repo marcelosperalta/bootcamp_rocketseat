@@ -1,0 +1,263 @@
+<!-- 
+    selectors
+    - conects the HTML element with a CSS element
+        types
+        - element selector
+        - ID selector (use different names in each element/tag)
+        - class selector
+        - attribute selector
+        - pseudo-class selector
+        - pseudo-elements selector
+
+    combinators
+    - to search and combine selectors to apply some style
+
+        descendant combinator
+        - have a space between the selectors
+        - search a element inside other element
+        ```css
+        body article h2
+        ```
+        child combinator
+        - uses the ` > ` signal between two selectors
+        - selects only the direct element child
+        - elements after the direct element child are ignored
+        ```css
+        body > ul > li
+        ```
+
+        adjacent sibling combinator
+        - uses the ` + ` signal between two selectors
+        - selects only the right element that is direct child
+        ```css
+        h1 + p
+        ```
+
+        general sibling combinator
+        - uses the ` ~ ` signal between two selectors
+        - selects all siblings elements
+        ```css
+        h1 ~ p
+        ```
+
+        using combinators
+        ```css
+        ul > li[class="red"]
+        ```
+
+        pseudo-class selector
+        - selects an element in a specific state
+       `:pseudo-class-name`
+            - :first-child
+            - :nth-of-type()
+            - :nth-child()
+            - :nth-child(odd)
+            - :nth-child(even)
+
+        actions
+        - :hover
+        - :focus
+
+        attribute
+        - disable
+        - required
+
+        reference
+        https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+
+        pseudo-elements selector
+        - 
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>CSS Selectors and Combinators</title>
+
+     <style>
+         html {
+             margin: 0 0 0 20px;
+         }
+         h1 {
+             color: blue;
+             font-size: 60px;
+         }
+         p {
+             color: green;
+         }
+         /* pseudo-class selector */
+         h1:hover,
+         p:hover {
+            color: red;
+         }
+         #content2 {
+             color: greenyellow;
+         }
+         .red {
+            color: red;
+         }
+         .big {
+             font-size: 3em;
+         }
+         [title] {
+            color: orange;
+         }
+         body article h2 {
+             color: red;
+         }
+         body > ul > li {
+             color: blue;
+         }
+         h3 + p {
+             color: blueviolet;
+         }
+         button + button {
+             margin-left: 30px;
+         }
+         h4 ~ p {
+             color: coral;
+         }
+         h5 > p[class="crimson"] {
+             color: crimson;
+         }
+         .ul li:first-child {
+             font-size: 20px;
+             font-weight: bold;
+         }
+         .ul2 li:nth-of-type(2) {
+             font-size: 20px;
+             font-weight: bold;
+         }
+         .ul3 li:nth-child(3) {
+             font-weight: bold;
+         }
+         .ul4 li:nth-child(odd) {
+             color: royalblue;
+             font-weight: bold;
+         }
+         .ul4 li:nth-child(even) {
+             color: crimson;
+         }
+         a:hover {
+            color: red;
+         }
+         body input:focus {
+             border-color: salmon;
+             outline: salmon;
+         }
+         .input2:disabled {
+             background-color: greenyellow;
+         }
+         .input3:required {
+             background-color: red;
+         }
+     </style>
+ </head>
+ <body>
+    <h1>Title 1</h1>
+    <p>Content 1</p>
+    <br>
+    <p id="content2">Content 2</p>
+    <br>
+    <p class="red big">Content 3</p>
+    <br>
+    <p class="red big">Content 4</p>
+    <br>
+    <h2 title="Some title">Title 2</h2>
+    <br>
+    <article>
+        <h2>Article Title</h2>
+    </article>
+    <article>
+        <h2>Article Title</h2>
+    </article>
+    <div>
+        <article>
+            <p>
+                <h2>Article Title</h2>
+            </p>
+        </article>
+    </div>
+    <br>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ul>
+            <li>Item 2.1</li>
+        </ul>
+    </ul>
+    <br>
+    <h3>
+        Title
+    </h3>
+    <p>
+        Lorem, ipsum dolor.
+    </p>
+    <p>
+        Lorem ipsum dolor sit.
+    </p>
+    <br>
+    <button>Click 1</button>
+    <button>Click 2</button>
+    <br>
+    <h4>
+        Title
+    </h4>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <button>Click3</button>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <br>
+    <h5>
+        <p>Lorem, ipsum.</p>
+        <p>Lorem, ipsum.</p>
+        <p class="crimson">Lorem, ipsum.</p>
+        <p>Lorem, ipsum.</p>
+    </h5>
+    <br>
+    <ul class="ul">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <br>
+    <ul class="ul2">
+        <h3>Title</h3>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <br>
+    <ul class="ul3">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <br>
+    <ul class="ul4">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <br>
+    <a href="www.google.com">Google</a>
+    <br>
+    <input type="text">
+    <br>
+    <br>
+    <input class="input2" type="text" disabled>
+    <br>
+    <br>
+    <input class="input3" type="text" required>
+    <br>
+    <br>
+ </body>
+ </html>
