@@ -1,0 +1,259 @@
+<!-- 
+    https://www.w3.org/TR/css-fonts-3/
+
+    https://css-tricks.com/snippets/css/using-font-face/
+
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
+
+    fonts
+    - bold
+    - size
+    - style
+
+        - font-family
+        - font-weight
+        - font-style
+        - font-size
+    
+        font family
+        - fallback font
+
+        ```css
+        p {
+            font-family: "Times New Roman", Times, serif;
+        }
+        ```
+            - serif
+            - sans
+        
+        font weight
+        ```css
+        p {
+            font-weight: bold;
+        }
+        ```
+
+        font style
+        ```css
+        p {
+            font-style: italic;
+        }
+        ```
+
+        font size
+        ```css
+        p {
+            font-size: 18px;
+        }
+        ```
+
+        web fonts
+        - @font-face
+        - @import
+        - link
+            fonts.google.com
+
+        font-variant
+        ```css
+        p {
+            font-variant: small-caps;
+        }
+        ```
+        https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant
+
+        font-stretch
+        - enlargement
+        - shrinkage
+            - expanded
+            - condensed
+            - normal
+        - from 50% to 200%
+        ```css
+        p {
+            font-stretch: expanded;
+        }
+        https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch
+
+        letter-spacing
+        ```css
+        p {
+            letter-spacing: 4px;
+        }
+        https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing
+        
+        word-spacing
+        ```css
+        p {
+            word-spacing: 4px;
+        }
+        https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing
+
+        line-height
+                ```css
+        p {
+            line-height: 1.6;
+        }
+        https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
+
+        text-transform
+        ```css
+        p {
+            text-transform: uppercase; /* capitalize | lowercase | none */
+        }
+        https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
+
+        text-decoration
+        - line: underline | overline | line-through
+        - stlye: wavy | dotted | double | dashed | solid
+        - color: `<color>` values
+        ```css
+        p {
+            text-decoration: underline; /* shorthand */
+        }
+        https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+
+        text-align
+        ```css
+        p {
+            text-align: center; /* left | right | center | justify */
+        }
+        https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
+
+        text-shadow
+        ```css
+        p {
+            text-shadow: 1px 1px 1px red,
+                         2px 2px 1px green; /* offset-x | offset-y | blur-radius | color */
+        }
+        https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow
+
+        shorthand
+        font-style, font-variant, font-weight, font-stretch, font-size, line-height, and font-family
+        p {
+               /* -style, -variant, -weight, -stretch, -size/-line-height, -family */
+            font: italic  normal    bold     normal    3em/1.5             Helvetica, Arial, sans-serif;
+        }
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <title>Fonts</title>
+
+    <style>
+        .p1 {
+            font-family: "Times New Roman", Times, serif;
+            /* font-family: sans-serif; */
+        }
+        .p2 {
+            font-weight: bold;
+        }
+        .p3 {
+            font-style: italic;
+        }
+        .p4 {
+            font-size: 18px;
+        }
+        .p5 {
+            font-family: 'Lato', sans-serif;
+        }
+        .p6 {
+            font-variant: small-caps;
+        }
+        .p7 {
+            font-stretch: condensed;
+        }
+        .p8 {
+            letter-spacing: 4px;
+        }
+        .p9 {
+            word-spacing: 10px;
+        }
+        .p10 {
+            line-height: 1.5;
+            border: 1px solid red
+        }
+        .p11 {
+            line-height: 3;
+            border: 1px solid red
+        }
+        .p12 {
+            text-transform: uppercase;
+        }
+        .p13 {
+            text-decoration: underline;
+        }
+        .p14 {
+            text-decoration: underline overline;
+        }
+        .p15 {
+            text-decoration: underline wavy;
+        }
+        .p16 {
+            text-decoration: underline solid red;
+        }
+        .p17 {
+            text-align: center;
+        }
+        .p18 {
+            text-shadow: 1px 1px 1px red,
+                         2px 2px 1px green;
+        }
+        .p19 {
+            text-shadow: 1px 1px 1px red;
+        }
+        .p20 {
+            font: italic normal bold normal 2em/1.5 Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p2">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p3">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p4">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p5">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p6">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p7">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p8">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p9">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p10">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p11">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p12">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p13">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p14">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p15">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p16">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p17">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p18">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p19">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+    <p class="p20">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <br>
+</body>
+</html>
