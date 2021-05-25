@@ -53,20 +53,24 @@
             - :nth-child()
             - :nth-child(odd)
             - :nth-child(even)
-
-        actions
-        - :hover
-        - :focus
-
-        attribute
-        - disable
-        - required
-
-        reference
-        https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+            actions
+                - :hover
+                - :focus
+            attribute
+                - disable
+                - required
+            reference
+                https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
 
         pseudo-elements selector
-        - 
+        - Add HTML elements using CSS
+        `::pseudo-element-name`
+            example
+                ::before
+                ::after
+                ::first-line
+            reference
+                https://developer.mozilla.org/en-US/docs/Glossary/Pseudo-element
  -->
  <!DOCTYPE html>
  <html lang="en">
@@ -153,6 +157,29 @@
          }
          .input3:required {
              background-color: red;
+         }
+         .ul5 li::after {
+             content: " >";
+         }
+
+         .ul6 li {
+             position: relative;
+         }
+         .ul6 li::after {
+             content: "";
+                width: 10px;
+                height: 1px;
+                background-color: blue;
+                position: absolute;
+                bottom: 0px;
+         }
+
+         .article p::first-line {
+             font-weight: bold;
+         }
+
+         .article2 p:nth-of-type(2) {
+             font-weight: bold;
          }
      </style>
  </head>
@@ -257,6 +284,71 @@
     <br>
     <br>
     <input class="input3" type="text" required>
+    <br>
+    <br>
+    <ul class="ul5">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <br>
+    <ul class="ul6">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <br>
+    <article class="article">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Culpa provident sunt dolore nobis nihil optio quibusdam perspiciatis 
+            quia rem officia hic consequatur exercitationem, saepe fuga 
+            reprehenderit cupiditate voluptates sed. Commodi incidunt eum 
+            rerum nostrum ad sunt, suscipit inventore soluta harum possimus 
+            similique eos odit velit doloribus asperiores amet totam facilis.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Culpa provident sunt dolore nobis nihil optio quibusdam perspiciatis 
+            quia rem officia hic consequatur exercitationem, saepe fuga 
+            reprehenderit cupiditate voluptates sed. Commodi incidunt eum 
+            rerum nostrum ad sunt, suscipit inventore soluta harum possimus 
+            similique eos odit velit doloribus asperiores amet totam facilis.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Culpa provident sunt dolore nobis nihil optio quibusdam perspiciatis 
+            quia rem officia hic consequatur exercitationem, saepe fuga 
+            reprehenderit cupiditate voluptates sed. Commodi incidunt eum 
+            rerum nostrum ad sunt, suscipit inventore soluta harum possimus 
+            similique eos odit velit doloribus asperiores amet totam facilis.
+        </p>
+    </article>
+    <br>
+    <article class="article2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Culpa provident sunt dolore nobis nihil optio quibusdam perspiciatis 
+            quia rem officia hic consequatur exercitationem, saepe fuga 
+            reprehenderit cupiditate voluptates sed. Commodi incidunt eum 
+            rerum nostrum ad sunt, suscipit inventore soluta harum possimus 
+            similique eos odit velit doloribus asperiores amet totam facilis.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Culpa provident sunt dolore nobis nihil optio quibusdam perspiciatis 
+            quia rem officia hic consequatur exercitationem, saepe fuga 
+            reprehenderit cupiditate voluptates sed. Commodi incidunt eum 
+            rerum nostrum ad sunt, suscipit inventore soluta harum possimus 
+            similique eos odit velit doloribus asperiores amet totam facilis.
+        </p>
+    </article>
     <br>
     <br>
  </body>
