@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://rocketseat.com.br/">
-        <img src="./logo_rocketseat.png" alt="Rocketseat" width="300px">
+        <img src="./.github/logo_rocketseat.png" alt="Rocketseat" width="300px">
     </a>
     <h1>
         <a href="https://marcelosperalta.github.io/bootcamp_rocketseat/">
