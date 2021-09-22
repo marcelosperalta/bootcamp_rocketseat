@@ -11,5 +11,13 @@ npx create-react-app route-auth
 ```
 
 ```
-npx create-react-app route-auth
+cd route-auth
+```
+
+```
+yarn add react-router-dom
+```
+
+```
+yarn start
 ```
