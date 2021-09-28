@@ -19,7 +19,6 @@ https://www.prisma.io/
 - TypeScript integration;
 - Automatic migration;
 - Prisma Studio (SGBD);
-- 
 
 ### Install
 
@@ -80,9 +79,10 @@ yarn prisma studio
 ## Other Tools
 
 [Prisma extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma)  
-
 [Serverless Next.js Component](https://github.com/serverless-nextjs/serverless-next.js#serverless-nextjs-component)  
-
 [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)  
-
 [Beekeeper Studio](https://www.beekeeperstudio.io/)  
+[node-postgres](https://node-postgres.com/)  
+[Amazon DynamoD](https://aws.amazon.com/dynamodb/)  
+[Fauna](https://fauna.com/)  
+[PlanetScale](https://planetscale.com/)  
