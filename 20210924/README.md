@@ -6,7 +6,7 @@ Essa biblioteca permite nos comunicarmos com o banco de dados com um ORM extrema
 
 Nesse vídeo mostro os principais benefícios por trás do uso dessa ferramenta e todos pontos de destaque dela.  
 
-## Outros ORMs
+## Other ORMs
 
 - [Sequelize](https://sequelize.org/)  
 - [TypeORM](https://typeorm.io/#/)  
@@ -37,6 +37,18 @@ yarn add prisma -D
 
 ```
 yarn add @prisma/client
+
+```
+```
+yarn add typescript -D
+```
+
+```
+yarn add ts-node -D
+```
+
+```
+yarn tsc --init
 ```
 
 ### Run
@@ -45,8 +57,16 @@ yarn add @prisma/client
 yarn prisma migrate dev
 ```
 
-## Outras Ferramentas
+```
+yarn ts-node src/index.ts
+```
+
+## Other Tools
 
 [Prisma extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma)  
 
 [Serverless Next.js Component](https://github.com/serverless-nextjs/serverless-next.js#serverless-nextjs-component)  
+
+[MySQL Workbench](https://dev.mysql.com/downloads/workbench/)  
+
+[Beekeeper Studio](https://www.beekeeperstudio.io/)  
