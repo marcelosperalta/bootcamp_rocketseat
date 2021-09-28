@@ -51,6 +51,14 @@ yarn add ts-node -D
 yarn tsc --init
 ```
 
+open ``tsconfig.json``` and edit:  
+
+```
+...
+"target": "es2017",
+...
+```
+
 ### Run
 
 ```
@@ -59,6 +67,14 @@ yarn prisma migrate dev
 
 ```
 yarn ts-node src/index.ts
+```
+
+### [Prisma Studio](https://www.prisma.io/studio)
+
+_explore and manipulate your data_  
+
+```
+yarn prisma studio
 ```
 
 ## Other Tools
