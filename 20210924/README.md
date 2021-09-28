@@ -31,6 +31,20 @@ yarn init -y
 npx prisma init
 ```
 
+```
+yarn add prisma -D
+```
+
+```
+yarn add @prisma/client
+```
+
+### Run
+
+```
+yarn prisma migrate dev
+```
+
 ## Outras Ferramentas
 
 [Prisma extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma)  
