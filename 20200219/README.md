@@ -10,7 +10,7 @@ Nesse vídeo vamos utilizar o [Unform](https://unform.dev/), uma biblioteca cria
 - [Formik](https://formik.org/)
 - [Redux Form](https://redux-form.com/8.3.0/)
 
-## Unform
+## Unform (uncontrolled-form)
 
 https://github.com/unform/unform  
 
