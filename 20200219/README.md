@@ -7,63 +7,25 @@ Nesse vídeo vamos utilizar o [Unform](https://unform.dev/), uma biblioteca cria
 
 ## Other libraries
 
-- []()  
+- [Formik](https://formik.org/)
+- [Redux Form](https://redux-form.com/8.3.0/)
 
 ## Unform
 
 https://github.com/unform/unform  
 
-- ;
-
 ### Install
 
 ```
-
+npx create-react-app unformweb
 ```
 
 ```
-
-```
-
-```
-
-```
-
-```
-
-
-```
-```
-
-```
-
-```
-
-```
-
-```
-
-```
-
-open ``tsconfig.json``` and edit:  
-
-```
-...
-"target": "es2017",
-...
+yarn add @unform/web @unform/core
 ```
 
 ### Run
 
 ```
-
+yarn start
 ```
-
-```
-
-```
-
-
-## Other Tools
-
-[]()  
