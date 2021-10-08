@@ -1,4 +1,4 @@
-# https://www.youtube.com/watch?v=oWKuJnrceS8
+# [Isso TRANSFORMOU como lido com banco de dados | Prisma](https://www.youtube.com/watch?v=oWKuJnrceS8)
 
 Rcentemente começamos a aplicar em todos projetos da Rocketseat uma nova ferramenta para interagir com o banco de dados, o [Prisma](https://www.prisma.io/).  
 
