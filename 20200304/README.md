@@ -66,15 +66,35 @@ yarn tsc
 ```
 
 _In the file ``tsconfig.json`` (opcional)_  
-
 ```
 ...
 "outDir": "./dist",
 ...
 ```
 
+_Run_  
 ```
+node dist/index.js
+```
+
+_Compilation real-time (opcional)_  
 ```
 
 ```
+yarn add ts-node-dev -D
+```
+```
+
+_Add a script to ``package.json`` to run **ts-node-dev**:_  
+```
+...
+  "scripts": {
+    "dev:server": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+...
+```
+
+_Run using **ts-node-dev**:_  
+```
+yarn dev:server
 ```
