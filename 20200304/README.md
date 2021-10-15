@@ -128,5 +128,5 @@ yarn tsc
 ### Install - Front End
 
 ```
-
+yarn add axios
 ```
