@@ -11,14 +11,14 @@ interface IMailMessage {
 }
 
 // DTO = Data Transfer Object
-interface MessageDTO {
+interface IMessageDTO {
     to: IMailTo;
     message: IMailMessage;
 }
 
 class EmailService {
     // sendMail(to: IMailTo, message: IMailMessage) { // or
-    sendMail({ to, message }: MessageDTO) {
+    sendMail({ to, message }: IMessageDTO) {
         console.log(`Email sent to ${to.name}: ${message.subject}`);
     }
 }

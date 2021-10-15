@@ -5,6 +5,10 @@ TypeScript é uma linguagem? Mas por que não usar simplesmente JavaScript pra t
 
 Nesse vídeo eu quero desmistificar algumas opiniões sobre o TypeScript e mostrar como essa linguagem de programação tem ganhado tanto espaço no coração dos devs e também no mercado.  
 
+## Article
+
+[TypeScript: Vantagens, mitos, dicas e conceitos fundamentais](https://blog.rocketseat.com.br/typescript-vantagens-mitos-conceitos/)  
+
 ## Other Static Typing tools for JavaScript
 
 - [flow](https://flow.org/)  
@@ -14,9 +18,7 @@ Nesse vídeo eu quero desmistificar algumas opiniões sobre o TypeScript e mostr
 
 - https://www.typescriptlang.org/
 
-- 
-
-### Install - Backend
+### Install - Back End
 
 ```
 mkdir backend
@@ -98,3 +100,11 @@ _Run using **ts-node-dev**:_
 ```
 yarn dev:server
 ```
+
+_On Web Browser:_  
+
+http://localhost:3333/  
+http://localhost:3333/users/  
+http://localhost:3333/users/create  
+
+### Install - Front End
