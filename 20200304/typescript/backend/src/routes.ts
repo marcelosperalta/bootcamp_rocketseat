@@ -7,4 +7,6 @@ routes.get('/', (req, res) => { return res.send("Hello Word from routes.ts")});
 routes.get('/users', UserController.index);
 routes.get('/users/create', UserController.create);
 
+routes.post('/users', UserController.index);
+
 export default routes;

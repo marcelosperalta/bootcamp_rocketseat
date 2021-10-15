@@ -108,3 +108,25 @@ http://localhost:3333/users/
 http://localhost:3333/users/create  
 
 ### Install - Front End
+
+```
+yarn create react-app frontend --template=typescript
+```
+
+### Install - cors on Back End
+
+```
+yarn add cors
+yarn add @types/cors
+```
+
+_To recreate de ``dist`` folder if the new configurations:_
+```
+yarn tsc
+```
+
+### Install - Front End
+
+```
+
+```
