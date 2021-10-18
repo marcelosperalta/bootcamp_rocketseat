@@ -80,14 +80,13 @@ node dist/index.js
 ```
 
 _Compilation real-time (opcional)_  
-```
 
 ```
 yarn add ts-node-dev -D
 ```
-```
 
 _Add a script to ``package.json`` to run **ts-node-dev**:_  
+
 ```
 ...
   "scripts": {
@@ -97,6 +96,7 @@ _Add a script to ``package.json`` to run **ts-node-dev**:_
 ```
 
 _Run using **ts-node-dev**:_  
+
 ```
 yarn dev:server
 ```
