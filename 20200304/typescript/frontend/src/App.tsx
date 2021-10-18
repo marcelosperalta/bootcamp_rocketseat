@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import      api      from "./services/api";
+import      api                from "./services/api";
+
+import     User                from "./components/User";
 
 interface IUser {
   name: string;
-  email: string;
+  email?: string;
 }
 
 function App() {
@@ -17,7 +19,8 @@ function App() {
 
   return (
     <div className="App">
-      { users.map(users => <p>{users.name}</p>)}
+      {/* { users.map(users => <p>{users.name}</p>)} */}
+      { users.map(user => <User key={user.email} user={user}/>) }
     </div>
   );
 }

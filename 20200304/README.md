@@ -130,3 +130,13 @@ yarn tsc
 ```
 yarn add axios
 ```
+
+### Run - Front End
+
+```
+yarn start
+```
+
+_On Web Browser:_  
+
+http://localhost:3000/  
