@@ -16,21 +16,17 @@ _screenshot:_
 
 ![app's name](./.github/...)
 
-### [Environment](https://efficient-sloth-d85.notion.site/NLW-Heat-daaa092e1eeb42ff929151d2807c8231)
+## [Environment](https://efficient-sloth-d85.notion.site/NLW-Heat-daaa092e1eeb42ff929151d2807c8231)
 
 - Visual Studio Code;
 - Node + NPM;
 - Yarn;
 - React;
-- Next.js;
-- TypeScript;
-- Sass;
-- [date-fns](https://date-fns.org/);
-- [json-server](https://github.com/typicode/json-server);
-- [axios](https://axios-http.com/);
-- [rc-slider](https://github.com/react-component/slider/);
+- [JetBrains Mono](https://www.jetbrains.com/lp/mono/);
+- [Omni Theme](https://marketplace.visualstudio.com/items?itemName=rocketseat.theme-omni);
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme);
 
-#### update [Node.js](https://nodejs.org/en/)
+### update [Node.js](https://nodejs.org/en/)
 
 https://nodejs.org/en/  
 
@@ -38,7 +34,7 @@ https://nodejs.org/en/
 node -v
 ```
 
-#### update [NPM](https://www.npmjs.com/package/npm)
+### update [NPM](https://www.npmjs.com/package/npm)
 
 ```
 npm install npm@latest -g
@@ -48,7 +44,7 @@ npm install npm@latest -g
 npm -v
 ```
 
-#### update [Yarn](https://yarnpkg.com/)
+### update [Yarn](https://yarnpkg.com/)
 
 ```
 yarn set version latest
@@ -58,39 +54,82 @@ yarn set version latest
 npm -v
 ```
 
-## Aula 1 - 19.04.2021 - Liftoff (React e Next.js)
+## Layout da aplicação
+
+https://www.figma.com/community/file/1031699316177416916  
+
+## Usando as Font Ligatures
+
+![fontes](./.github/fontLigatures.png)
+
+## Configurações do Ambiente Visual Studio Code
+
+``Ctrl + Shift + P``  
+
+``Open Settings (JSON)``  
+
+É preciso tomar alguns cuidados ao realizar essas alterações. Verifique se a configuração adicionada já não existe no arquivo. Se sim, apenas atualize o valor.   
+
+Verifique também se a todas as linhas de configuração exceto a última terminam com vírgula, para não gerar erro.  
+
+Por fim, caso queira substituir completamente a sua configuração pela abaixo, envolva com chaves ``{}`` todo o código disponibilizado.  
+
+_JSON_  
+```
+  // Configurações da fonte JetBrains Mono
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+
+  // Demais configurações
+  "workbench.colorTheme": "Omni",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+
+  "explorer.compactFolders": false,
+  "editor.renderLineHighlight": "gutter",
+  "workbench.editor.labelFormat": "short",
+  "extensions.ignoreRecommendations": true,
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+
+  "breadcrumbs.enabled": true,
+  "editor.parameterHints.enabled": false,
+	"editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+```
+
+## Aula 1 - 18.10.2021 - 
 
 ### **topics**
 
-- SPA;
-- API;
-- API RESTful;
-- JSON;
-- SSR;
-- SSG;
-- [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration);
-- [Link prefetching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ);
-- [React - Context API](https://reactjs.org/docs/context.html);
-- [React - Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html);
-- [Code refactoring](https://en.wikipedia.org/wiki/Code_refactoring);
-- [React - Why Immutability Is Important](https://reactjs.org/tutorial/tutorial.html#why-immutability-is-important).
+- ;
+- ;
+- ;
 
 ### :file_folder: **folder**
 
-podcastr
+...
 
 **install**  
 
 https://create-react-app.dev/  
 
 ```
-npx create-react-app podcastr
+npx create-react-app ...
 ```
 
 **start**  
 
 ```
-cd podcastr
+cd ...
 ```
 
 ```
@@ -99,18 +138,18 @@ yarn start
 
 ### :file_folder: **folder**
 
-podcastrnext
+...
 
 **install**  
 
 ```
-npx create-next-app podcastrnext
+npx create-next-app ...
 ```
 
 **start**  
 
 ```
-cd podcastrnext
+cd ...
 ```
 
 ```
@@ -119,24 +158,24 @@ yarn dev
 
 http://localhost:3000/  
 
-## Aula 2 - 20.04.2021 - Maximum Speed (Consumo de API)
+## Aula 2 - 19.10.2021 - 
 
 ### :file_folder: **folder**
 
-podcastrnext
+...
 
 **install**  
 
 ```
-yarn add typescript @types/react @types/node -D
+yarn add ...
 ```
 
 ```
-yarn add sass
+yarn add ...
 ```
 
 ```
-yarn add date-fns
+yarn add ...
 ```
 
 **start**  
@@ -186,7 +225,7 @@ yarn start
 
 http://localhost:3000/  
 
-## Aula 3 - 21.04.2021 - In Orbit (Páginas do app)
+## Aula 3 - 20.10.2021 - 
 
 **run**
 
@@ -212,23 +251,14 @@ http://localhost:3000/
 yarn add axios
 ```
 
-## Aula 4 - 22.04.2021 - Landing (Contexto de áudio)
-
-layer: client (browser)  
-layer: next.js (node.js)  
-layer: server (back-end)  
-
-" fallback: 'blocking' " > layer: next.js (node.js)  
-" fallback: 'blocking' " > incremental static regeneration  
+## Aula 4 - 21.10.2021 - 
 
 **install**
 
 ```
-yarn add rc-slider
+yarn add ...
 ```
 
-## Aula 5 - 26.02.2021 - Surface Exploration (Controlando player)
+## Aula 5 - 22.10.2021 - 
 
-Code refactoring  
-Immutability  
-[next-pwa](https://github.com/shadowwalker/next-pwa)  
+...
