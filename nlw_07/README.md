@@ -265,8 +265,20 @@ _Press_ "Generate a new client secret"
 `backend/.env` for [SQLite](https://www.prisma.io/docs/concepts/database-connectors/sqlite)  
 
 ````
-GITHUB_CLINET_ID=<GitHub_OAuth_Client_ID>
-GITHUB_CLINET_SECRET=<GitHub_OAuth_Client_secrets>
+GITHUB_CLIENT_ID=<GitHub_OAuth_Client_ID>
+GITHUB_CLIENT_SECRET=<GitHub_OAuth_Client_secrets>
+````
+
+**Simulating Front End and Mobile for tests**  
+
+`src/app.ts`  
+
+````
+...
+app.get("/github", (request, response) => {
+    response.redirect(`https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}`);
+});
+...
 ````
 
 <hr />
