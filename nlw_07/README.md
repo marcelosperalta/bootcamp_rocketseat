@@ -233,12 +233,6 @@ yarn add prisma -D
 yarn prisma init
 ```
 
-`backend/.env` for [SQLite](https://www.prisma.io/docs/concepts/database-connectors/sqlite)  
-
-````
-
-````
-
 `backend/prisma/schema.prisma`
 
 ````
@@ -267,6 +261,13 @@ _Client secrets:_
 _Press_ "Generate a new client secret"  
 
 :rotating_light: Make sure to copy your new client secret now. You won’t be able to see it again. :rotating_light:
+
+`backend/.env` for [SQLite](https://www.prisma.io/docs/concepts/database-connectors/sqlite)  
+
+````
+GITHUB_CLINET_ID=<GitHub_OAuth_Client_ID>
+GITHUB_CLINET_SECRET=<GitHub_OAuth_Client_secrets>
+````
 
 <hr />
 
