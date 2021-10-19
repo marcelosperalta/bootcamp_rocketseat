@@ -1,4 +1,6 @@
-# JobsCalc App
+# Maratona Discover
+
+## Edição 02: JobsCalc
 
 An app to help freelancers to calculate how much they should charge for your services using **[HTML](https://whatwg.org/)**, **[CSS](https://www.w3.org/Style/CSS/)**, **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)**, **[Node.js](https://nodejs.org/)**, **[Express](https://expressjs.com/)**, and **[SQLite](https://www.sqlite.org/)**.  
 
