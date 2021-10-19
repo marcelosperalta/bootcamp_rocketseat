@@ -2,7 +2,7 @@
 
 ## NLW Heat - _Mission:_ Impulse
 
-_tech stack:_  
+**_tech stack:_**  
 
 - **Node.js**
   - Typescript
@@ -11,21 +11,21 @@ _tech stack:_
 - React Native
 - Elixir
 
-_app name:_  
+**_app name:_**  
 
 **DoWhile2021**  
 
-_app version:_  
+**_app version:_**  
 
-- desktop
+desktop
 
-_app description:_  
+**_app description:_**  
 
 People can share their expectations about the _DoWhile2021_ event.
 
-_app features:_ 
+**_app features:_** 
 
-- authentication using GitHub;
+authentication using GitHub
 
 **_app screenshot:_**  
 
