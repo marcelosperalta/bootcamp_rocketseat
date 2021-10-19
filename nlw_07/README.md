@@ -6,13 +6,15 @@
 
 - **Node.js**
   - Typescript
+  - ts-node-dev
   - Socket.IO
   - Express
   - Prisma
   - GitHub OAuth
-- React
-- React Native
-- Elixir
+- **React**
+- **React Native**
+- **Elixir**
+- **SQLite**
 
 **_app name:_**  
 
@@ -41,7 +43,6 @@ _desktop version:_
 - Visual Studio Code
 - Node + NPM
 - Yarn
-- React
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 - [Omni Theme](https://marketplace.visualstudio.com/items?itemName=rocketseat.theme-omni)
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
@@ -126,6 +127,8 @@ _JSON_
   "typescript.suggest.autoImports": true,
 ```
 
+<hr />
+
 ## Stage 1 - 18.10.2021 - Backend - Node.js _(Instructor: [Daniele Evangelista](https://github.com/danileao))_
 
 ### **topics**
@@ -151,15 +154,122 @@ _JSON_
 yarn init -y
 ```
 
+```
+yarn add express
+```
+
+```
+yarn add -D @types/express typescript ts-node-dev
+```
+
+```
+yarn tsc --init
+```
+
+``tsconfig.json`` configuration:  
+
+````
+{
+  "compilerOptions": {
+    "target": "es2017",                         // <=====
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,                            // <=====
+    "skipLibCheck": true
+  }
+}
+````
+
+`package.json` configuration:  
+
+````
+....
+  "scripts": {
+    "dev": "ts-node-dev src/app.ts"
+  },
+....
+````
+
+````
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev src/app.ts"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  }
+}
+````
+
 **start**  
 
 ```
-cd ...
+cd backend
 ```
 
 ```
-yarn start
+yarn dev
 ```
+
+**install Prisma**  
+
+_[relational databases](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases-typescript-postgres)_  
+
+```
+yarn add prisma -D
+```
+
+```
+yarn prisma init
+```
+
+`backend/.env` for [SQLite](https://www.prisma.io/docs/concepts/database-connectors/sqlite)  
+
+````
+
+````
+
+`backend/prisma/schema.prisma`
+
+````
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+````
+
+**_GitHub OAuth_ configuration**  
+
+https://github.com/settings/developers  
+
+https://github.com/settings/applications/new  
+
+_Homepage URL:_  
+
+http://localhost:4000  
+
+_Authorization callback URL:_  
+
+http://localhost:4000/signin/callback  
+
+_Client secrets:_
+
+_Press_ "Generate a new client secret"  
+
+:rotating_light: Make sure to copy your new client secret now. You won’t be able to see it again. :rotating_light:
+
+<hr />
+
 
 ### :file_folder: **folder**
 
@@ -187,7 +297,7 @@ http://localhost:3000/
 
 ### :file_folder: **folder**
 
-...
+`...`
 
 **install**  
 
