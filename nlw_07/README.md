@@ -17,21 +17,21 @@
 
 **_app version:_**  
 
-desktop
+- desktop
 
 **_app description:_**  
 
-People can share their expectations about the _DoWhile2021_ event.
+- People can share their expectations about the _DoWhile2021_ event.
 
 **_app features:_** 
 
-authentication using GitHub
+- authentication using GitHub
 
 **_app screenshot:_**  
 
 _desktop version:_
 
-![DoWhile2021desktop](./.github/...)  
+- ![DoWhile2021desktop](./.github/...)  
 
 ## [Environment](https://efficient-sloth-d85.notion.site/NLW-Heat-daaa092e1eeb42ff929151d2807c8231)
 
