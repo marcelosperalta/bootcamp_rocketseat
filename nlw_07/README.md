@@ -7,13 +7,16 @@
 - **Node.js**
   - Typescript
   - Socket.IO
+  - Express
+  - Prisma
+  - GitHub OAuth
 - React
 - React Native
 - Elixir
 
 **_app name:_**  
 
-**DoWhile2021**  
+- DoWhile2021  
 
 **_app version:_**  
 
@@ -21,7 +24,7 @@
 
 **_app description:_**  
 
-- People can share their expectations about the _DoWhile2021_ event.
+- People can share their expectations about the _[DoWhile2021](https://dowhile.io/)_ event.
 
 **_app features:_** 
 
@@ -71,15 +74,15 @@ yarn set version latest
 npm -v
 ```
 
-## Layout da aplicação
+## App Layout
 
 https://www.figma.com/community/file/1031699316177416916  
 
-## Usando as Font Ligatures
+## Font Ligatures
 
 ![fontes](./.github/fontLigatures.png)  
 
-## Configurações do Ambiente Visual Studio Code
+## Visual Studio Code configuration
 
 ``Ctrl + Shift + P``  
 
@@ -127,20 +130,25 @@ _JSON_
 
 ### **topics**
 
-- ;
-- ;
-- ;
+- Create project;
+- _Express_, _Prisma (ORM)_, _TypeScript_ installation;
+- _GitHub OAuth_ configuration;
+- GitHub login route creation;
+- Callback route creation;
+- User authentication;
+- Message registration;
+- WebSocket configuration;
+- Returning the last three messages;
+- User profile creation.
 
 ### :file_folder: **folder**
 
-...
+`backend`
 
 **install**  
 
-https://create-react-app.dev/  
-
 ```
-npx create-react-app ...
+yarn init -y
 ```
 
 **start**  
