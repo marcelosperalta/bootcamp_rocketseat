@@ -1,30 +1,47 @@
 # [Next Level Week 07](https://nextlevelweek.com/)
 
-_name:_  
+## NLW Heat - _Mission:_ Impulse
 
-**NLW Heat**  
+_tech stack:_  
 
-_trilha:_  
+- **Node.js**
+  - Typescript
+  - Socket.IO
+- React
+- React Native
+- Elixir
 
-**Impulese**  _(React)_
+_app name:_  
 
-_app:_  
+**DoWhile2021**  
 
-**...**
+_app version:_  
 
-_screenshot:_  
+- desktop
 
-![app's name](./.github/...)
+_app description:_  
+
+People can share their expectations about the _DoWhile2021_ event.
+
+_app features:_ 
+
+- authentication using GitHub;
+
+**_app screenshot:_**  
+
+_desktop version:_
+
+![DoWhile2021desktop](./.github/...)  
 
 ## [Environment](https://efficient-sloth-d85.notion.site/NLW-Heat-daaa092e1eeb42ff929151d2807c8231)
 
-- Visual Studio Code;
-- Node + NPM;
-- Yarn;
-- React;
-- [JetBrains Mono](https://www.jetbrains.com/lp/mono/);
-- [Omni Theme](https://marketplace.visualstudio.com/items?itemName=rocketseat.theme-omni);
-- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme);
+- Visual Studio Code
+- Node + NPM
+- Yarn
+- React
+- [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+- [Omni Theme](https://marketplace.visualstudio.com/items?itemName=rocketseat.theme-omni)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
 ### update [Node.js](https://nodejs.org/en/)
 
@@ -60,7 +77,7 @@ https://www.figma.com/community/file/1031699316177416916
 
 ## Usando as Font Ligatures
 
-![fontes](./.github/fontLigatures.png)
+![fontes](./.github/fontLigatures.png)  
 
 ## Configurações do Ambiente Visual Studio Code
 
@@ -106,7 +123,7 @@ _JSON_
   "typescript.suggest.autoImports": true,
 ```
 
-## Aula 1 - 18.10.2021 - 
+## Stage 1 - 18.10.2021 - Backend - Node.js _(Instructor: [Daniele Evangelista](https://github.com/danileao))_
 
 ### **topics**
 
