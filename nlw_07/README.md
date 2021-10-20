@@ -137,7 +137,7 @@ _JSON_
 
 ## Stage 1 - 18.10.2021 - Backend - Node.js _(Instructor: [Daniele Evangelista](https://github.com/danileao))_
 
-### **topics**
+### topics
 
 - Create project;
 - _Express_, _Prisma (ORM)_, _TypeScript_ installation;
@@ -154,7 +154,7 @@ _JSON_
 
 `backend`
 
-**install**  
+:black_medium_square: _install_  
 
 ```
 yarn init -y
@@ -217,7 +217,7 @@ yarn tsc --init
 }
 ````
 
-**start**  
+:black_medium_square: _start_  
 
 ```
 cd backend
@@ -227,7 +227,7 @@ cd backend
 yarn dev
 ```
 
-**install Prisma**  
+:black_medium_square: _install **Prisma**:_  
 
 _[relational databases](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases-typescript-postgres)_  
 
@@ -297,7 +297,7 @@ file ``src/app.ts``
 yarn add dotenv
 ```
 
-_start:_  
+:black_medium_square: _start:_  
 
 ```
 cd backend
@@ -330,7 +330,7 @@ file ``src/services/AuthenticateUserService.ts``
 
 file ``src/controllers/AuthenticateUserController.ts``  
 
-- _install **axios**:_  
+:black_medium_square: _install **axios**:_  
 
 ```
 yarn add axios
@@ -344,7 +344,7 @@ file ``src/routes.ts``
 
 file ``src/app.ts``  
 
-- _using [Insomnia](https://insomnia.rest/):_
+:black_medium_square: _using [Insomnia](https://insomnia.rest/):_
 
 Insomnia > No Environment > Manage Environments > Base Environment  
 
