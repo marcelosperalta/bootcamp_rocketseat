@@ -227,7 +227,7 @@ cd backend
 yarn dev
 ```
 
-:black_medium_square: _install **Prisma**:_  
+:black_medium_square: _install **[Prisma](https://www.prisma.io/)**:_  
 
 _[relational databases](https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases-typescript-postgres)_  
 
@@ -287,7 +287,7 @@ app.get("/github", (request, response) => {
 ...
 ````
 
-**Install [dotenv](https://github.com/motdotla/dotenv)**  
+:black_medium_square: _install **[dotenv](https://github.com/motdotla/dotenv)**:_  
 
 file ``src/app.ts``  
 
