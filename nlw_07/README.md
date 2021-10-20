@@ -405,7 +405,7 @@ _generate a new code:_
 
 http://localhost:4000/github  
 
-_and send again using insomina (success scenario):_  
+_and send again using insomnia (success scenario):_  
 
 ![insomnia](./.github/backend_insomnia_04.png)  
 
