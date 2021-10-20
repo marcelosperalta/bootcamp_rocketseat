@@ -7,10 +7,17 @@ import axios from "axios";
 // - Verifcar se o usuário existe no DB
 //   - if TRUE  = Gera um token
 //   - if FALSE = Cria no DB, gera um token
-// - Retornar o toke com as infos do user
+// - Retornar o token com as infos do user
 
 interface IAccessTokenResponse {
     access_token: string
+}
+
+interface IUserResponse {
+    avatar_url: string,
+    login: string,
+    id: number,
+    name: string
 }
 
 class AuthenticateUserService {
@@ -31,7 +38,8 @@ class AuthenticateUserService {
             }
         })
 
-        const response = await axios.get("https://api.github.com/user", {
+//      const response = await axios.get("https://api.github.com/user", {
+        const response = await axios.get<IUserResponse>("https://api.github.com/user", {
             headers: {
                 authorization: `Bearer ${accessTokenResponse.access_token}`
             }

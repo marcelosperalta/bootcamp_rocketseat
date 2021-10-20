@@ -53,6 +53,21 @@ _desktop version:_
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 - [Omni Theme](https://marketplace.visualstudio.com/items?itemName=rocketseat.theme-omni)
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [Prisma](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma)
+- [Prisma - Insider](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma-insider)
+
+### Visual Studio Code: _Prisma_ and _Prisma - Insider_
+
+`settings.json`  
+
+```
+{
+  ...,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
+}
+```
 
 ### update [Node.js](https://nodejs.org/en/)
 
@@ -278,7 +293,7 @@ GITHUB_CLIENT_SECRET=<GitHub_OAuth_Client_secrets>
 
 **Simulating Front End and Mobile for tests**  
 
-file `src/app.ts`  
+file `backend/src/app.ts`  
 
 ````
 ...
@@ -290,7 +305,7 @@ app.get("/github", (request, response) => {
 
 :black_medium_square: _install **[dotenv](https://github.com/motdotla/dotenv)**:_  
 
-file ``src/app.ts``  
+file ``backend/src/app.ts``  
 
 ``Dotenv`` is a zero-dependency module that loads environment variables from a ``.env`` file into ``process.env``. Storing configuration in the environment separate from code is based on **The Twelve-Factor App** methodology.  
 
@@ -312,7 +327,7 @@ http://localhost:4000/github
 
 **Callback route (URL) creation**  
 
-file ``src/app.ts``  
+file ``backend/src/app.ts``  
 
 ```
 ...
@@ -327,13 +342,15 @@ http://localhost:4000/github
 
 **User authentication**  
 
-file ``src/services/AuthenticateUserService.ts``  
+file ``backend/src/services/AuthenticateUserService.ts``  
 
-file ``src/controllers/AuthenticateUserController.ts``  
+file ``backend/src/controllers/AuthenticateUserController.ts``  
 
-file ``src/routes.ts``  
+file ``backend/src/routes.ts``  
 
-file ``src/app.ts``  
+file ``backend/src/app.ts``  
+
+file ``backend/prisma/schema.prisma``  
 
 :black_medium_square: _install **axios**:_  
 
