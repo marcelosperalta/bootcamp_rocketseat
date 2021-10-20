@@ -233,7 +233,7 @@ yarn add prisma -D
 yarn prisma init
 ```
 
-folder `backend/prisma/schema.prisma`  
+file `backend/prisma/schema.prisma`  
 
 ````
 datasource db {
@@ -262,7 +262,7 @@ _Press_ "Generate a new client secret"
 
 :rotating_light: Make sure to copy your new client secret now. You won’t be able to see it again. :rotating_light:
 
-folder `backend/.env` for [SQLite](https://www.prisma.io/docs/concepts/database-connectors/sqlite)  
+file `backend/.env` for [SQLite](https://www.prisma.io/docs/concepts/database-connectors/sqlite)  
 
 ````
 GITHUB_CLIENT_ID=<GitHub_OAuth_Client_ID>
@@ -303,7 +303,7 @@ http://localhost:4000/github
 
 **Creating callback URL**  
 
-folder ``app.ts``  
+file ``app.ts``  
 
 ```
 ...
