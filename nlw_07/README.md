@@ -281,30 +281,41 @@ app.get("/github", (request, response) => {
 ...
 ````
 
-<hr />
+**Install [dotenv](https://github.com/motdotla/dotenv)**  
 
-
-### :file_folder: **folder**
-
-...
-
-**install**  
+``Dotenv`` is a zero-dependency module that loads environment variables from a ``.env`` file into ``process.env``. Storing configuration in the environment separate from code is based on **The Twelve-Factor App** methodology.  
 
 ```
-npx create-next-app ...
+yarn add dotenv
 ```
 
 **start**  
 
 ```
-cd ...
+cd backend
 ```
 
 ```
 yarn dev
 ```
 
-http://localhost:3000/  
+http://localhost:4000/github  
+
+**Creating callback URL**  
+
+``app.ts``  
+
+```
+...
+app.get("/signin/callback", (request, response) => {
+    const { code } = request.query;
+    return response.json(code);
+});
+...
+```
+http://localhost:4000/github  
+
+<hr />
 
 ## Aula 2 - 19.10.2021 - 
 
@@ -315,98 +326,43 @@ http://localhost:3000/
 **install**  
 
 ```
-yarn add ...
-```
 
 ```
-yarn add ...
-```
-
-```
-yarn add ...
-```
-
-**start**  
-
-```
-yarn dev
-```
-
-http://localhost:3000/  
-
-**JSON server**
-
-_install_  
-```
-yarn add json-server -D
-```
-
-_add to package.json_  
-```
-{
-  "name": "podcastrnext",
-  ...
-  "scripts": {
-    ...
-    "server": "json-server server.json -w -d 750 -p 3333"
-  },
-  ...
-}
-```
-
-_run_  
-```
-yarn server
-```
-
-**build**
-
-```
-yarn build
-```
-
-**run in production**
-
-```
-yarn start
-```
-
-http://localhost:3000/  
 
 ## Aula 3 - 20.10.2021 - 
 
+### :file_folder: **folder**
+
 **run**
 
-_terminal 1_  
+`...`
+
+**install**  
 
 ```
-yarn server
-```
 
-_terminal 2_  
-
-```
-yarn run dev
-```
-
-_web browser_  
-
-http://localhost:3000/  
-
-**install**
-
-```
-yarn add axios
 ```
 
 ## Aula 4 - 21.10.2021 - 
 
-**install**
+### :file_folder: **folder**
+
+`...`
+
+**install**  
 
 ```
-yarn add ...
+
 ```
 
 ## Aula 5 - 22.10.2021 - 
 
-...
+### :file_folder: **folder**
+
+`...`
+
+**install**  
+
+```
+
+```
