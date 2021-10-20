@@ -5,12 +5,13 @@
 **_tech stack:_**  
 
 - **Node.js**
+  - Express
+  - GitHub OAuth
   - Typescript
   - ts-node-dev
+  - dotenv
   - Socket.IO
-  - Express
   - Prisma
-  - GitHub OAuth
 - **React**
 - **React Native**
 - **Elixir**
