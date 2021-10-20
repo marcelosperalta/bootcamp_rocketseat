@@ -350,8 +350,6 @@ file ``backend/src/routes.ts``
 
 file ``backend/src/app.ts``  
 
-file ``backend/prisma/schema.prisma``  
-
 :black_medium_square: _install **axios**:_  
 
 ```
@@ -425,6 +423,31 @@ http://localhost:4000/github
 _and send again using insomnia (success scenario):_  
 
 ![insomnia](./.github/backend_insomnia_04.png)  
+
+add to the file ``backend/prisma/schema.prisma``  
+
+```
+...
+model User {
+  id          String @id @default(uuid())
+  name        String
+  github_id   Int
+  avatar_url  String
+  login       String
+
+  @@map("users")
+}
+```
+
+and run:  
+
+```
+yarn prisma migrate dev
+```
+
+will be created:  
+
+![prisma](./.github/backend_prisma_01.png)  
 
 <hr />
 
