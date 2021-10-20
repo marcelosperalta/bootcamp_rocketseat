@@ -397,6 +397,18 @@ _install [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken):_
 yarn add jsonwebtoken
 ```
 
+```
+yarn add @types/jsonwebtoken -D
+```
+
+_generate a new code:_  
+
+http://localhost:4000/github  
+
+_and send again using insomina (success scenario):_  
+
+![insomnia](./.github/backend_insomnia_04.png)  
+
 <hr />
 
 ## Stage 2 - 19.10.2021 - _(Instructor: []())_
