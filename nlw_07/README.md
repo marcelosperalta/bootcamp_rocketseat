@@ -377,7 +377,7 @@ e.g. ``http://localhost:4000/signin/callback?code=<github_code>``
 
 `...`
 
-**install**  
+:black_medium_square: _install ... :_  
 
 ```
 
@@ -389,11 +389,9 @@ e.g. ``http://localhost:4000/signin/callback?code=<github_code>``
 
 ### :file_folder: **folder**
 
-**run**
-
 `...`
 
-**install**  
+:black_medium_square: _install ... :_  
 
 ```
 
@@ -407,7 +405,7 @@ e.g. ``http://localhost:4000/signin/callback?code=<github_code>``
 
 `...`
 
-**install**  
+:black_medium_square: _install ... :_  
 
 ```
 
@@ -421,7 +419,7 @@ e.g. ``http://localhost:4000/signin/callback?code=<github_code>``
 
 `...`
 
-**install**  
+:black_medium_square: _install ... :_  
 
 ```
 
