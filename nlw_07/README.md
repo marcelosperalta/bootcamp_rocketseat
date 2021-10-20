@@ -330,7 +330,7 @@ file ``src/services/AuthenticateUserService.ts``
 
 file ``src/controllers/AuthenticateUserController.ts``  
 
-_install **axios**:_  
+- _install **axios**:_  
 
 ```
 yarn add axios
@@ -344,7 +344,7 @@ file ``src/routes.ts``
 
 file ``src/app.ts``  
 
-_using [Insomnia](https://insomnia.rest/):_
+- _using [Insomnia](https://insomnia.rest/):_
 
 Insomnia > No Environment > Manage Environments > Base Environment  
 
