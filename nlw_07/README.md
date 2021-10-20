@@ -11,6 +11,7 @@
   - ts-node-dev
   - dotenv
   - axios
+  - jsonwebtoken
   - Socket.IO
   - Prisma
 - **React**
@@ -330,6 +331,10 @@ file ``src/services/AuthenticateUserService.ts``
 
 file ``src/controllers/AuthenticateUserController.ts``  
 
+file ``src/routes.ts``  
+
+file ``src/app.ts``  
+
 :black_medium_square: _install **axios**:_  
 
 ```
@@ -339,10 +344,6 @@ yarn add axios
 ```
 yarn add @types/axios -D
 ```
-
-file ``src/routes.ts``  
-
-file ``src/app.ts``  
 
 :black_medium_square: _using [Insomnia](https://insomnia.rest/):_
 
@@ -368,6 +369,33 @@ e.g. ``http://localhost:4000/signin/callback?code=<github_code>``
 
 ![insomnia](./.github/backend_insomnia_02.png)
 
+_after try to send, if:_
+
+````
+{
+  "error": "bad_verification_code",
+  "error_description": "The code passed is incorrect or expired.",
+  "error_uri": "https://docs.github.com/apps/managing-oauth-apps/troubleshooting-oauth-app-access-token-request-errors/#bad-verification-code"
+}
+````
+
+_generate a new code:_  
+
+http://localhost:4000/github  
+
+_copy the new code and paste here:_  
+
+![insomnia](./.github/backend_insomnia_02.png)  
+
+_success scenario:_  
+
+![insomnia](./.github/backend_insomnia_03.png)  
+
+_install [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken):_  
+
+```
+yarn add jsonwebtoken
+```
 
 <hr />
 

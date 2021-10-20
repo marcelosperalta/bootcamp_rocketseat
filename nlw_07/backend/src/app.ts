@@ -5,6 +5,9 @@ import { router } from "./routes";
 
 const app = express();
 
+// to make "express" works with "code" of request.body:
+app.use(express.json()); 
+
 app.use(router);
 
 app.get("/github", (request, response) => {
