@@ -4,7 +4,7 @@ import { AuthenticateUserController } from "./controllers/AuthenticateUserContro
 
 const router = Router();
 
-//  "express" pass the parameters (req, res) automatically to "handle"
+// "express" pass the parameters (req, res) automatically to "handle"
 router.post("/authenticate", new AuthenticateUserController().handle)
 
 export { router };

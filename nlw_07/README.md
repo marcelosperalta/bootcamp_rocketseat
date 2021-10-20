@@ -252,7 +252,23 @@ yarn add prisma -D
 ```
 
 ```
+yarn add @prisma/client
+```
+
+```
 yarn prisma init
+```
+
+file ``backend/package.json``
+
+_add ``--exit-child``_ 
+
+```
+...
+  "scripts": {
+    "dev": "ts-node-dev --exit-child src/app.ts"
+  },
+...
 ```
 
 file `backend/prisma/schema.prisma`  
@@ -448,6 +464,20 @@ yarn prisma migrate dev
 will be created:  
 
 ![prisma](./.github/backend_prisma_01.png)  
+
+afeter ``backend/src/services/AuthenticateUserService.ts`` configurations  
+
+```
+yarn dev
+```
+
+_generate a new code:_  
+
+http://localhost:4000/github  
+
+_and send again using insomnia (success scenario):_  
+
+![insomnia](./.github/backend_insomnia_05.png)  
 
 <hr />
 

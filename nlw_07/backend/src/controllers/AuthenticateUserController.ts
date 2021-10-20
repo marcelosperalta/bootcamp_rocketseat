@@ -8,9 +8,15 @@ class AuthenticateUserController {
 
         //              instantiating the service layer (src/services)
         const service = new AuthenticateUserService();
-        const result = await service.execute(code)
 
-        return response.json(result)
+    //  const result = await service.execute(code)
+    //  return response.json(result)
+        try {
+            const result = await service.execute(code);
+            return response.json(result);
+        } catch (err) {
+            return response.json({ error: err.message });
+        }
     }
 }
 
