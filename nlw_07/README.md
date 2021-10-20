@@ -371,7 +371,7 @@ e.g. ``http://localhost:4000/signin/callback?code=<github_code>``
 
 <hr />
 
-## Aula 2 - 19.10.2021 - 
+## Stage 2 - 19.10.2021 - _(Instructor: []())_
 
 ### :file_folder: **folder**
 
@@ -385,7 +385,7 @@ e.g. ``http://localhost:4000/signin/callback?code=<github_code>``
 
 <hr />
 
-## Aula 3 - 20.10.2021 - 
+## Stage 3 - 20.10.2021 - _(Instructor: []())_ 
 
 ### :file_folder: **folder**
 
@@ -399,7 +399,7 @@ e.g. ``http://localhost:4000/signin/callback?code=<github_code>``
 
 <hr />
 
-## Aula 4 - 21.10.2021 - 
+## Stage 4 - 21.10.2021 - _(Instructor: []())_
 
 ### :file_folder: **folder**
 
@@ -413,7 +413,7 @@ e.g. ``http://localhost:4000/signin/callback?code=<github_code>``
 
 <hr />
 
-## Aula 5 - 22.10.2021 - 
+## Stage 5 - 22.10.2021 - _(Instructor: []())_
 
 ### :file_folder: **folder**
 
