@@ -354,7 +354,7 @@ Insomnia > No Environment > Manage Environments > Base Environment
 }
 ```
 
-![insomnia](./.github/backend_isnomnia_01.png)
+![insomnia](./.github/backend_insomnia_01.png)
 
 Insomnia > New Request > POST   
 
@@ -366,7 +366,7 @@ Body: JSON
 ```
 e.g. ``http://localhost:4000/signin/callback?code=<github_code>``
 
-![insomnia](./.github/backend_isnomnia_02.png)
+![insomnia](./.github/backend_insomnia_02.png)
 
 
 <hr />
