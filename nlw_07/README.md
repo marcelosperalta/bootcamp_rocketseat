@@ -369,7 +369,7 @@ e.g. ``http://localhost:4000/signin/callback?code=<github_code>``
 
 ![insomnia](./.github/backend_insomnia_02.png)
 
-_after try to send, if:_
+_after trying to send it, if:_
 
 ````
 {
