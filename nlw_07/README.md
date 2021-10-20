@@ -10,12 +10,17 @@
   - Typescript
   - ts-node-dev
   - dotenv
+  - axios
   - Socket.IO
   - Prisma
 - **React**
 - **React Native**
 - **Elixir**
 - **SQLite**
+
+**_tools:_**  
+
+- [Insomnia](https://insomnia.rest/)
 
 **_app name:_**  
 
@@ -167,7 +172,7 @@ yarn add -D @types/express typescript ts-node-dev
 yarn tsc --init
 ```
 
-``tsconfig.json`` configuration:  
+``backend/tsconfig.json`` configuration:  
 
 ````
 {
@@ -182,7 +187,7 @@ yarn tsc --init
 }
 ````
 
-`package.json` configuration:  
+`backend/package.json` configuration:  
 
 ````
 ....
@@ -272,7 +277,7 @@ GITHUB_CLIENT_SECRET=<GitHub_OAuth_Client_secrets>
 
 **Simulating Front End and Mobile for tests**  
 
-folder `src/app.ts`  
+file `src/app.ts`  
 
 ````
 ...
@@ -284,13 +289,15 @@ app.get("/github", (request, response) => {
 
 **Install [dotenv](https://github.com/motdotla/dotenv)**  
 
+file ``src/app.ts``  
+
 ``Dotenv`` is a zero-dependency module that loads environment variables from a ``.env`` file into ``process.env``. Storing configuration in the environment separate from code is based on **The Twelve-Factor App** methodology.  
 
 ```
 yarn add dotenv
 ```
 
-**start**  
+_start:_  
 
 ```
 cd backend
@@ -302,9 +309,9 @@ yarn dev
 
 http://localhost:4000/github  
 
-**Creating callback URL**  
+**Callback route (URL) creation**  
 
-file ``app.ts``  
+file ``src/app.ts``  
 
 ```
 ...
@@ -314,7 +321,53 @@ app.get("/signin/callback", (request, response) => {
 });
 ...
 ```
+
 http://localhost:4000/github  
+
+**User authentication**  
+
+file ``src/services/AuthenticateUserService.ts``  
+
+file ``src/controllers/AuthenticateUserController.ts``  
+
+_install **axios**:_  
+
+```
+yarn add axios
+```
+
+```
+yarn add @types/axios -D
+```
+
+file ``src/routes.ts``  
+
+file ``src/app.ts``  
+
+_using [Insomnia](https://insomnia.rest/):_
+
+Insomnia > No Environment > Manage Environments > Base Environment  
+
+```
+{
+  "baseURL": "http://localhost:4000"
+}
+```
+
+![insomnia](./.github/backend_isnomnia_01.png)
+
+Insomnia > New Request > POST   
+
+Body: JSON
+```
+{
+	"code": "<github_code>"
+}
+```
+e.g. ``http://localhost:4000/signin/callback?code=<github_code>``
+
+![insomnia](./.github/backend_isnomnia_02.png)
+
 
 <hr />
 
@@ -330,6 +383,8 @@ http://localhost:4000/github
 
 ```
 
+<hr />
+
 ## Aula 3 - 20.10.2021 - 
 
 ### :file_folder: **folder**
@@ -344,6 +399,8 @@ http://localhost:4000/github
 
 ```
 
+<hr />
+
 ## Aula 4 - 21.10.2021 - 
 
 ### :file_folder: **folder**
@@ -355,6 +412,8 @@ http://localhost:4000/github
 ```
 
 ```
+
+<hr />
 
 ## Aula 5 - 22.10.2021 - 
 
