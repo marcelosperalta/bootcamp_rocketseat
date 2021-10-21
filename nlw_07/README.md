@@ -749,7 +749,7 @@ yarn add sass
 :black_medium_square: _install [React Icons](https://react-icons.github.io/react-icons/):_  
 
 ```
-npm install react-icons
+yarn add react-icons
 ```
 
 <hr />
