@@ -491,7 +491,7 @@ file ``backend/src/routes.ts``
 
 file ``backend/src/middleware/ensureAuthenticated.ts`` 
 
-file ``backend\src\@types\express\index.d.ts``
+file ``backend/src/@types/express/index.d.ts``
 
 add to the file ``backend/tsconfig.json``
 
@@ -566,6 +566,10 @@ yarn prisma studio
 
 file ``backend/src/app.ts``  
 
+file ``backend/src/server.ts``  
+
+file ``backend/src/services/CreateMessageService.ts``
+
 https://socket.io/  
 
 ```
@@ -585,6 +589,59 @@ yarn add cors
 ```
 yarn add @types/cors -D
 ```
+
+CDN Socket Client:  
+
+add to the file `backend/public/index.html`  
+
+```
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"
+  integrity="sha512-eVL5Lb9al9FzgR63gDs1MxcDS2wFu3loYAgjIH0+Hg38tCS8Ag62dwKyH+wzDb+QauDpEZjXbMn11blw8cbTJQ=="
+  crossorigin="anonymous"
+></script>
+```
+
+change the ``package.json`` configuration  
+
+from:  
+```
+...
+  "scripts": {
+    "dev": "ts-node-dev --exit-child src/app.ts"
+  },
+...
+```
+
+to:  
+```
+...
+  "scripts": {
+    "dev": "ts-node-dev --exit-child src/server.ts"
+  },
+...
+```
+
+run the app in the terminal:  
+
+```
+yarn dev
+```
+
+open the ``index.html`` using a web browser and send a message using **Insomnia**:  
+
+![insomnia](./.github/backend_insomnia_08.png)  
+
+**Returning the last three messages:**  
+
+
+
+
+
+**User profile creation:**  
+
+
+
 
 ## Stage 2 - 19.10.2021 - _(Instructor: []())_
 

@@ -8,11 +8,18 @@ import { Server } from "socket.io";
 import { router } from "./routes";
 
 const app = express();
-app.use(cors())
+app.use(cors());
 
 const serverHttp = http.createServer(app);
 
-const io = new Server(serverHttp);
+const io = new Server(serverHttp, {
+    cors: {
+        origin: "*"
+    }
+});
+io.on("connection", socket => {
+    console.log(`User connected to the socket ${socket.id}`);
+});
 
 // to make "express" works with "code" of request.body:
 app.use(express.json()); 
@@ -46,4 +53,6 @@ app.get("/signin/callback", (request, response) => {
 
 });
 
-app.listen(4000, () => console.log("Server running on port 4000"));
+//     app.listen(4000, () => console.log("Server running on port 4000"));
+// serverHttp.listen(4000, () => console.log("Server running on port 4000"));
+export { serverHttp, io };
