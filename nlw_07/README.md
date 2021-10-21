@@ -16,6 +16,10 @@
   - Socket.IO
   - corrs
 - **React**
+  - Vite
+    - CSS Modules
+  - Typescript
+  - Sass
 - **React Native**
 - **Elixir**
 - **SQLite**
@@ -153,6 +157,8 @@ _JSON_
 <hr />
 
 ## Stage 1 - 18.10.2021 - Backend - Node.js _(Instructor: [Daniele Evangelista](https://github.com/danileao))_
+
+https://github.com/rocketseat-education/nlw-heat-node  
 
 ### topics
 
@@ -693,16 +699,39 @@ adding to GET "User Profile" > Bearer
 
 <hr />
 
-## Stage 2 - 19.10.2021 - _(Instructor: []())_
+## Stage 2 - 19.10.2021 - React _(Instructor: [Diego Fernandes](https://github.com/diego3g))_
 
 ### :file_folder: **folder**
 
-`...`
+`web`
 
-:black_medium_square: _install ... :_  
+:black_medium_square: _install [Vite](https://vitejs.dev/):_  
 
 ```
+yarn create vite web --template react-ts
+```
 
+```
+cd web
+```
+
+```
+yarn
+```
+
+:black_medium_square: _run:_  
+
+
+```
+yarn dev
+```
+
+http://localhost:3000/  
+
+:black_medium_square: _install Sass:_  
+
+```
+yarn add sass
 ```
 
 <hr />
