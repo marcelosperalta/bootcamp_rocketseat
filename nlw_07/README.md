@@ -388,9 +388,8 @@ Insomnia > No Environment > Manage Environments > Base Environment
 
 ![insomnia](./.github/backend_insomnia_01.png)
 
-Insomnia > New Request > POST   
+Insomnia > New Request > "Authenticate User" > POST > JSON
 
-Body: JSON
 ```
 {
 	"code": "<github_code>"
@@ -485,6 +484,23 @@ file ``backend/src/services/CreateMessageService.ts``
 
 file ``backend/src/controllers/CreateMessageController.ts``  
 
+file ``backend/src/routes.ts``  
+
+file ``backend/src/middleware/ensureAuthenticated.ts`` 
+
+file ``backend\src\@types\express\index.d.ts``
+
+add to the file ``backend/tsconfig.json``
+
+```
+{
+  "compilerOptions": {
+    ...,
+    "typeRoots": ["./src/@types", "node_modules/@types"]
+  }
+}
+```
+
 add to the file ``backend/prisma/schema.prisma``  
 
 ```
@@ -511,9 +527,23 @@ yarn prisma migrate dev
 yarn dev
 ```
 
+Insomnia > New Request > "Create Message" > POST > JSON   
 
+```
+{
+	"message": "I am looking forward to the DoWhile2021"
+}
+```
 
+![insomnia](./.github/backend_insomnia_06.png)
 
+Insomnia > POST "Create Message" > Auth > Bearer Token  
+
+user the token from  POST "Authenticate User"  
+
+POST "Create Message" Send  
+
+![insomnia](./.github/backend_insomnia_07.png)
 
 <hr />
 
