@@ -7,9 +7,7 @@
     "dev": "ts-node-dev --exit-child src/app.ts"
   },
   "dependencies": {
-    "-": "^0.0.1",
     "@prisma/client": "^3.3.0",
-    "D": "^1.0.0",
     "axios": "^0.23.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
