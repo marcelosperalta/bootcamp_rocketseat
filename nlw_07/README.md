@@ -479,6 +479,42 @@ _and send again using insomnia (success scenario):_
 
 ![insomnia](./.github/backend_insomnia_05.png)  
 
+**Message registration**
+
+file ``backend/src/services/CreateMessageService.ts``  
+
+file ``backend/src/controllers/CreateMessageController.ts``  
+
+add to the file ``backend/prisma/schema.prisma``  
+
+```
+...
+model Message {
+  id          String   @id @default(uuid())
+  text        String
+  created_at  DateTime @default(now())
+
+  user User   @relation(fields: [user_id], references: [id])
+
+  user_id     String // relation
+  @@map("messages")
+}
+```
+
+and run:  
+
+```
+yarn prisma migrate dev
+```
+
+```
+yarn dev
+```
+
+
+
+
+
 <hr />
 
 ## Stage 2 - 19.10.2021 - _(Instructor: []())_
