@@ -390,6 +390,8 @@ Insomnia > No Environment > Manage Environments > Base Environment
 
 Insomnia > New Request > "Authenticate User" > POST > JSON
 
+``/authenticate``
+
 ```
 {
 	"code": "<github_code>"
@@ -538,6 +540,8 @@ Insomnia > New Request > "Create Message" > POST > JSON
 ![insomnia](./.github/backend_insomnia_06.png)
 
 Insomnia > POST "Create Message" > Auth > Bearer Token  
+
+``/messages``
 
 user the token from  POST "Authenticate User"  
 
