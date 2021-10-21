@@ -29,6 +29,7 @@
     - CSS Modules
   - Typescript
   - Sass
+  - React Icons
 - **React Native**
 - **Elixir**
 - **SQLite**
@@ -743,6 +744,12 @@ http://localhost:3000/
 
 ```
 yarn add sass
+```
+
+:black_medium_square: _install [React Icons](https://react-icons.github.io/react-icons/):_  
+
+```
+npm install react-icons
 ```
 
 <hr />
