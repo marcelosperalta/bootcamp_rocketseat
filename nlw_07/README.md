@@ -660,7 +660,7 @@ Insomnia > New Request > "User Profile" > GET
 
 Insomnia > GET "User Profile" > Auth > Bearer Token  
 
-user the token used on POST "Create Message"  
+use the token used on POST "Create Message"  
 
 ![insomnia](./.github/backend_insomnia_10.png)
 
