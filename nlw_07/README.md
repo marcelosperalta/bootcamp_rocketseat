@@ -560,8 +560,6 @@ yarn prisma studio
 
 ![insomnia](./.github/backend_prisma_03.png)
 
-<hr />
-
 **WebSocket configuration:**
 
 file ``backend/src/app.ts``  
@@ -634,14 +632,65 @@ open the ``index.html`` using a web browser and send a message using **Insomnia*
 
 **Returning the last three messages:**  
 
+file `backend/src/services/GetLast3MessagesService.ts`  
 
+file `backend/src/controllers/GetLast3MessagesController.ts`  
 
+file ``backend/src/routes.ts``  
 
+Insomnia > New Request > "Get last 3 messages" > GET  
+
+``/messages/last3``  
+
+GET "Get last 3 messages" Send  
+
+![insomnia](./.github/backend_insomnia_09.png)  
 
 **User profile creation:**  
 
+file `backend/src/services/ProfileUserService.ts`  
 
+file `backend/src/controller/ProfileUserController.ts`  
+file ``backend/src/routes.ts``  
 
+Insomnia > New Request > "User Profile" > GET  
+
+``/profile``  
+
+Insomnia > GET "User Profile" > Auth > Bearer Token  
+
+user the token used on POST "Create Message"  
+
+![insomnia](./.github/backend_insomnia_10.png)
+
+GET "User Profile" Send  
+
+![insomnia](./.github/backend_insomnia_11.png)  
+
+**Insomnia** > _Storing the token in one variable:_  
+
+Insomnia > Manage Environments > Base Environment
+
+```
+{
+  "baseURL": "http://localhost:4000",
+  "token": "response"
+}
+```
+
+![insomnia](./.github/backend_insomnia_12.png)  
+
+![insomnia](./.github/backend_insomnia_13.png)  
+
+![insomnia](./.github/backend_insomnia_14.png)  
+
+adding to GET "User Profile" > Bearer  
+
+![insomnia](./.github/backend_insomnia_15.png)  
+
+![insomnia](./.github/backend_insomnia_16.png)  
+
+<hr />
 
 ## Stage 2 - 19.10.2021 - _(Instructor: []())_
 
