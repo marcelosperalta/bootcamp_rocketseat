@@ -1,9 +1,18 @@
 import "dotenv/config";
-import express from "express";
+
+import express    from "express";
+import http       from "http";      // Node.js native
+import cors       from "cors";
+import { Server } from "socket.io";
 
 import { router } from "./routes";
 
 const app = express();
+app.use(cors())
+
+const serverHttp = http.createServer(app);
+
+const io = new Server(serverHttp);
 
 // to make "express" works with "code" of request.body:
 app.use(express.json()); 

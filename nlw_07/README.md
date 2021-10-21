@@ -12,8 +12,9 @@
   - dotenv
   - axios
   - jsonwebtoken
-  - Socket.IO
   - Prisma
+  - Socket.IO
+  - corrs
 - **React**
 - **React Native**
 - **Elixir**
@@ -480,7 +481,7 @@ _and send again using insomnia (success scenario):_
 
 ![insomnia](./.github/backend_insomnia_05.png)  
 
-**Message registration**
+**Message registration**  
 
 file ``backend/src/services/CreateMessageService.ts``  
 
@@ -549,7 +550,41 @@ POST "Create Message" Send
 
 ![insomnia](./.github/backend_insomnia_07.png)
 
+run Prisma Studio:  
+
+```
+yarn prisma studio
+```
+
+![insomnia](./.github/backend_prisma_02.png)
+
+![insomnia](./.github/backend_prisma_03.png)
+
 <hr />
+
+**WebSocket configuration:**
+
+file ``backend/src/app.ts``  
+
+https://socket.io/  
+
+```
+yarn add socket.io
+```
+
+```
+yarn add @types/socket.io -D
+```
+
+https://github.com/expressjs/cors  
+
+```
+yarn add cors
+```
+
+```
+yarn add @types/cors - D
+```
 
 ## Stage 2 - 19.10.2021 - _(Instructor: []())_
 
