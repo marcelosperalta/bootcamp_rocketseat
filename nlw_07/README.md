@@ -583,7 +583,7 @@ yarn add cors
 ```
 
 ```
-yarn add @types/cors - D
+yarn add @types/cors -D
 ```
 
 ## Stage 2 - 19.10.2021 - _(Instructor: []())_
