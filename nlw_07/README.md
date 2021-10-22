@@ -789,7 +789,11 @@ http://localhost:3000/
 
 - configure the ``web/src/components/LoginBox/index.ts`` file  
 
-  - Be sure that your GitHub OAuth is configured like that.  
+  - Be sure that your GitHub OAuth (Settings > Developer Settings > OAuth Apps) is configured like that: 
+
+  _needs to be the same URL used by React_  
+
+  - ![github](./.github/github_01.png)
 
 <hr />
 
