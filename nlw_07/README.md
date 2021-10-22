@@ -785,6 +785,12 @@ http://localhost:3000/
     yarn add axios
     ```
 
+- configure the ``web/src/components/MessageList/index.ts`` file  
+
+- configure the ``web/src/components/LoginBox/index.ts`` file  
+
+  - Be sure that your GitHub OAuth is configured like that.  
+
 <hr />
 
 ## Stage 3 - 20.10.2021 - _(Instructor: []())_ 
