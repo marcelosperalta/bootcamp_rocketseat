@@ -30,6 +30,7 @@
   - Typescript
   - Sass
   - React Icons
+  - axios
 - **React Native**
 - **Elixir**
 - **SQLite**
@@ -751,6 +752,38 @@ yarn add sass
 ```
 yarn add react-icons
 ```
+
+:black_medium_square: run _Backend_ and _Frontend_:_  
+
+```
+cd backend
+```
+
+```
+yarn dev
+```
+
+http://localhost:4000/  
+
+```
+cd web
+```
+
+```
+yarn dev
+```
+
+http://localhost:3000/  
+
+:black_medium_square: **integrating** _Backend and Frontend:_  
+
+- create the ``services`` folder with the ``api.ts`` file  
+
+- install `axios`  
+
+  - ```
+    yarn add axios
+    ```
 
 <hr />
 
