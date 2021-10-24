@@ -798,6 +798,8 @@ http://localhost:3000/
   - If the login was successful, you will see the "client ID" on the URL:  
 
     - e.g. http://localhost:3000/?code=272506f1b7849abc8430
+
+
 <hr />
 
 ## Stage 3 - 20.10.2021 - _(Instructor: []())_ 
