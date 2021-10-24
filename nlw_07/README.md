@@ -798,3 +798,9 @@ http://localhost:3000/
 :black_medium_square: **[React Context](https://reactjs.org/docs/context.html)**:  
 
 file `web/src/contexts/auth.tsx`  
+
+:black_medium_square: install [socket.io-client](https://socket.io/docs/v4/client-api/):  
+
+```
+yarn add socket.io-client
+```

@@ -12,6 +12,7 @@ export function App() {
   return (
     <main className={`${styles.contentWrapper} ${!!user ? styles.contentSigned : ''}`}>
       <MessageList />
+  {/* { Boolean(user) ? ... } */}
       { !!user ? <SendMessageForm /> : <LoginBox /> }
     </main>
   )
