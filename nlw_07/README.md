@@ -5,9 +5,6 @@
 - [Overview](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_07#nlw-heat---mission-impulse)
 - [Stage 1](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_07#stage-1---18102021---backend---nodejs-instructor-daniele-evangelista)
 - [Stage 2](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_07#stage-2---19102021---react-instructor-diego-fernandes)
-- [Stage 3]()
-- [Stage 4]()
-- [Stage 5]()
 
 ## NLW Heat - _Mission:_ Impulse
 
@@ -31,8 +28,7 @@
   - Sass
   - React Icons
   - axios
-- **React Native**
-- **Elixir**
+  - Context
 - **SQLite**
 
 **_tools:_**  
@@ -799,45 +795,5 @@ http://localhost:3000/
 
     - e.g. http://localhost:3000/?code=272506f1b7849abc8430
 
+:black_medium_square: **[React Context](https://reactjs.org/docs/context.html)**:  
 
-<hr />
-
-## Stage 3 - 20.10.2021 - _(Instructor: []())_ 
-
-### :file_folder: **folder**
-
-`...`
-
-:black_medium_square: _install ... :_  
-
-```
-
-```
-
-<hr />
-
-## Stage 4 - 21.10.2021 - _(Instructor: []())_
-
-### :file_folder: **folder**
-
-`...`
-
-:black_medium_square: _install ... :_  
-
-```
-
-```
-
-<hr />
-
-## Stage 5 - 22.10.2021 - _(Instructor: []())_
-
-### :file_folder: **folder**
-
-`...`
-
-:black_medium_square: _install ... :_  
-
-```
-
-```
