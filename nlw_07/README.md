@@ -797,3 +797,4 @@ http://localhost:3000/
 
 :black_medium_square: **[React Context](https://reactjs.org/docs/context.html)**:  
 
+file `web/src/contexts/auth.tsx`  
