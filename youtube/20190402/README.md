@@ -13,8 +13,69 @@ Adicionar tipagem em nossos componentes? Por que? Nesse vídeo vamos entender a 
 
 - https://www.typescriptlang.org/
 
+- https://create-react-app.dev/docs/adding-typescript/
+
 ### Install
 
 ```
-yarn ...
+yarn create react-app my-app --template typescript
+```
+
+```
+yarn start
+```
+
+### Install ESLint
+
+```
+yarn add eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-config-prettier eslint-plugin-prettier prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+```
+
+### Create `.eslintrc.js` file
+
+```
+module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    jest: true,
+  },
+  extends: [
+    'react-app',
+    'airbnb',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['react', 'import', 'jsx-a11y'],
+  rules: {
+    'react/jsx-filename-extension': [
+      'error',
+      {
+        extensions: ['.tsx'],
+      },
+    ],
+    'import/prefer-default-export': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-member-accessibility': 'off'
+  },
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      typescript: {},
+    },
+  },
+};
 ```
