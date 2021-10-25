@@ -29,6 +29,7 @@
   - React Icons
   - axios
   - Context
+  - dotenv
 - **SQLite**
 
 **_tools:_**  
