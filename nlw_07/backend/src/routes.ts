@@ -21,6 +21,13 @@ router.post(
 );
 
 router.get(
+    "/",
+    function (req, res) {
+        res.send('Server running on port 4000')
+    }
+);
+
+router.get(
     "/messages/last3",
     new GetLast3MessagesController().handle
 );
