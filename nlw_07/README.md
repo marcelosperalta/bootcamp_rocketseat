@@ -57,9 +57,9 @@
 
 _desktop version:_
 
-- ![DoWhile2021desktop](./.github/interface_web_01.png)  
+![DoWhile2021desktop](./.github/interface_web_01.png)  
 
-- ![DoWhile2021desktop](./.github/interface_web_02.png)  
+![DoWhile2021desktop](./.github/interface_web_02.png)  
 
 ## [Environment](https://efficient-sloth-d85.notion.site/NLW-Heat-daaa092e1eeb42ff929151d2807c8231)
 
