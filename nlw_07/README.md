@@ -55,7 +55,7 @@
 
 **_app screenshot:_**  
 
-_desktop version:_
+_web version:_
 
 ![DoWhile2021desktop](./.github/interface_web_01.png)  
 
