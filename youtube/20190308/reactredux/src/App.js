@@ -1,13 +1,23 @@
+import React, { Component } from "react";
+import { Provider } from "react-redux";
+
 import Video from "./components/Video";
 import Sidebar from "./components/Sidebar";
 
-function App() {
-  return (
-    <div>
-      <Video />
-      <Sidebar />
-    </div>
-  );
+import store from "./store";
+
+class App extends Component {
+  
+  render() {
+    return (
+      <div>
+        <Provider store={store}>
+          <Video />
+          <Sidebar />
+        </Provider>
+      </div>
+    );
+  }
 }
 
 export default App;
