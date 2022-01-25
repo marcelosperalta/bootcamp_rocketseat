@@ -21,3 +21,9 @@ yarn install
 ```
 yarn dev
 ```
+
+### [React Router](https://reactrouter.com/)
+
+```
+yarn add react-router-dom
+```
