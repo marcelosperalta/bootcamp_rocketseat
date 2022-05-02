@@ -74,11 +74,11 @@ npm -v
 #### update [Yarn](https://yarnpkg.com/)
 
 ```
-yarn set version latest
+yarn set version stable
 ```
 
 ```
-npm -v
+yarn -v
 ```
 
 ### Tech Stack
