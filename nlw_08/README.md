@@ -11,13 +11,13 @@
 
 **_tech stack:_**  
 
-- **Node.js**
+- Node.js
   - 
-- **React**
+- React
   - 
-- **React Native**
+- React Native
   - 
-- **...**
+- ...
 
 **_tools:_**  
 
