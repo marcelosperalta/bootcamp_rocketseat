@@ -4,8 +4,8 @@
 
 ## Table of Contents:
 
-- [Overview]()
-- [Stage 1]()
+- [Overview](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#overview)
+- [Stage 1](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#stage-1---02052022---front-end---react---instructor-diego-fernandes)
 - [Stage 2]()
 - [Run]()
 
@@ -19,31 +19,31 @@
 
 - https://github.com/rocketseat-education/nlw-return-impulse  
 
-**_app name:_**  
+**_app name_**  
 
 - Feedback Widget
 
-**_app versions:_**  
+**_app versions_**  
 
 - web
 
 - mobile
 
-**_app description:_**  
+**_app description_**  
 
 - A widget to collect users' feedback that can be used in any application.
 
-**_app features:_**  
+**_app features_**  
 
 - ...
 
-**_app screenshot:_**  
+**_app screenshot_**  
 
-_web version:_  
+_web version_  
 
 ![sreenshot](./.github/)  
 
-_mobile version:_  
+_mobile version_  
 
 ![sreenshot](./.github/)  
 
@@ -98,13 +98,13 @@ npm -v
 
 ### topics
 
-- SPA;
-- React;
-  - Component;
-  - Props.
-- Tailwind CSS;
-- Web accessibility;
-- PopOver.
+- SPA
+- React
+  - Component
+  - Props
+- Tailwind CSS
+- Web accessibility
+- PopOver
 
 ### :file_folder: **folder**
 
