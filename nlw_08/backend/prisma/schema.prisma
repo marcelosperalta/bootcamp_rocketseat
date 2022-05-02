@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// postgresql
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
+
+//sqlite
+// https://www.prisma.io/docs/concepts/database-connectors/sqlite
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id          String   @id @default(uuid())
+  name        String
+//name        String? // "?" to turn it optional
+  github_id   Int
+  avatar_url  String
+  login       String
+
+  messages Message[] // relation
+  @@map("users")
+}
+
+model Message {
+  id          String   @id @default(uuid())
+  text        String
+  created_at  DateTime @default(now())
+
+  user User   @relation(fields: [user_id], references: [id])
+
+  user_id     String // relation
+  @@map("messages")
+}
