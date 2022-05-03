@@ -7,7 +7,7 @@
 - [Overview](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#overview)
 - [Stage 1](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#stage-1---02052022---front-end---react---instructor-diego-fernandes)
 - [Stage 2]()
-- [Run]()
+- [Run](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#run)
 
 ## Overview
 
@@ -85,6 +85,7 @@ yarn -v
 ### Tech Stack
 
 - React
+  - [Vite](https://vitejs.dev/)
 - React Native
 - Node.js
 
@@ -109,25 +110,15 @@ yarn -v
 
 ### :file_folder: **folder**
 
-`...`
+`web`
 
 :black_medium_square: _install_  
 
 ```
-yarn init -y
+npm create vite@latest
 ```
 
-``.../tsconfig.json`` configuration:  
-
-````
-...
-````
-
-`.../package.json` configuration:  
-
-````
-...
-````
+_react-ts_  
 
 :black_medium_square: _start_  
 
@@ -176,7 +167,7 @@ cd backend
 ```
 
 ```
-yarn dev
+...
 ```
 
 http://localhost:4000/  
@@ -188,7 +179,11 @@ cd web
 ```
 
 ```
-yarn dev
+npm install
+```
+
+```
+npm run dev
 ```
 
 http://localhost:3000/  
