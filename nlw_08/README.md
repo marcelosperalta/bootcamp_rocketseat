@@ -114,7 +114,7 @@ yarn -v
 
 ##### [Vite](https://vitejs.dev/)
 
-- :black_medium_square: _install_  
+- _install_
 
   ```
   npm create vite@latest
@@ -124,29 +124,29 @@ yarn -v
 
   used _react-ts_ option  
 
-:black_medium_square: _start_  
+- _start_
 
-```
-cd web
-```
+  ```
+  cd web
+  ```
 
-```
-npm install
-```
+  ```
+  npm install
+  ```
 
-```
-npm run dev
-```
+  ```
+  npm run dev
+  ```
 
-http://localhost:3000/  
+  http://localhost:3000/  
 
-#### [Tailwind CSS](https://tailwindcss.com/)
+##### [Tailwind CSS](https://tailwindcss.com/)
 
-:black_medium_square: _install_
+- _install_
 
-```
-npm 
-```
+  ```
+  npm 
+  ```
 
 <hr />
 
