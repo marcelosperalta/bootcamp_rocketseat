@@ -110,7 +110,7 @@ yarn -v
 
 ### web app version
 
-#### file_folder: **web** folder
+#### :file_folder: **web** folder
 
 ##### [Vite](https://vitejs.dev/)
 
