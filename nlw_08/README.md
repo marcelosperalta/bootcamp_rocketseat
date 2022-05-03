@@ -144,9 +144,43 @@ yarn -v
 
 - _install_
 
+  https://tailwindcss.com/docs/installation/using-postcss  
+
   ```
-  npm 
+  npm install -D tailwindcss postcss autoprefixer
   ```
+
+  ```
+  npx tailwindcss init
+  ```
+
+  postcss.config.js
+  ```
+  module.exports = {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      }
+  }
+  ```
+
+  tailwind.config.js
+  ```
+  module.exports = {
+    content: ["./src/**/*.tsx"],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
+  ```
+
+  src/global.css
+  ```
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  ``
 
 <hr />
 
