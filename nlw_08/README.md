@@ -110,19 +110,19 @@ yarn -v
 
 ### web app version
 
-#### :file_folder: **web** folder
+#### :file_folder: web folder
 
 ##### [Vite](https://vitejs.dev/)
 
-:black_medium_square: _install_  
+- :black_medium_square: _install_  
 
-```
-npm create vite@latest
-```
+  ```
+  npm create vite@latest
+  ```
 
-project name: _web_  
+  project name: _web_  
 
-used _react-ts_ option  
+  used _react-ts_ option  
 
 :black_medium_square: _start_  
 
