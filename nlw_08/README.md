@@ -123,12 +123,18 @@ _react-ts_
 :black_medium_square: _start_  
 
 ```
-cd ...
+cd web
 ```
 
 ```
-yarn dev
+npm install
 ```
+
+```
+npm run dev
+```
+
+http://localhost:3000/  
 
 <hr />
 
