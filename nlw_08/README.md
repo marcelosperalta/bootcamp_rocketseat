@@ -108,9 +108,11 @@ yarn -v
 - Web accessibility
 - PopOver
 
-### :file_folder: **folder**
+### web app version
 
-`web`
+#### file_folder: **web** folder
+
+##### [Vite](https://vitejs.dev/)
 
 :black_medium_square: _install_  
 
@@ -118,7 +120,9 @@ yarn -v
 npm create vite@latest
 ```
 
-_react-ts_  
+project name: _web_  
+
+used _react-ts_ option  
 
 :black_medium_square: _start_  
 
@@ -135,6 +139,14 @@ npm run dev
 ```
 
 http://localhost:3000/  
+
+#### [Tailwind CSS](https://tailwindcss.com/)
+
+:black_medium_square: _install_
+
+```
+npm 
+```
 
 <hr />
 
