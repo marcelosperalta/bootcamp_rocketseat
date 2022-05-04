@@ -195,6 +195,16 @@ yarn -v
   npm install phosphor-react
   ```
 
+##### [Headless UI](https://headlessui.dev/)
+
+- _install_
+
+  https://headlessui.dev/react/popover  
+
+  ```
+  npm install @headlessui/react
+  ```
+
 <hr />
 
 ## Stage 2 - 03.05.2021 - ... _(Instructor: [...](...))_
