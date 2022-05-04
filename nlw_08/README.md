@@ -93,6 +93,7 @@ yarn -v
 
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Headless UI](https://headlessui.dev/)
+- [Phosphor Icons](https://phosphoricons.com/)
 
 <hr />
 
@@ -181,6 +182,18 @@ yarn -v
   @tailwind components;
   @tailwind utilities;
   ``
+
+##### [Phosphor Icons](https://phosphoricons.com/)
+
+- _install_
+
+  https://github.com/phosphor-icons/phosphor-home#react  
+
+  https://github.com/phosphor-icons/phosphor-react  
+
+  ```
+  npm install phosphor-react
+  ```
 
 <hr />
 
