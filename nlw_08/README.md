@@ -209,9 +209,14 @@ yarn -v
 
 ## Stage 2 - 03.05.2021 - Frontend - React - _Instructor: [Diego Fernandes](https://github.com/diego3g)_
 
-### :file_folder: **folder**
+### topics
 
-`...`
+- Widget Form
+- Feedback component
+
+### web app version
+
+#### :file_folder: web folder
 
 :black_medium_square: _install [...](https://...):_  
 
