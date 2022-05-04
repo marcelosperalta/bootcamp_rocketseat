@@ -2,6 +2,7 @@
 
 import { ChatTeardropDots } from "phosphor-react";
 import { Popover } from "@headlessui/react";
+import { WidgetForm } from "./WidgetForm";
 
 export function Widget(){
 
@@ -15,11 +16,14 @@ export function Widget(){
 
     return (
         // <div className="absolute bottom-5 right-5">
-        <Popover className="absolute bottom-5 right-5">
+        <Popover className="absolute bottom-4 right-4 md:bottom-8 flex flex-col items-end">
             {/* { isWidgetOpen ? <p>Hello World</p> : null } */}
             {/* { isWidgetOpen && <p>Hello World</p> } */}
             {/* <p>Hello World</p> */}
-            <Popover.Panel>Hello World</Popover.Panel>
+            {/* <Popover.Panel>Hello World</Popover.Panel> */}
+            <Popover.Panel>
+                <WidgetForm />
+            </Popover.Panel>
 
             {/* <button onClick={toogleWidgetVisibility} className="bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group"> */}
             <Popover.Button className="bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group">
