@@ -97,7 +97,7 @@ yarn -v
 
 <hr />
 
-## Stage 1 - 02.05.2022 - Front End - React - _Instructor: [Diego Fernandes](https://github.com/diego3g)_
+## Stage 1 - 02.05.2022 - Frontend - React - _Instructor: [Diego Fernandes](https://github.com/diego3g)_
 
 ### topics
 
@@ -207,7 +207,7 @@ yarn -v
 
 <hr />
 
-## Stage 2 - 03.05.2021 - ... _(Instructor: [...](...))_
+## Stage 2 - 03.05.2021 - Frontend - React - _Instructor: [Diego Fernandes](https://github.com/diego3g)_
 
 ### :file_folder: **folder**
 
