@@ -218,11 +218,28 @@ yarn -v
 
 #### :file_folder: web folder
 
-:black_medium_square: _install [...](https://...):_  
+##### [Tailwind CSS Forms Pluging](https://tailwindcss.com/docs/plugins#forms)
 
-```
-yarn create ...
-```
+- _install_
+
+  https://github.com/tailwindlabs/tailwindcss-forms  
+
+  ```
+  npm install -D @tailwindcss/forms
+  ```
+
+  tailwind.config.js
+  ```
+  module.exports = {
+    theme: {
+      // ...
+    },
+    plugins: [
+      require('@tailwindcss/forms'),
+      // ...
+    ],
+  }
+  ```
 
 ## Run
 
