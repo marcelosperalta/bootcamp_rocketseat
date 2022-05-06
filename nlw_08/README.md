@@ -241,6 +241,30 @@ yarn -v
   }
   ```
 
+##### [Scrollbar Plugin for Tailwind CSS](https://www.npmjs.com/package/tailwind-scrollbar)
+
+- _install_
+
+  https://github.com/adoxography/tailwind-scrollbar  
+
+  ```
+  npm install --save-dev tailwind-scrollbar
+  ```
+  
+  tailwind.config.js
+  ```
+  module.exports = {
+    theme: {
+      // ...
+    },
+    plugins: [
+      // ...
+      require('tailwind-scrollbar'),
+    ],
+  }
+  ```
+
+
 ## Run
 
 ### Backend
