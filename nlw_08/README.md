@@ -224,20 +224,6 @@ yarn -v
 yarn create ...
 ```
 
-```
-cd ...
-```
-
-```
-yarn
-```
-
-:black_medium_square: _run:_  
-
-```
-yarn dev
-```
-
 ## Run
 
 ### Backend
