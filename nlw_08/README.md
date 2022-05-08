@@ -264,6 +264,14 @@ yarn -v
   }
   ```
 
+##### [html2canvas](https://html2canvas.hertzen.com/)
+
+- _install_
+
+  ```
+  npm install --save html2canvas
+  ```
+
 ## Run
 
 ### Backend
