@@ -272,18 +272,6 @@ yarn -v
 
 ## Run
 
-### Backend
-
-```
-cd backend
-```
-
-```
-...
-```
-
-http://localhost:4000/  
-
 ### Frontend
 
 ```
