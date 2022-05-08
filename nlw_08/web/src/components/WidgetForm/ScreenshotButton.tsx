@@ -2,14 +2,15 @@ import { useState } from "react";
 
 import html2canvas from "html2canvas";
 
-import { Camera } from "phosphor-react";
+import { Camera, Trash } from "phosphor-react";
 import { Loading } from "../Loading";
 
 interface ScreenshotButtonProps {
-    onTookScreenshot: (screenshot: string) => void;
+    screenshot: string | null;
+    onTookScreenshot: (screenshot: string | null) => void;
 }
 
-export function ScreenshotButton( { onTookScreenshot }: ScreenshotButtonProps) {
+export function ScreenshotButton( { screenshot, onTookScreenshot }: ScreenshotButtonProps) {
     const [isTakingScreenshot, setIsTakingScreenshot] = useState(false);
 
     async function handleTakeScreenshot() {
@@ -20,6 +21,23 @@ export function ScreenshotButton( { onTookScreenshot }: ScreenshotButtonProps) {
 
         onTookScreenshot(base64image);
         setIsTakingScreenshot(false);
+    }
+
+    if (screenshot) {
+        return (
+            <button
+                type="button"
+                className="p-1 w-10 h-10 rounded-md border-transparent flex justify-end items-end text-zinc-400 hover:text-zinc-100 transition-colors"
+                style={{
+                    backgroundImage: `url(${screenshot})`,
+                    backgroundPosition: 'right bottom',
+                    backgroundSize: 180,
+                }}
+                onClick={() => onTookScreenshot(null)}
+            >
+                <Trash weight="fill"/>
+            </button>
+        );
     }
 
     return (
