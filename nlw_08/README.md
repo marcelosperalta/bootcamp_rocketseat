@@ -35,7 +35,7 @@
 
 **_app features_**  
 
-- ...
+- It is possible to print the screen and send with the feedback.
 
 **_app screenshot_**  
 
