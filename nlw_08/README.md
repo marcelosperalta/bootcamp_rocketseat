@@ -41,11 +41,9 @@
 
 _web version_  
 
-![sreenshot](./.github/)  
+![sreenshot](./.github/web_version_screenshot_01.png)  
 
-_mobile version_  
-
-![sreenshot](./.github/)  
+![sreenshot](./.github/web_version_screenshot_02.png)  
 
 ### Environment
 
