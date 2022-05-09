@@ -86,6 +86,7 @@ yarn -v
   - [Vite](https://vitejs.dev/)
 - React Native
 - Node.js
+  - Express
 
 
 #### Tools
@@ -306,6 +307,26 @@ npm init -y
   ...
   "target": "es2020",
   ...
+  "rootDir": "./src", 
+  ...
+  "outDir": "./dist",
+  ...
+  ```
+
+  ```
+  npx tsc
+  ```
+
+##### [Express](https://expressjs.com/)
+
+- _install_
+
+  ```
+  npm i express @types/expre
+  ```
+
+  ```
+  npm i -D @types/express
   ```
 
 ## Run
@@ -325,3 +346,19 @@ npm run dev
 ```
 
 http://localhost:3000/  
+
+### Backend
+
+```
+cd server
+```
+
+```
+npm install
+```
+
+```
+npm run dev
+```
+
+http://localhost:3333/  
