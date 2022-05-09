@@ -87,11 +87,14 @@ yarn -v
 - React Native
 - Node.js
 
+
 #### Tools
 
+- [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Headless UI](https://headlessui.dev/)
 - [Phosphor Icons](https://phosphoricons.com/)
+- [Prisma](https://www.prisma.io/)
 
 <hr />
 
@@ -268,6 +271,41 @@ yarn -v
 
   ```
   npm install --save html2canvas
+  ```
+
+## Stage 3 - 04.05.2021 - Backend - Node.js - _Instructor: [Diego Fernandes](https://github.com/diego3g)_
+
+### topics
+
+- SOLID
+- Automated testing
+- Database
+
+### web app version
+
+#### :file_folder: server folder
+
+```
+npm init -y
+```
+
+##### TypeScript + @types + [ts-node-dev](https://github.com/wclr/ts-node-dev)
+
+- _install_
+
+  ```
+  npm i typescript @types/node ts-node-dev -D
+  ```
+
+  ```
+  npx tsc --init
+  ```
+
+  tsconfig.json
+  ```
+  ...
+  "target": "es2020",
+  ...
   ```
 
 ## Run

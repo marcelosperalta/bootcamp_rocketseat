@@ -1,0 +1,14 @@
+.icon, .icon-facebook, .icon-twitter {
+  font-family: 'Custom Font';
+  line-height: 1;
+  color: #111;
+}
+
+.icon-facebook {
+  content: '\e301';
+}
+
+.icon-twitter {
+  content: '\e302';
+}
+/*# sourceMappingURL=inheritance.css.map */

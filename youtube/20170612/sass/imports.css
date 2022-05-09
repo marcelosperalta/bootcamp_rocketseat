@@ -1,0 +1,56 @@
+body {
+  margin-left: 10px;
+  font-size: 2rem;
+}
+
+body ul {
+  list-style: none;
+}
+
+body ul li {
+  margin-left: 10px;
+}
+
+body ul li a {
+  color: #111;
+}
+
+body ul li a:hover {
+  color: #ddd;
+}
+
+body {
+  font-family: "Baloo Thambi 2", cursive;
+  background-color: #e1f1ec;
+}
+
+.main {
+  background-color: #DDD;
+  border-color: #111;
+}
+
+.item {
+  width: 320px;
+}
+
+.banana {
+  padding: 30px;
+  background-image: url("images/banana.png");
+}
+
+.apple {
+  padding: 20px;
+  margin: 10px;
+  background-image: url("images/apple.png");
+}
+
+.lemon {
+  margin: 20px;
+  background-image: url("images/lemon.png");
+}
+
+code {
+  font-family: courier, monospace;
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=imports.css.map */

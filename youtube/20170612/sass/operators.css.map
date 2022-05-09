@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,KAA4B;CACtC",
+    "sources": [
+        "operators.scss"
+    ],
+    "names": [],
+    "file": "operators.css"
+}

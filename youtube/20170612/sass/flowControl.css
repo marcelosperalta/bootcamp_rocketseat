@@ -1,0 +1,16 @@
+.banana {
+  padding: 30px;
+  background-image: url("images/banana.png");
+}
+
+.apple {
+  padding: 20px;
+  margin: 10px;
+  background-image: url("images/apple.png");
+}
+
+.lemon {
+  margin: 20px;
+  background-image: url("images/lemon.png");
+}
+/*# sourceMappingURL=flowControl.css.map */
