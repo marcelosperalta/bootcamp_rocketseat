@@ -1,8 +1,9 @@
 import express from 'express';
+import nodemailer from 'nodemailer';
 import { prisma } from './prisma';
 
 const app = express();
-const port = 3333
+const port = 3333;
 
 app.use(express.json());
 

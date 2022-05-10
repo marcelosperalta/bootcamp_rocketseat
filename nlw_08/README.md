@@ -88,6 +88,7 @@ yarn -v
 - React Native
 - Node.js
   - Express
+  - Nodemailer
 - SQLite
   - Prisma
 
@@ -98,6 +99,7 @@ yarn -v
 - [Headless UI](https://headlessui.dev/)
 - [Phosphor Icons](https://phosphoricons.com/)
 - [Insomnia](https://insomnia.rest/)
+- [Mailtrap](https://mailtrap.io/)
 
 <hr />
 
@@ -375,6 +377,18 @@ npm init -y
   ```
 
   http://localhost:5555  
+
+##### [Nodemailer](https://nodemailer.com/)
+
+- _install_
+
+  ```
+  npm install nodemailer
+  ```
+
+  ```
+  npm install @types/nodemailer -D
+  ```
 
 ## Run
 
