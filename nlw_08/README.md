@@ -87,6 +87,8 @@ yarn -v
 - React Native
 - Node.js
   - Express
+- SQLite
+  - Prisma
 
 
 #### Tools
@@ -327,6 +329,37 @@ npm init -y
 
   ```
   npm i -D @types/express
+  ```
+
+##### [Prisma](https://www.prisma.io/)
+
+- _install_
+
+  ```
+  npm i prisma -D
+  ```
+
+  ```
+  npm i @prisma/client
+  ```
+
+  ```
+  npx prisma init
+  ```
+
+  prisma/schema.prisma
+  ```
+  ...
+  datasource db {
+    provider = "sqlite"
+  ...
+  ```
+
+  .env
+  ```
+  ...
+  DATABASE_URL="file:./dev.db"
+  ...
   ```
 
 ## Run
