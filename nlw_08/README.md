@@ -362,6 +362,20 @@ npm init -y
   ...
   ```
 
+- _create tables_
+
+  ```
+  npx prisma migrate dev
+  ```
+
+- _to see the tables_
+
+  ```
+  npx prisma studio
+  ```
+
+  http://localhost:5555  
+
 ## Run
 
 ### Frontend
