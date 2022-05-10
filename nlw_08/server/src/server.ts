@@ -1,7 +1,12 @@
 import express from 'express';
 
 const app = express();
+const port = 3333
 
-app.listen(3333, () => {
-    console.log("HTTP Server is running!");
+app.get('/users', (req, res) => {
+    return res.send("Hello World");
+})
+
+app.listen(port, () => {
+    console.log(`App listening on port ${port}`);
 })
