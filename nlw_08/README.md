@@ -82,6 +82,7 @@ yarn -v
 
 ### Tech Stack
 
+- TypeScript
 - React
   - [Vite](https://vitejs.dev/)
 - React Native
@@ -93,11 +94,10 @@ yarn -v
 
 #### Tools
 
-- [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Headless UI](https://headlessui.dev/)
 - [Phosphor Icons](https://phosphoricons.com/)
-- [Prisma](https://www.prisma.io/)
+- [Insomnia](https://insomnia.rest/)
 
 <hr />
 
