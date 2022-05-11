@@ -283,9 +283,14 @@ yarn -v
 
 ### topics
 
-- SOLID
-- Automated testing
 - Database
+- SOLID
+  - (S)ingle-Responsability principle: Every class should have only one responsibility.
+  - (O)pen-Closed principle: Software entities should be open for extension, but closed for modification.
+  - (L)skov substitution principle: Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it.
+  - (I)nterface segregation principle: Many client-specific interfaces are better than one general-purpose interface.
+  - (D)ependency inversion principle: Depend upon abstractions, (not) concretions.
+- Automated testing
 
 ### web app version
 
