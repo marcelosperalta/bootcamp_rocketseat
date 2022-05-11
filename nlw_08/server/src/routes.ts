@@ -1,6 +1,9 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
-import { prisma } from './prisma';
+import { PrismaFeedbacksRepository } from './repositories/prisma/prisma-feedbacks-repository';
+import { SubmitFeedbackUseCase } from './use-cases/submit-feedback-use-case';
+
+// import { prisma } from './prisma';
 
 export const routes = express.Router()
 
@@ -25,7 +28,9 @@ routes.post('/feedbacks', async (req, res) => {
     //         screenshot: req.body.screenshot,
     //     }
     // })
+
     const { type, comment, screenshot } = req.body;
+
     // prisma.feedback.create({
     //     data: {
     //         type: type,
@@ -33,26 +38,38 @@ routes.post('/feedbacks', async (req, res) => {
     //         screenshot: screenshot,
     //     }
     // })
-    const feedback = await prisma.feedback.create({
-        data: {
-            type,
-            comment,
-            screenshot,
-        }
+    // const feedback = await prisma.feedback.create({
+    //     data: {
+    //         type,
+    //         comment,
+    //         screenshot,
+    //     }
+    // })
+    
+    const prismaFeedbacksRepository = new PrismaFeedbacksRepository();
+    const submitFeedbaclUseCase = new SubmitFeedbackUseCase(
+        prismaFeedbacksRepository
+    );
+
+    await submitFeedbaclUseCase.execute({
+        type,
+        comment,
+        screenshot
     })
 
-    await transport.sendMail({
-        from: "Feedget Team <hi@feedget.com>",
-        to: "Marcelo Peralta <marcelosperalta@gmail.com>",
-        subject: "New feedback",
-        html: [
-            `<div style="font-family: sans-serif; font-size: 16px; color: #111;">`,
-                `<p><b>Feedback type:</b> ${type}<p>`,
-                `<p><b>Comment:</b> ${comment}`,
-            `</div>`,
-        ].join(''),
-    });
+    // await transport.sendMail({
+    //     from: "Feedget Team <hi@feedget.com>",
+    //     to: "Marcelo Peralta <marcelosperalta@gmail.com>",
+    //     subject: "New feedback",
+    //     html: [
+    //         `<div style="font-family: sans-serif; font-size: 16px; color: #111;">`,
+    //             `<p><b>Feedback type:</b> ${type}<p>`,
+    //             `<p><b>Comment:</b> ${comment}`,
+    //         `</div>`,
+    //     ].join(''),
+    // });
 
     // return res.send("Hello World");
-    return res.status(201).json( { data: feedback } );
+    // return res.status(201).json( { data: feedback } );
+    return res.status(201).send();
 })
