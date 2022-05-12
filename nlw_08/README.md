@@ -92,7 +92,9 @@ yarn -v
   - Nodemailer
 - SQLite
   - Prisma
-
+- Jest
+  - [ts-node](https://typestrong.org/ts-node/)
+  - [SWC](https://swc.rs/)
 
 #### Tools
 
@@ -293,6 +295,8 @@ yarn -v
 - Repository Pattern
 - Design by contract
 - Automated testing
+- Unit testing
+- Jest
 
 ### web app version
 
@@ -396,6 +400,52 @@ npm init -y
 
   ```
   npm install @types/nodemailer -D
+  ```
+
+##### [Jest](https://jestjs.io/)
+
+- _install_
+
+  ```
+  npm install jest -D
+  ```
+
+  ```
+  npx jest --init
+  ```
+
+  > node  
+
+  > v8  
+
+  ```
+  npm i @types/jest -D
+  ```
+
+  [ts-node](https://typestrong.org/ts-node/)
+    ```
+    npm install ts-node -D
+    ```
+  
+  [SWC](https://swc.rs/)
+
+    https://swc.rs/docs/usage/jest  
+
+    ```
+    npm i -D @swc/core @swc/jest
+    ```
+
+    jest.config.ts
+    ```
+    transform: {
+        "^.+\\.(t|j)sx?$": ["@swc/jest"],
+    },
+    ```
+
+- _run_
+
+  ```
+  npm run test
   ```
 
 ## Run
