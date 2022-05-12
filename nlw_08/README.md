@@ -51,7 +51,6 @@ _web version_
 - Visual Studio Code
   - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 - Node + NPM
-- Yarn
 
 #### update [Node.js](https://nodejs.org/en/)
 
@@ -89,6 +88,7 @@ yarn -v
 - React Native
 - Node.js
   - Express
+  - cors
   - Nodemailer
 - SQLite
   - Prisma
@@ -296,7 +296,8 @@ yarn -v
 - Design by contract
 - Automated testing
 - Unit testing
-- Jest
+- Jest (Jest Spy)
+- cors
 
 ### web app version
 
@@ -446,6 +447,18 @@ npm init -y
 
   ```
   npm run test
+  ```
+
+##### [cors](https://github.com/expressjs/cors)
+
+- _install_
+
+  ```
+  npm i cors
+  ```
+
+  ```
+  npm i @types/cors -D
   ```
 
 ## Run
