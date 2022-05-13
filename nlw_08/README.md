@@ -86,6 +86,7 @@ yarn -v
 - React
   - [Vite](https://vitejs.dev/)
 - React Native
+  - [Expo](https://expo.dev/)
 - Node.js
   - Express
   - cors
@@ -460,6 +461,47 @@ npm init -y
   ```
   npm i @types/cors -D
   ```
+
+## Stage 5 - 05.05.2021 - Mobile - React Native - _Instructor: [Rodrigo Gonçalves](https://github.com/rodrigorgtic)_
+
+### topics
+
+- Mobile app
+  - Android > Java/Kotlin > Build (APK)
+  - iOS > Object-C/Swift > Build (IAP)
+  - Android/iOS > JavaScript > Js Bundle > APK/IPA
+- React Native
+- Expo
+
+### mobile app version
+
+#### :file_folder: mobile folder
+
+##### [Expo](https://expo.dev/)
+
+- _install_
+
+  ```
+  npm install -g expo-cli
+  ```
+
+  ```
+  expo --version
+  ```
+
+  ```
+  expo init mobile
+  ```
+
+  > blank (TypeScript)  
+
+- _install_ on your mobile phone
+
+  Android  
+  https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR&gl=US
+
+  iOS  
+  https://apps.apple.com/br/app/expo-go/id982107779
 
 ## Run
 
