@@ -495,13 +495,29 @@ npm init -y
 
   > blank (TypeScript)  
 
-- _install_ on your mobile phone
+- _install_ [Expo Go](https://expo.dev/client) on your mobile phone
 
   Android  
   https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR&gl=US
 
   iOS  
   https://apps.apple.com/br/app/expo-go/id982107779
+
+ - _optional_ run using emulators
+
+  Adroid Studio  
+  https://developer.android.com/studio
+
+  iOS Xcode
+  https://developer.apple.com/xcode/
+
+- _run_ 
+
+  ```
+  expo start
+  ```
+
+  http://localhost:19002/  
 
 ## Run
 
