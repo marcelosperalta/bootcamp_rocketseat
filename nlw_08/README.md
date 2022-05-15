@@ -503,7 +503,7 @@ npm init -y
   iOS  
   https://apps.apple.com/br/app/expo-go/id982107779
 
- - _optional_ run using emulators
+ - _optional_ - run using emulators
 
   Adroid Studio  
   https://developer.android.com/studio
@@ -518,6 +518,10 @@ npm init -y
   ```
 
   http://localhost:19002/  
+
+##### [R Component](https://marketplace.visualstudio.com/items?itemName=rodrigorgtic.rcomponent)
+
+  https://marketplace.visualstudio.com/items?itemName=rodrigorgtic.rcomponent  
 
 ## Run
 
