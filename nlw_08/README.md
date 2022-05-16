@@ -8,7 +8,7 @@
 - [Stage 1](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#stage-1---02052022---frontend---react---instructor-diego-fernandes)
 - [Stage 2](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#stage-2---03052021---frontend---react---instructor-diego-fernandes)
 - [Stage 3](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#stage-3---04052021---backend---nodejs---instructor-diego-fernandes)
-- [Stage 4](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#stage-4---05052021---mobile---react-native---instructor-rodrigo-gon%C3%A7alves)
+<!-- - [Stage 4](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#stage-4---05052021---mobile---react-native---instructor-rodrigo-gon%C3%A7alves) -->
 - [Run](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#run)
 
 ## Overview
