@@ -8,7 +8,7 @@
 - [Stage 1](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#stage-1---02052022---frontend---react---instructor-diego-fernandes)
 - [Stage 2](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#stage-2---03052021---frontend---react---instructor-diego-fernandes)
 - [Stage 3](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#stage-3---04052021---backend---nodejs---instructor-diego-fernandes)
-- [Stage 4](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#stage-3---04052021---backend---nodejs---instructor-diego-fernandes)
+- [Stage 4](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#stage-4---05052021---mobile---react-native---instructor-rodrigo-gon%C3%A7alves)
 - [Run](https://github.com/marcelosperalta/bootcamp_rocketseat/tree/master/nlw_08#run)
 
 ## Overview
@@ -463,7 +463,7 @@ npm init -y
   npm i @types/cors -D
   ```
 
-## Stage 4 - 05.05.2021 - Mobile - React Native - _Instructor: [Rodrigo Gonçalves](https://github.com/rodrigorgtic)_
+<!-- ## Stage 4 - 05.05.2021 - Mobile - React Native - _Instructor: [Rodrigo Gonçalves](https://github.com/rodrigorgtic)_
 
 ### topics
 
@@ -534,7 +534,7 @@ npm init -y
 
   ```
   expo install expo-splash-screen
-  ```
+  ``` -->
 
 ## Run
 
