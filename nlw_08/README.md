@@ -523,6 +523,18 @@ npm init -y
 
   https://marketplace.visualstudio.com/items?itemName=rodrigorgtic.rcomponent  
 
+##### [Expo Fonts](https://docs.expo.dev/guides/using-custom-fonts/)
+
+  ```
+  expo install expo-font @expo-google-fonts/inter
+  ```
+
+##### [SplashScreen](https://docs.expo.dev/versions/latest/sdk/splash-screen/)
+
+  ```
+  expo install expo-splash-screen
+  ```
+
 ## Run
 
 ### Frontend
