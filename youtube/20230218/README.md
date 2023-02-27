@@ -77,6 +77,8 @@ https://www.youtube.com/watch?v=EDotqZwJ4aA
 
     - GraphQL
 
+    - Microservices
+
 - SQL
 
     - PostgreSQL
